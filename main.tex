@@ -1,0 +1,39 @@
+% =============================================================================
+% Unit 1: Electrostatics - Class 12 Physics
+% Board Exam Preparation Series
+% Professional Design Guide Implementation - Modular Structure
+% Author: Dr. KN Ray
+% Institution: Ray Physics Academy, Darbhanga
+% =============================================================================
+
+% Document class and theme
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Madrid}
+
+% Load preamble with all configuration settings
+\input{preamble.tex}
+
+% Fix for siunitx and physics package conflict
+% This ensures that \qty works properly with both packages
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
+
+% Title and author information
+\title{\Huge\textbf{Unit I: Electrostatics}}
+\subtitle{\Large\textbf{Class 12 Physics -- Board Exam Preparation}}
+\author{\large\textbf{Dr. KN Ray}}
+\institute{\large\textbf{Ray Physics Academy, Darbhanga}}
+\date{\large October 14, 2025}
+
+\begin{document}
+
+    % Include title slide
+   \input{Title.tex}
+   \input{chapter1.tex}
+   \input{chapter2.tex}
+   \input{chapter3.tex}
+    %\input{chapter4.tex}
+    %\input{chapter5.tex}
+    %\input{chapter6.tex}
+    %\input{chapter7.tex}
+    % \appendix
+\end{document}

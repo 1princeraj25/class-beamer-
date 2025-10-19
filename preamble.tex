@@ -1,0 +1,534 @@
+% =============================================================================
+% PREAMBLE.TEX
+% LaTeX Preamble for Unit 1: Electrostatics - Class 12 Physics
+% Board Exam Preparation Series
+% Professional Design Guide Implementation - Modular Structure
+% =============================================================================
+
+% Note: \documentclass and \usetheme should be declared in main.tex, not here
+
+% Typography: scientific sans-serif with crisp mathematics
+\usefonttheme{professionalfonts}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{newtxmath}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Color Scheme - Unified and comprehensive
+\definecolor{deepnavy}{HTML}{003366}        % Darker blue for structure
+\definecolor{steelblue}{HTML}{4682B4}       % Main theme color
+\definecolor{warmgray}{HTML}{696969}        % Dark gray for secondary text
+\definecolor{lightblue}{HTML}{E0F0FF}       % Lighter blue for backgrounds
+
+% Semantic Colors Based on User Syllabus Requirements
+\definecolor{importantRed}{HTML}{D32F2F}    % Red for important/frequently asked
+\definecolor{conceptualBlue}{HTML}{1976D2}  % Blue for conceptual understanding
+\definecolor{familiarGreen}{HTML}{388E3C}   % Green to get familiar
+\definecolor{commentPink}{HTML}{E91E63}     % Pink for comments/directions
+
+% Legacy/Compatibility colors (unified)
+\definecolor{primary}{HTML}{000080}         % Deep Navy (alias for deepnavy)
+\definecolor{secondary}{HTML}{228B22}       % Forest Green
+\definecolor{forestgreen}{HTML}{228B22}     % Forest Green (duplicate alias)
+\definecolor{accentorange}{HTML}{FF4500}    % Orange for highlights
+\definecolor{coolgray}{HTML}{555555}        % Neutral supporting text
+\definecolor{slidebg}{HTML}{F5F5F5}         % Light slide backdrop
+\definecolor{charcoal}{HTML}{333333}        % Dark gray for text
+
+% Footer specific colors for four distinct sections
+\definecolor{footerAuthor}{HTML}{1565C0}    % Strong blue for author section
+\definecolor{footerChapter}{HTML}{2E7D32}   % Strong green for chapter section
+\definecolor{footerPage}{HTML}{AD1457}      % Strong pink for page number
+\definecolor{footerInstitute}{HTML}{E65100} % Strong orange for institute
+
+% Beamer theme color settings
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=charcoal}
+\setbeamercolor{frametitle}{bg=white, fg=steelblue!90!black}
+\setbeamercolor{title}{fg=steelblue!90!black}
+\setbeamercolor{structure}{fg=steelblue!80!black}
+\setbeamercolor{alerted text}{fg=importantRed}
+\setbeamercolor{block title}{fg=steelblue!80!black,bg=steelblue!12}
+\setbeamercolor{block body}{fg=charcoal,bg=steelblue!5}
+\setbeamercolor{titleinfobox}{fg=coolgray,bg=white}
+
+% Professional footer colors
+\setbeamercolor{footline}{fg=steelblue!90!black,bg=steelblue!10}
+\setbeamercolor{author in head/foot}{fg=footerAuthor,bg=footerAuthor!10}
+\setbeamercolor{chapter in head/foot}{fg=footerChapter,bg=footerChapter!10}
+\setbeamercolor{page number in head/foot}{fg=footerPage,bg=footerPage!10}
+\setbeamercolor{institute in head/foot}{fg=footerInstitute,bg=footerInstitute!10}
+
+% Typography Settings - Following Design Guide with enhanced hierarchy
+\setbeamerfont{title}{size=\Large, series=\bfseries}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamerfont{normal text}{size=\small}
+\setbeamerfont{author in head/foot}{size=\scriptsize,series=\bfseries}
+\setbeamerfont{chapter in head/foot}{size=\scriptsize,series=\bfseries}
+\setbeamerfont{page number in head/foot}{size=\scriptsize,series=\bfseries}
+\setbeamerfont{institute in head/foot}{size=\scriptsize,series=\bfseries}
+
+% Frame title template - Clean and scientific
+\setbeamertemplate{frametitle}{%
+    \nointerlineskip%
+    \vspace{0.3cm}%
+    {\color{steelblue!90}\Large\bfseries\insertframetitle}%
+    \vspace{0.2cm}%
+}
+
+% Spacing Implementation - Optimized margins for 16:9 aspect ratio and better readability
+% 16:9 aspect ratio: 25.6cm × 14.4cm (native dimensions for widescreen)
+% Margins optimized for widescreen to prevent text crowding
+\setbeamersize{text margin left=0.8cm, text margin right=0.8cm}
+
+% 16:9 WIDESCREEN OPTIMIZATION SECTION
+% ====================================
+% For 16:9 presentations, optimal line length is 60-70 characters
+% With 0.46\textwidth columns, each column provides perfect readability
+% Vertical spacing adjusted to leverage extra horizontal space
+
+% Enhanced vertical spacing for 16:9 (more horizontal space = less need for vertical)
+\usepackage{setspace}
+\setstretch{1.05}  % Slightly reduced from 1.08 for widescreen proportions
+
+% Better paragraph spacing for widescreen
+\parskip=0.4em plus 0.2em minus 0.2em
+
+% Improved line spacing for mathematical content on widescreen
+\jot=0.3em  % Reduced from default for tighter math displays
+
+% Add slide numbers and navigation symbols
+\setbeamertemplate{navigation symbols}{}
+\setbeamerfont{page number in head/foot}{size=\scriptsize}
+
+% Enhanced packages
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usetikzlibrary{arrows.meta,positioning,decorations.pathreplacing,calc,shapes.geometric,shadows,decorations.markings}
+\usepackage{graphicx}
+\usepackage{circuitikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage[most]{tcolorbox}
+\usepackage{fontawesome5}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{siunitx}
+\usepackage{physics}
+\sisetup{inter-unit-product=\ensuremath{{}\cdot{}}}
+
+% Fix for siunitx and physics package conflict - ensure \qty is properly defined
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
+
+% Enhanced visual commands for educational content
+% Custom commands for semantic highlighting (unified definitions)
+\newcommand{\important}[1]{\textcolor{importantRed}{\textbf{#1}}}   % Red for important/frequently asked
+\newcommand{\concept}[1]{\textcolor{conceptualBlue}{\textbf{#1}}}   % Blue for concepts
+\newcommand{\familiar}[1]{\textcolor{familiarGreen}{#1}}             % Green to get familiar
+\newcommand{\directed}[1]{\textcolor{commentPink}{\textit{#1}}}     % Pink for comments/directions
+\newcommand{\formula}[1]{\colorbox{lightblue!40}{$\displaystyle #1$}} % Formula highlighting
+\newcommand{\examplenew}[1]{\textcolor{steelblue}{\textbf{#1}}}     % Example highlighting
+% Backward-compatible alias (define only if not already defined by a package)
+\providecommand{\example}[1]{\examplenew{#1}}
+\newcommand{\keypoint}[1]{\textcolor{familiarGreen}{\textbf{#1}}}   % Key points
+
+% Chapter name command for footer
+\newcommand{\currentchapter}{Chapter Name}  % Default value
+\newcommand{\setchapter}[1]{\renewcommand{\currentchapter}{#1}}
+
+% Enhanced section titles
+\newcommand{\sectiontitle}[2]{%
+    \begin{tcolorbox}[colback=deepnavy, colframe=deepnavy,
+        boxrule=0pt, arc=3mm, boxsep=4pt,
+        left=8pt, right=8pt, top=4pt, bottom=4pt,
+        valign=center]
+        \textcolor{white}{\Large\textbf{#1: #2}}%
+    \end{tcolorbox}%
+}
+
+% Board exam focus box
+\newtcolorbox{exambox}[1]{
+    colback=yellow!20,
+    colframe=accentorange,
+    colbacktitle=accentorange!80,
+    coltitle=white,
+    fonttitle=\bfseries,
+    title=#1,
+    boxrule=2pt,
+    arc=2mm,
+    boxsep=6pt,
+    left=8pt,
+    right=8pt,
+    top=4pt,
+    bottom=4pt
+}
+
+% Professional content boxes - Enhanced scientific styling
+\newtcolorbox{keybox}[1][Key Point]{
+    colback=white,
+    colframe=steelblue!85,
+    coltitle=white,
+    colbacktitle=steelblue!85,
+    fonttitle=\bfseries\normalsize,
+    title=#1,
+    boxrule=2pt,
+    arc=3mm,
+    boxsep=8pt,
+    left=10pt,
+    right=10pt,
+    top=6pt,
+    bottom=6pt,
+    fontupper=\normalsize,
+    enhanced,
+    shadow={2pt}{2pt}{0pt}{black!20}
+}
+
+\newtcolorbox{importantbox}[1][Important]{
+    colback=white,
+    colframe=importantRed!85,
+    coltitle=white,
+    colbacktitle=importantRed!85,
+    fonttitle=\bfseries\normalsize,
+    title=#1,
+    boxrule=2pt,
+    arc=3mm,
+    boxsep=8pt,
+    left=10pt,
+    right=10pt,
+    top=6pt,
+    bottom=6pt,
+    fontupper=\normalsize,
+    enhanced,
+    shadow={2pt}{2pt}{0pt}{black!15}
+}
+
+\newtcolorbox{examplebox}[1][Example]{
+    colback=white,
+    colframe=familiarGreen!80,
+    coltitle=white,
+    colbacktitle=familiarGreen!80,
+    fonttitle=\bfseries\normalsize,
+    title=#1,
+    boxrule=2pt,
+    arc=3mm,
+    boxsep=8pt,
+    left=10pt,
+    right=10pt,
+    top=6pt,
+    bottom=6pt,
+    fontupper=\normalsize,
+    enhanced,
+    shadow={2pt}{2pt}{0pt}{black!15}
+}
+
+\newtcolorbox{formulabox}[1][Formula]{
+    colback=steelblue!8,
+    colframe=steelblue!90,
+    coltitle=white,
+    colbacktitle=steelblue!90,
+    fonttitle=\bfseries\normalsize,
+    title=#1,
+    boxrule=2pt,
+    arc=3mm,
+    boxsep=8pt,
+    left=10pt,
+    right=10pt,
+    top=6pt,
+    bottom=6pt,
+    fontupper=\large\centering,
+    enhanced,
+    shadow={2pt}{2pt}{0pt}{black!20}
+}
+
+% Two-column layout support for overflow content - Optimized for 16:9
+% Each column: 0.46\textwidth + 0.08\textwidth gap = 1.0\textwidth
+\newcommand{\twocolumncontent}[2]{%
+    \begin{columns}[T]
+        \column{0.46\textwidth}
+        #1
+        \column{0.46\textwidth}
+        #2
+    \end{columns}
+}
+
+% Three-column layout support - Optimized for 16:9 widescreen
+% Each column: 0.29\textwidth + gaps = proper widescreen distribution
+\newcommand{\threecolumncontent}[3]{%
+    \begin{columns}[T]
+        \column{0.29\textwidth}
+        #1
+        \column{0.29\textwidth}
+        #2
+        \column{0.29\textwidth}
+        #3
+    \end{columns}
+}
+
+% Custom macros for specific chapters (can be adapted)
+\newcommand{\ZT}{\ensuremath{ZT}}
+\newcommand{\Seebeck}{\ensuremath{\alpha}}
+\newcommand{\conductivity}{\ensuremath{\sigma}}
+\newcommand{\resistivity}{\ensuremath{\rho}}
+\newcommand{\kappaT}{\ensuremath{\kappa}}
+
+% Custom FrameColorBox environment for compatibility
+\newenvironment{FrameColorBox}[2]{%
+    \begin{beamercolorbox}[bg=#1,#2]{block body}%
+}{%
+    \end{beamercolorbox}%
+}
+
+% Graphics path and extensions
+\graphicspath{{./}{Images/}{images/}}
+\DeclareGraphicsExtensions{.png,.jpg,.jpeg,.pdf}
+
+% Professional logo commands - Using actual logo path
+\newcommand{\presentationlogo}{%
+    \IfFileExists{Images/logo.png}{%
+        \includegraphics[height=0.5cm]{Images/logo.png}%
+    }{%
+        \raisebox{0pt}[0pt][0pt]{\scalebox{1}{\tikz[baseline=(current bounding box.center)]{\draw[fill=white,draw=steelblue,line width=1.1pt] (0,0) circle (0.18cm);\node at (0,0) [font=\tiny\bfseries,steelblue] {RP};}}}%
+    }%
+}
+
+% Small logo for footer
+\newcommand{\footerlogo}{%
+    \IfFileExists{Images/logo.png}{%
+        \includegraphics[height=0.25cm]{Images/logo.png}%
+    }{%
+        \raisebox{0pt}[0pt][0pt]{\scalebox{1}{\tikz[baseline=(current bounding box.center)]{\draw[fill=white,draw=steelblue,line width=1.1pt] (0,0) circle (0.12cm);\node at (0,0) [font=\tiny\bfseries,steelblue] {RP};}}}%
+    }%
+}
+
+% Bigger logo for title slide
+\newcommand{\biglogo}{%
+    \IfFileExists{Images/logo.png}{%
+        \includegraphics[height=0.8cm]{Images/logo.png}%
+    }{%
+        \fcolorbox{steelblue}{white}{\textcolor{steelblue}{\textbf{RP}}}%
+    }%
+}
+
+% Fallback logo command in case the image doesn't exist
+\newcommand{\fallbacklogo}{%
+    \tikz[baseline=(current bounding box.center)]{
+        \draw[fill=white,draw=steelblue,line width=1.1pt] (0,0) circle (0.38cm);
+        \node at (0,0) [font=\tiny\bfseries,steelblue] {RP};
+    }
+}
+
+% Small electron animation for footer
+\newcommand{\electronanimation}{%
+    \begin{tikzpicture}[scale=0.3]
+        % Nucleus
+        \fill[red!80] (0,0) circle (0.15);
+        % Electron orbit
+        \draw[gray!50] (0,0) circle (0.6);
+        % Animated electron
+        \node[circle,fill=blue,inner sep=1.5pt] (e) at (0.6,0) {};
+        % Electron path arrow
+        \draw[->,blue!50,decoration={markings,mark=at position .25 with {\arrow{>}}},postaction={decorate}] (0.6,0) arc (0:270:0.6);
+        % Label
+        \node[font=\tiny,gray] at (0,-0.9) {e-};
+    \end{tikzpicture}%
+}
+
+% Minimal frametitle styling with underline
+\setbeamertemplate{frametitle}{%
+    \vspace*{0.5em}%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=3.2ex,dp=1.1ex,leftskip=1.1em,rightskip=1.1em]{frametitle}
+        \usebeamerfont{frametitle}\insertframetitle
+    \end{beamercolorbox}
+    \nointerlineskip
+    {\color{steelblue!70}\rule{\paperwidth}{0.6pt}}\vspace{-0.35em}
+}
+
+% Helper environment for schematic placeholders
+\newenvironment{conceptdiagram}[2][0.85\textwidth]{%
+    \begin{center}
+    \begin{tcolorbox}[width=#1,colback=steelblue!7,colframe=steelblue!70,
+        boxrule=0.9pt,arc=1.6mm,left=8pt,right=8pt,top=6pt,bottom=6pt,
+        title=\textbf{#2}]
+    \small
+}{%
+    \end{tcolorbox}
+    \end{center}
+}
+
+% 16:9 WIDESCREEN SPECIFIC ENVIRONMENTS
+% =====================================
+% For better content management in widescreen format
+
+% Optimized single-column frame content (full width)
+\newenvironment{fullwidthcontent}{%
+    \begin{center}
+    \begin{minipage}{0.92\textwidth}
+}{%
+    \end{minipage}
+    \end{center}
+}
+
+% Show a small logo on every slide using beamer's \logo template
+\logo{\presentationlogo}
+
+% Header: show a small logo at the top-left for normal slides (hidden on plain/title frames)
+\makeatletter
+\setbeamertemplate{headline}{%
+    \ifx\insertframetitle\@empty
+        % plain frame or no frametitle: don't show headline
+    \else
+        \begin{beamercolorbox}[wd=\paperwidth,sep=0pt,ht=1.2cm,dp=0.2cm]{palette quaternary}%
+            % Header without logo
+        \end{beamercolorbox}
+    \fi
+}
+\makeatother
+
+% Enhanced footer with four distinct sections, larger font, logo, and electron animation
+\setbeamertemplate{footline}{%
+    \leavevmode
+    \hbox{%
+        % Author section with logo
+        \begin{beamercolorbox}[wd=.24\paperwidth,ht=4.5ex,dp=1.5ex,left,leftskip=0.2cm]{author in head/foot}%
+            \usebeamerfont{author in head/foot}\footerlogo\hspace{0.1cm}\textbf{Dr. KN Ray}
+        \end{beamercolorbox}%
+        % Chapter section
+        \begin{beamercolorbox}[wd=.24\paperwidth,ht=4.5ex,dp=1.5ex,center]{chapter in head/foot}%
+            \usebeamerfont{chapter in head/foot}\textbf{\insertshorttitle}
+        \end{beamercolorbox}%
+        % Page number section with electron animation
+        \begin{beamercolorbox}[wd=.24\paperwidth,ht=4.5ex,dp=1.5ex,center]{page number in head/foot}%
+            \usebeamerfont{page number in head/foot}\electronanimation\hspace{0.1cm}\textbf{\insertframenumber{} / \inserttotalframenumber}
+        \end{beamercolorbox}%
+        % Institute section
+        \begin{beamercolorbox}[wd=.24\paperwidth,ht=4.5ex,dp=1.5ex,right,rightskip=0.2cm]{institute in head/foot}%
+            \usebeamerfont{institute in head/foot}\textbf{Ray Physics Academy}
+        \end{beamercolorbox}%
+    }%
+    \vskip0pt%
+}
+
+% =============================================================================
+% CUSTOM FOOTER CONFIGURATION
+% =============================================================================
+
+% Define lighter golden and yellow colors for footer sections
+\definecolor{goldenhue}{HTML}{FFE680}      % Lighter golden color for author section
+\definecolor{brightyellow}{HTML}{FFF59D}   % Lighter yellow color for chapter section
+
+% Define footer template with 4 sections - enhanced styling
+\setbeamertemplate{footline}{
+    \leavevmode%
+    \hbox{%
+        % Section 1: Institute name with logo (27% width) - Keep as-is (PERFECT)
+        \begin{beamercolorbox}[wd=.27\paperwidth,ht=4ex,dp=1.5ex,left,leftskip=0.5em]{author in head/foot}%
+            \usebeamerfont{author in head/foot}%
+            \IfFileExists{Images/logo.png}{%
+                \raisebox{-0.6ex}{\includegraphics[height=3ex]{Images/logo.png}}%
+            }{%
+                \raisebox{-0.6ex}{\tikz[baseline=(current bounding box.center)]{\draw[fill=white,draw=steelblue,line width=1pt] (0,0) circle (0.15cm);\node at (0,0) [font=\tiny\bfseries,steelblue] {RP};}}%
+            }%
+            \hspace{0.4em}%
+            \textcolor{steelblue}{\small\textbf{Ray Physics Academy}}
+        \end{beamercolorbox}%
+        %
+        % Section 2: Author name with photo and LIGHTER GOLDEN background (27% width)
+        \begin{beamercolorbox}[wd=.27\paperwidth,ht=4ex,dp=1.5ex,center]{title in head/foot}%
+            \colorbox{goldenhue}{%
+                \parbox[c][4ex][c]{0.265\paperwidth}{%
+                    \centering
+                    \usebeamerfont{title in head/foot}%
+                    \IfFileExists{Images/knray.png}{%
+                        \raisebox{-0.6ex}{\includegraphics[height=3ex,width=3ex,keepaspectratio]{Images/knray.png}}%
+                        \hspace{0.3em}%
+                    }{}%
+                    \textcolor{black}{\small\textbf{Dr. KN Ray}}%
+                }%
+            }%
+        \end{beamercolorbox}%
+        %
+        % Section 3: Chapter name with LIGHTER YELLOW background (32% width)
+        \begin{beamercolorbox}[wd=.32\paperwidth,ht=4ex,dp=1.5ex,center]{date in head/foot}%
+            \colorbox{brightyellow}{%
+                \parbox[c][4ex][c]{0.315\paperwidth}{%
+                    \centering
+                    \usebeamerfont{date in head/foot}%
+                    \textcolor{black}{\small\textbf{\currentchapter}}%
+                }%
+            }%
+        \end{beamercolorbox}%
+        %
+        % Section 4: Slide number (14% width) - Keep as-is (PERFECT)
+        \begin{beamercolorbox}[wd=.14\paperwidth,ht=4ex,dp=1.5ex,right,rightskip=0.5em]{page number in head/foot}%
+            \usebeamerfont{page number in head/foot}%
+            \textcolor{charcoal}{\small\textbf{Slide \insertframenumber{} / \inserttotalframenumber}}%
+        \end{beamercolorbox}%
+    }%
+    \vskip0pt%
+}
+
+% Remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% =============================================================================
+
+% Additional packages
+\usepackage{textcomp}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{lipsum}
+\usepackage{fancyvrb}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{longtable}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{wallpaper}
+\usepackage{bookmark}
+
+% Declare Unicode characters for subscripts
+\DeclareUnicodeCharacter{2082}{\textsubscript{2}}
+\DeclareUnicodeCharacter{2083}{\textsubscript{3}}
+
+% Note: \setstretch already defined above in 16:9 optimization section
+% Value: 1.05 (optimized for widescreen, reduced from default 1.08)
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=deepnavy,
+    citecolor=forestgreen,
+    urlcolor=forestgreen,
+    pdfpagemode=UseOutlines,
+    pdfstartview=FitH,
+    pdftitle={Unit 1: Electrostatics - Class 12 Physics},
+    pdfauthor={Dr. KN Ray},
+    pdfsubject={Board Exam Preparation Notes},
+    pdfkeywords={Electrostatics, Physics, Class 12, CBSE, ICSE}
+}
+
+% Enhanced list formatting per Design Guide
+\setbeamertemplate{itemize item}{\textcolor{deepnavy}{$\bullet$}}
+\setbeamertemplate{itemize subitem}{\textcolor{steelblue}{--}}
+\setbeamertemplate{enumerate item}{\textcolor{deepnavy}{\arabic{enumi}.}}
+\setbeamertemplate{description item}{\textcolor{deepnavy}{\textbf{\insertdescriptionitem}}}
+
+% Background image configuration for 16:9 slides
+% \CenterWallPaper{1}{Images/background.png}
+
+% Enhanced caption formatting
+\captionsetup{
+    font=small,
+    labelformat=empty,
+    labelsep=none,
+    textfont=it,
+    justification=centering,
+    singlelinecheck=false
+}

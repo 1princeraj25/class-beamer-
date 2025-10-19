@@ -1,0 +1,89 @@
+% =============================================================================
+% TITLE.TEX
+% Title Slide for Unit 1: Electrostatics - Class 12 Physics
+% =============================================================================
+
+\begin{frame}[plain]
+    % Background gradient
+    \begin{tikzpicture}[remember picture,overlay]
+        % Create a gradient background
+        \fill[top color=steelblue!10,bottom color=white] 
+            (current page.south west) rectangle (current page.north east);
+        
+        % Add subtle geometric pattern
+        \foreach \i in {1,...,12} {
+            \draw[steelblue!5,line width=0.5pt] 
+                ([xshift=\i*2cm]current page.south west) -- 
+                ([xshift=\i*2cm]current page.north west);
+        }
+        \foreach \i in {1,...,5} {
+            \draw[steelblue!5,line width=0.5pt] 
+                ([yshift=\i*1.5cm]current page.south west) -- 
+                ([yshift=\i*1.5cm]current page.south east);
+        }
+        
+        % Add subtle decorative elements
+        \node[anchor=north east,opacity=0.15] at ([xshift=-0.5cm,yshift=-0.5cm]current page.north east) {
+            \begin{tikzpicture}[scale=0.5]
+                \draw[steelblue,line width=1.5pt] (0,0) circle (1cm);
+                \draw[steelblue,line width=1pt,->] (0,0) -- (0.8,0);
+                \draw[steelblue,line width=1pt,->] (0,0) -- (0,0.8);
+                \node[steelblue] at (0.5,0.5) {$+$};
+                \node[steelblue] at (-0.5,-0.5) {$-$};
+            \end{tikzpicture}
+        };
+    \end{tikzpicture}
+    
+    % Title content
+    \begin{center}
+    \vspace{0.8cm}
+        
+        % Main title (logo removed for cleaner look)
+        {\color{deepnavy}\Huge\textbf{Unit I: Electrostatics}}
+        
+    \vspace{0.2cm}
+        
+        % Subtitle - Single line for class and exams
+        {\color{steelblue}\Large\textbf{Class 12 Physics}}\\[0.15cm]
+        {\color{deepnavy}\large Board Exams | JEE Main | JEE Advanced | NEET | NDA}\\[0.05cm]
+        {\color{deepnavy}\large \& Other Competitive Examinations}
+        
+    \vspace{0.2cm}
+        
+        % Chapter information in a highlighted box
+        \begin{tcolorbox} [
+            colback=lightblue!30,
+            colframe=steelblue!80,
+            boxrule=1.2pt,
+            arc=3mm,
+            width=0.65\textwidth,
+            valign=center,
+            halign=center
+        ]
+            {\color{deepnavy}\normalsize\textbf{Unit I Contents:}}\\[0.15cm]
+            {\color{charcoal}\small Chapter 1: Electric Charges and Fields}\\[0.08cm]
+            {\color{charcoal}\small Chapter 2: Electrostatic Potential and Capacitance}
+        \end{tcolorbox}
+        
+    \vspace{0.2cm}
+        
+        % Author and Academy information (with fallback logo)
+        {\color{warmgray}\large\textbf{Dr. KN Ray}}\\[0.08cm]
+        \IfFileExists{Images/logo.png}{
+            \raisebox{-0.3ex}{\includegraphics[height=2.5ex]{Images/logo.png}}
+        }{
+            \raisebox{-0.3ex}{\tikz[baseline=(current bounding box.center)]{\draw[fill=white,draw=steelblue,line width=1pt] (0,0) circle (0.15cm);\node at (0,0) [font=\tiny\bfseries,steelblue] {RP};}}
+        }
+        \hspace{0.4em}{\color{steelblue}\normalsize Ray Physics Academy}
+
+    \vspace{0.1cm}
+
+        % University information
+        {\color{deepnavy}\small Lalit Narayan Mithila University, Darbhanga}
+        
+    \vspace{0.1cm}
+        
+        % Date
+        {\color{warmgray}\small October 14, 2025}
+    \end{center}
+\end{frame}

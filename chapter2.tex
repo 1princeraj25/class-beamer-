@@ -1,0 +1,3333 @@
+% ═════════════════════════════════════════════════════════════════════════════
+% CHAPTER 1: ELECTRIC CHARGES AND FIELDS
+% ═════════════════════════════════════════════════════════════════════════════
+\section{Chapter--1: Electric Charges and Fields}
+
+\begin{frame}
+\frametitle{\textsf{\Large\textbf{Chapter 1:} Electric Charges and Fields}}
+\framesubtitle{\textcolor{steelblue}{\textit{Fundamental Principles of Electrostatics}}}
+
+\vspace{-0.1cm}
+
+\begin{keybox}[{\faIcon{book-open} \textbf{Learning Objectives \& Key Topics}}]
+\vspace{0.15cm}
+\small Master the foundational principles of electrostatics for Class 12 Board Examinations
+\end{keybox}
+
+\vspace{0.25cm}
+
+\begin{columns}[T]
+    \column{0.46\textwidth}
+    \textbf{\textcolor{deepnavy}{Core Concepts:}}
+    \begin{itemize}
+        \item[\faIcon{atom}] \textbf{Electric Charge}: Properties \& quantization
+        \item[\faIcon{calculator}] \textbf{Coulomb's Law}: Electrostatic force
+        \item[\faIcon{layer-group}] \textbf{Superposition}: Multiple charge systems
+        \item[\faIcon{magnet}] \textbf{Electric Field}: $\vec{E}$ concept \& calculation
+    \end{itemize}
+    
+    \column{0.46\textwidth}
+    \textbf{\textcolor{deepnavy}{Advanced Topics:}}
+    \begin{itemize}
+        \item[\faIcon{project-diagram}] \textbf{Field Lines}: Visualization techniques
+        \item[\faIcon{infinity}] \textbf{Gauss's Law}: Symmetry applications
+        \item[\faIcon{wave-square}] \textbf{Electric Flux}: $\Phi_E$ through surfaces
+        \item[\faIcon{arrows-alt-h}] \textbf{Electric Dipole}: Field \& torque analysis
+    \end{itemize}
+\end{columns}
+
+\vspace{0.35cm}
+
+\begin{importantbox}[\faIcon{graduation-cap} \textbf{Board Examination Focus}]
+\textbf{High-Weightage Areas:} Gauss's theorem applications, continuous charge distributions, electric field calculations, and dipole moment analysis
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics | Dr. KN Ray
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% ELECTRIC CHARGE: FUNDAMENTAL DEFINITION
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Electric Charge:} Fundamental Property of Matter}}
+\framesubtitle{\textcolor{steelblue}{The Origin of Electrostatic Phenomena}}
+
+\vspace{-0.1cm}
+
+\begin{keybox}[\faIcon{lightbulb} \textbf{Conceptual Definition}]
+\vspace{0.1cm}
+\textbf{Electric charge} is an \textbf{\textcolor{importantRed}{intrinsic property}} of subatomic particles that governs electromagnetic interactions between matter. It manifests as an attractive or repulsive force between charged objects.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.4cm}
+
+\begin{center}
+\textsf{\Large\textbf{\textcolor{deepnavy}{Atomic Structure \& Charge Carriers}}}
+\end{center}
+
+\vspace{0.2cm}
+
+\begin{columns}[T]
+    \column{0.31\textwidth}
+    \begin{beamercolorbox}[wd=\textwidth,rounded=true,shadow=true,center]{block body}
+    \vspace{0.15cm}
+    \centering
+    {\Large\textcolor{importantRed}{\faIcon{plus-circle}}}\\
+    \vspace{0.1cm}
+    \textbf{\Large\textsf{Protons}}\\
+    \vspace{0.05cm}
+    {\color{accentorange}\rule{0.6\textwidth}{1.5pt}}\\
+    \vspace{0.1cm}
+    \textcolor{importantRed}{\textbf{Positive (+)}}\\
+    {\small Charge: $+e$}\\
+    {\scriptsize Located in nucleus}\\
+    {\scriptsize Mass: $1.67 \times 10^{-27}$ kg}
+    \vspace{0.15cm}
+    \end{beamercolorbox}
+    
+    \column{0.31\textwidth}
+    \begin{beamercolorbox}[wd=\textwidth,rounded=true,shadow=true,center]{block body}
+    \vspace{0.15cm}
+    \centering
+    {\Large\textcolor{coolgray}{\faIcon{circle}}}\\
+    \vspace{0.1cm}
+    \textbf{\Large\textsf{Neutrons}}\\
+    \vspace{0.05cm}
+    {\color{warmgray}\rule{0.6\textwidth}{1.5pt}}\\
+    \vspace{0.1cm}
+    \textcolor{coolgray}{\textbf{Neutral (0)}}\\
+    {\small Charge: $0$}\\
+    {\scriptsize Located in nucleus}\\
+    {\scriptsize Mass: $1.67 \times 10^{-27}$ kg}
+    \vspace{0.15cm}
+    \end{beamercolorbox}
+    
+    \column{0.31\textwidth}
+    \begin{beamercolorbox}[wd=\textwidth,rounded=true,shadow=true,center]{block body}
+    \vspace{0.15cm}
+    \centering
+    {\Large\textcolor{steelblue}{\faIcon{minus-circle}}}\\
+    \vspace{0.1cm}
+    \textbf{\Large\textsf{Electrons}}\\
+    \vspace{0.05cm}
+    {\color{steelblue}\rule{0.6\textwidth}{1.5pt}}\\
+    \vspace{0.1cm}
+    \textcolor{steelblue}{\textbf{Negative (-)}}\\
+    {\small Charge: $-e$}\\
+    {\scriptsize Orbit around nucleus}\\
+    {\scriptsize Mass: $9.11 \times 10^{-31}$ kg}
+    \vspace{0.15cm}
+    \end{beamercolorbox}
+\end{columns}
+
+\vspace{0.4cm}
+
+\begin{examplebox}[\faIcon{atom} \textbf{Fundamental Interaction Principle}]
+\centering
+\Large\textbf{\textcolor{importantRed}{Like charges repel} \quad $\vert$ \quad \textcolor{familiarGreen}{Unlike charges attract}}
+\end{examplebox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% FUNDAMENTAL PROPERTIES OF ELECTRIC CHARGE
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Fundamental Properties of Electric Charge}}}
+\framesubtitle{\textcolor{steelblue}{Conservation \& Quantization Principles}}
+
+\vspace{-0.1cm}
+
+\begin{keybox}[\faIcon{shield-alt} \textbf{Property 1: Conservation of Charge}]
+\vspace{0.1cm}
+Electric charge is \textbf{conserved} in all physical processes. The \textbf{algebraic sum} of charges in an \textbf{isolated system} remains constant.
+\begin{equation*}
+\boxed{\sum Q_{\text{initial}} = \sum Q_{\text{final}} = \text{constant}}
+\end{equation*}
+\vspace{0.05cm}
+\textit{Charge can neither be created nor destroyed—only transferred between objects.}
+\end{keybox}
+
+\vspace{0.35cm}
+
+\begin{examplebox}[\faIcon{cubes} \textbf{Property 2: Quantization of Charge}]
+\vspace{0.1cm}
+Electric charge exists in discrete packets. Any charge $Q$ is an \textbf{integral multiple} of the elementary charge $e$.
+
+\vspace{0.2cm}
+
+\begin{columns}[T]
+    \column{0.58\textwidth}
+    \textbf{Quantization Formula:}
+    \begin{equation*}
+    \boxed{\mathbf{Q = \pm ne}} \quad \text{where } n \in \mathbb{Z}^+
+    \end{equation*}
+    \vspace{0.1cm}
+    \begin{itemize}
+        \item $n$ = integer (1, 2, 3, ...)
+        \item $e$ = elementary charge unit
+        \item \textbf{No fractional charges} in isolation
+    \end{itemize}
+    
+    \column{0.38\textwidth}
+    \textbf{Elementary Charge:}
+    \begin{align*}
+    e &= 1.602 \times 10^{-19} \text{ C}\\[0.15cm]
+    &\approx 1.6 \times 10^{-19} \text{ C}
+    \end{align*}
+    \vspace{0.1cm}
+    {\small (Charge of 1 electron/proton)}
+\end{columns}
+\end{examplebox}
+
+\vspace{0.35cm}
+
+\begin{importantbox}[\faIcon{exclamation-triangle} \textbf{Critical Insight}]
+\centering
+\textbf{Allowed:} $Q = e, 2e, 10^6e, ...$\quad\textcolor{familiarGreen}{\faIcon{check-circle}}\\[0.1cm]
+\textbf{Forbidden:} $Q = 0.5e, 1.73e, \sqrt{2}e, ...$\quad\textcolor{importantRed}{\faIcon{times-circle}}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% ADDITIONAL CHARGE PROPERTIES: INVARIANCE & ADDITIVITY
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Additional Properties of Electric Charge}}}
+\framesubtitle{\textcolor{steelblue}{Relativistic Invariance \& Scalar Additivity}}
+
+\vspace{-0.1cm}
+
+\begin{keybox}[\faIcon{tachometer-alt} \textbf{Property 3: Relativistic Invariance of Charge}]
+\vspace{0.1cm}
+Electric charge is a \textbf{Lorentz scalar}—it remains \textbf{invariant} under all reference frames, regardless of the state of motion of the charged object.
+\begin{equation*}
+\boxed{Q_{\text{rest}} = Q_{\text{moving}} = Q_{\text{any frame}}}
+\end{equation*}
+\vspace{0.05cm}
+\textit{Unlike mass (which increases with velocity in relativity), charge is absolute and frame-independent.}
+\end{keybox}
+
+\vspace{0.35cm}
+
+\begin{examplebox}[\faIcon{plus} \textbf{Property 4: Scalar Additivity of Charge}]
+\vspace{0.1cm}
+Charge is a \textbf{scalar quantity} (with sign). The total charge of a system equals the \textbf{algebraic sum} of individual charges.
+
+\vspace{0.25cm}
+
+\begin{columns}[T]
+    \column{0.52\textwidth}
+    \textbf{Mathematical Formulation:}
+    \begin{equation*}
+    \boxed{Q_{\text{total}} = \sum_{i=1}^{n} q_i = q_1 + q_2 + \cdots + q_n}
+    \end{equation*}
+    
+    \column{0.44\textwidth}
+    \textbf{Practical Example:}
+    \begin{align*}
+    q_1 &= +5e\\
+    q_2 &= -3e\\
+    \cline{1-2}
+    Q_{\text{net}} &= +2e
+    \end{align*}
+\end{columns}
+
+\vspace{0.2cm}
+\textit{Signs must be carefully considered: opposite charges partially cancel each other.}
+\end{examplebox}
+
+\vspace{0.35cm}
+
+\begin{formulabox}[\faIcon{arrows-alt-h} \textbf{Fundamental Force Law}]
+\vspace{0.15cm}
+\begin{center}
+\begin{tabular}{c c c}
+\textbf{Like Charges} & $\xrightarrow{\hspace{1.5cm}}$ & \textcolor{importantRed}{\textbf{REPULSION}} \\[0.2cm]
+$(+,+)$ or $(-,-)$ & & \textcolor{importantRed}{\faIcon{arrows-alt-h}} \\[0.3cm]
+\textbf{Unlike Charges} & $\xrightarrow{\hspace{1.5cm}}$ & \textcolor{familiarGreen}{\textbf{ATTRACTION}} \\[0.2cm]
+$(+,-)$ & & \textcolor{familiarGreen}{\faIcon{compress-arrows-alt}}
+\end{tabular}
+\end{center}
+\vspace{0.1cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% DYNAMIC CHARGE BEHAVIOR: ELECTROMAGNETIC PHENOMENA
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Dynamic Behavior of Electric Charges}}}
+\framesubtitle{\textcolor{steelblue}{Electromagnetic Field Generation \& Radiation}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{bolt} \textbf{Moving Charges \& Magnetic Fields}]
+\vspace{0.1cm}
+A charge in \textbf{uniform motion} generates both:
+\begin{itemize}
+    \item \textbf{Electric field} $\vec{E}$ (radial, time-independent in rest frame)
+    \item \textbf{Magnetic field} $\vec{B}$ (perpendicular to velocity $\vec{v}$)
+\end{itemize}
+\vspace{0.15cm}
+\begin{center}
+\textbf{Biot-Savart Law:} \quad $\displaystyle d\vec{B} = \frac{\mu_0}{4\pi} \frac{q\vec{v} \times \hat{r}}{r^2}$
+\end{center}
+\textit{Foundation of electromagnetism: moving charges create magnetic fields.}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{radiation} \textbf{Accelerating Charges \& Electromagnetic Radiation}]
+\vspace{0.1cm}
+A charge undergoing \textbf{acceleration} $\vec{a}$ radiates electromagnetic energy as waves.
+
+\vspace{0.2cm}
+
+\textbf{Larmor Formula} (radiated power):
+\begin{equation*}
+\boxed{P = \frac{q^2 a^2}{6\pi\epsilon_0 c^3}}
+\end{equation*}
+
+\vspace{0.2cm}
+
+\textbf{Applications:}
+\begin{itemize}
+    \item \textcolor{accentorange}{\faIcon{lightbulb}} Radio wave transmission (oscillating charges in antennas)
+    \item \textcolor{accentorange}{\faIcon{sun}} X-ray production (electron deceleration in atoms)
+    \item \textcolor{accentorange}{\faIcon{wifi}} Synchrotron radiation (particle accelerators)
+\end{itemize}
+\end{importantbox}
+
+\vspace{0.25cm}
+
+\begin{center}
+\fcolorbox{deepnavy}{lightgray!20}{%
+\begin{minipage}{0.92\textwidth}
+\centering
+\vspace{0.15cm}
+\textcolor{gray}{\textit{\faIcon{image} [Conceptual Diagram: Moving charge showing radial $\vec{E}$-field lines and circular $\vec{B}$-field loops]}}
+\vspace{0.15cm}
+\end{minipage}}
+\end{center}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% TRANSITION: CHARGE PROPERTIES TO CHARGING MECHANISMS
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Conceptual Bridge:} Properties $\rightarrow$ Applications}}
+\framesubtitle{\textcolor{steelblue}{From Theory to Experimental Methods}}
+
+\vspace{0.2cm}
+
+\begin{center}
+\begin{beamercolorbox}[wd=0.95\textwidth,rounded=true,shadow=true]{block body}
+\vspace{0.3cm}
+\large
+\faIcon{check-circle}\quad We have established \textbf{what} electric charge is and its fundamental properties.\\[0.3cm]
+\faIcon{question-circle}\quad \textbf{Next Question:} How do we experimentally \textit{transfer} or \textit{induce} charge on objects?\\[0.3cm]
+\faIcon{flask}\quad This leads to the \textbf{three classical methods} of electrification.
+\vspace{0.3cm}
+\end{beamercolorbox}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+{\color{deepnavy}\rule{0.8\textwidth}{2pt}}\\[0.2cm]
+{\Large\textsf{\textbf{Methods of Charging Objects}}}\\[0.1cm]
+{\color{steelblue}\textit{Friction • Conduction • Induction}}\\
+{\color{deepnavy}\rule{0.8\textwidth}{2pt}}
+\end{center}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% SECTION: METHODS OF CHARGING
+% ═════════════════════════════════════════════════════════════════════════════
+\section{Methods of Charging Objects}
+
+\begin{frame}
+\frametitle{\textsf{\textbf{Three Methods of Electrification}}}
+\framesubtitle{\textcolor{steelblue}{Comparative Overview}}
+
+\vspace{-0.05cm}
+
+\begin{examplebox}[\faIcon{hand-rock} \textbf{Method 1: Charging by Friction (Triboelectricity)}]
+\vspace{0.05cm}
+Two insulating materials are rubbed together $\rightarrow$ electrons transfer from one to the other $\rightarrow$ one acquires \textbf{positive} charge, the other \textbf{negative} charge.
+\vspace{0.05cm}
+\end{examplebox}
+
+\vspace{0.25cm}
+
+\begin{examplebox}[\faIcon{hand-point-right} \textbf{Method 2: Charging by Conduction (Contact)}]
+\vspace{0.05cm}
+A charged object \textbf{touches} a neutral conductor $\rightarrow$ charge flows and distributes $\rightarrow$ both objects acquire charges of the \textbf{same sign}.
+\vspace{0.05cm}
+\end{examplebox}
+
+\vspace{0.25cm}
+
+\begin{examplebox}[\faIcon{magnet} \textbf{Method 3: Charging by Induction (No Contact)}]
+\vspace{0.05cm}
+A charged object is brought \textbf{near} (not touching) a neutral conductor $\rightarrow$ charge redistribution occurs $\rightarrow$ grounding one side produces charge of \textbf{opposite sign}.
+\vspace{0.05cm}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{balance-scale} \textbf{Universal Conservation Principle}]
+\vspace{0.1cm}
+\centering
+\Large In \textbf{all three methods}: \quad $\boxed{\sum Q_{\text{before}} = \sum Q_{\text{after}}}$\\[0.15cm]
+\normalsize\textit{Charge is \textbf{conserved}—only redistributed, never created or destroyed.}
+\vspace{0.1cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% CHARGING BY FRICTION: TRIBOELECTRIC EFFECT
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Charging by Friction:} Triboelectric Effect}}
+\framesubtitle{\textcolor{steelblue}{Electron Transfer Through Mechanical Contact}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{random} \textbf{Physical Mechanism}]
+\vspace{0.1cm}
+When two dissimilar \textbf{insulating materials} are rubbed together, electrons are mechanically transferred due to differences in \textbf{electron affinity}.
+\begin{center}
+\textbf{Material A} $\xrightarrow{\text{rubbing}}$ \textbf{loses electrons} $\rightarrow$ becomes \textcolor{importantRed}{\textbf{positive (+)}}\\[0.1cm]
+\textbf{Material B} $\xrightarrow{\text{rubbing}}$ \textbf{gains electrons} $\rightarrow$ becomes \textcolor{steelblue}{\textbf{negative (-)}}
+\end{center}
+\textit{Net charge of the system remains zero (conservation principle).}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{flask} \textbf{Classic Example: Glass Rod + Silk Cloth}]
+\vspace{0.15cm}
+\begin{columns}[T]
+    \column{0.48\textwidth}
+    \textbf{Before Rubbing:}
+    \begin{itemize}
+        \item Glass rod: neutral ($Q = 0$)
+        \item Silk cloth: neutral ($Q = 0$)
+        \item Total charge: $Q_{\text{total}} = 0$
+    \end{itemize}
+    
+    \column{0.48\textwidth}
+    \textbf{After Rubbing:}
+    \begin{itemize}
+        \item Glass: \textcolor{importantRed}{$+Q$} (lost electrons)
+        \item Silk: \textcolor{steelblue}{$-Q$} (gained electrons)
+        \item Total: $Q_{\text{total}} = +Q - Q = 0$ \faIcon{check}
+    \end{itemize}
+\end{columns}
+
+\vspace{0.25cm}
+
+\textbf{Result:} The oppositely charged objects \textbf{\textcolor{familiarGreen}{attract}} each other (Coulomb force).
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{user} \textbf{Everyday Applications}]
+\vspace{0.05cm}
+\begin{itemize}
+    \item \textbf{Static cling} in clothes (fabric rubbing in dryer)
+    \item \textbf{Hair standing up} when combed with plastic comb
+    \item \textbf{Lightning strikes} (ice particles rubbing in clouds)
+\end{itemize}
+\vspace{0.05cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% CHARGING BY CONDUCTION: DIRECT CONTACT METHOD
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Charging by Conduction:} Direct Contact Transfer}}
+\framesubtitle{\textcolor{steelblue}{Charge Distribution via Physical Contact}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{exchange-alt} \textbf{Physical Mechanism}]
+\vspace{0.1cm}
+When a \textbf{charged conductor} touches a \textbf{neutral conductor}, mobile charge carriers (electrons) flow until \textbf{electrostatic equilibrium} is reached.
+\begin{center}
+Both objects acquire charges of the \textbf{same sign}.
+\end{center}
+\textit{Charge redistribution occurs due to Coulomb repulsion between like charges.}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{tint} \textbf{Conceptual Analogy: Water Level Equilibration}]
+\vspace{0.1cm}
+\textit{Just as water flows between connected containers until levels equalize, charge flows between conductors in contact until potentials equalize.}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{flask} \textbf{Quantitative Example: Charged Rod + Neutral Sphere}]
+\vspace{0.15cm}
+\begin{columns}[T]
+    \column{0.48\textwidth}
+    \textbf{Initial State:}
+    \begin{itemize}
+        \item Rod: $Q_{\text{rod}} = -Q$
+        \item Sphere: $Q_{\text{sphere}} = 0$
+        \item Total: $Q_{\text{total}} = -Q$
+    \end{itemize}
+    
+    \column{0.48\textwidth}
+    \textbf{Final State (after contact):}
+    \begin{itemize}
+        \item Rod: $Q'_{\text{rod}} < 0$ (shares charge)
+        \item Sphere: $Q'_{\text{sphere}} < 0$ (gains negative)
+        \item Total: $Q'_{\text{total}} = -Q$ \faIcon{check}
+    \end{itemize}
+\end{columns}
+
+\vspace{0.2cm}
+
+\textbf{Result:} Both objects now have \textbf{like charges} $\rightarrow$ they \textbf{\textcolor{importantRed}{repel}} each other.
+
+\vspace{0.1cm}
+
+\textit{For identical spheres:} $Q'_{\text{rod}} = Q'_{\text{sphere}} = -Q/2$ (equal distribution)
+\vspace{0.1cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% CHARGING BY INDUCTION: NON-CONTACT METHOD
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Charging by Induction:} Non-Contact Electrification}}
+\framesubtitle{\textcolor{steelblue}{Charge Redistribution Without Physical Contact}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{magic} \textbf{Physical Mechanism}]
+\vspace{0.1cm}
+A \textbf{neutral conductor} exposed to an external electric field undergoes \textbf{charge redistribution} without direct contact. Grounding removes excess charge, leaving a \textbf{net charge of opposite sign} to the inducing object.
+\vspace{0.05cm}
+\end{keybox}
+
+\vspace{0.25cm}
+
+\begin{examplebox}[\faIcon{list-ol} \textbf{Three-Step Induction Process}]
+\vspace{0.1cm}
+
+\textbf{Step 1: Polarization}
+\begin{itemize}
+    \item Bring charged object \textbf{near} (no contact) neutral conductor
+    \item Electric field causes charge separation (polarization)
+    \item Opposite charges attracted to near side, like charges repelled to far side
+\end{itemize}
+
+\vspace{0.15cm}
+
+\textbf{Step 2: Grounding}
+\begin{itemize}
+    \item Connect conductor to \textbf{ground} (Earth - infinite charge reservoir)
+    \item Repelled charges (same sign as inducing charge) flow to ground
+    \item Attracted charges remain bound by external field
+\end{itemize}
+
+\vspace{0.15cm}
+
+\textbf{Step 3: Isolation \& Removal}
+\begin{itemize}
+    \item \textbf{Remove ground connection first} (trap remaining charge)
+    \item \textbf{Remove inducing object} $\rightarrow$ charge redistributes uniformly
+    \item Result: Conductor has net charge \textbf{opposite} to inducing charge
+\end{itemize}
+
+\vspace{0.1cm}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{check-circle} \textbf{Key Advantages of Induction}]
+\vspace{0.05cm}
+\begin{itemize}
+    \item \textbf{No physical contact} required—eliminates wear/contamination
+    \item Produces charge of \textbf{opposite sign} to inducing object
+    \item Original inducing charge remains \textbf{unchanged}
+    \item More \textbf{controlled} than friction/conduction methods
+\end{itemize}
+\vspace{0.05cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% ADVANCED CHARGING MECHANISMS
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Advanced Charging Mechanisms}}}
+\framesubtitle{\textcolor{steelblue}{Beyond Classical Methods: Modern Physics Applications}}
+
+\vspace{-0.05cm}
+
+\begin{examplebox}[\faIcon{lightbulb} \textbf{1. Photoelectric Effect (Quantum Phenomenon)}]
+\vspace{0.05cm}
+High-frequency \textbf{electromagnetic radiation} (UV light, X-rays) strikes a metal surface $\rightarrow$ photons transfer energy to electrons $\rightarrow$ electrons escape, leaving surface \textbf{positively charged}.
+\begin{equation*}
+E_{\text{photon}} = h\nu \geq \Phi + KE_{\text{electron}} \quad \text{(Einstein's equation)}
+\end{equation*}
+\textbf{Applications:} Solar cells, photomultiplier tubes, photodetectors
+\end{examplebox}
+
+\vspace{0.25cm}
+
+\begin{examplebox}[\faIcon{fire} \textbf{2. Thermionic Emission (Thermal Ionization)}]
+\vspace{0.05cm}
+Heating a metal to high temperature $\rightarrow$ electrons gain sufficient \textbf{thermal energy} to overcome work function $\rightarrow$ electrons emitted from surface.
+\begin{equation*}
+KE_{\text{thermal}} = k_BT \geq \Phi \quad \text{(Work function condition)}
+\end{equation*}
+\textbf{Applications:} Vacuum tubes, cathode ray tubes (CRT), X-ray generation
+\end{examplebox}
+
+\vspace{0.25cm}
+
+\begin{examplebox}[\faIcon{bolt} \textbf{3. Corona Discharge (Field Ionization)}]
+\vspace{0.05cm}
+Extremely strong electric field near sharp points $\rightarrow$ air molecules ionize $\rightarrow$ plasma formation and charge transfer.
+\begin{equation*}
+E_{\text{breakdown}} \approx 3 \times 10^6 \text{ V/m} \quad \text{(Air breakdown threshold)}
+\end{equation*}
+\textbf{Applications:} Lightning rods, electrostatic precipitators, Van de Graaff generators
+\end{examplebox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% CHARGE DETECTION INSTRUMENTS
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Charge Detection Instruments}}}
+\framesubtitle{\textcolor{steelblue}{Qualitative vs. Quantitative Measurement}}
+
+\vspace{0.2cm}
+\textbf{\large Charge Detection Instruments:}
+\begin{itemize}
+	\item \textbf{Electroscope}: \textit{Qualitative} detection (detects presence of charge via leaf divergence)
+	\item \textbf{Electrometer}: \textit{Quantitative} measurement (measures actual charge value)
+\end{itemize}
+
+\vspace{0.3cm}
+\textbf{[Insert Figure: Electroscope diagram showing diverging gold leaves]}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% TRANSITION TO COULOMB'S LAW
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}{\textbf{Transition}: From Charging to Quantifying Forces}
+\textit{Recall}: We have learned how to create and transfer charges using friction, conduction, and induction.
+
+\vspace{0.3cm}
+\textbf{\large Now the Critical Question:}
+\begin{itemize}
+	\item When two charged bodies are placed near each other, they exert \textit{forces} on each other.
+	\item \textbf{How do we calculate} this force?
+	\item What factors affect the magnitude of this force?
+		\begin{itemize}
+			\item Amount of charge ($q_1$, $q_2$)?
+			\item Distance between charges ($r$)?
+			\item Medium between them?
+		\end{itemize}
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Answer}: \textit{Coulomb's Law} -- discovered by Charles-Augustin de Coulomb in 1785.
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% SECTION: COULOMB'S LAW
+% ═════════════════════════════════════════════════════════════════════════════
+\section{Coulomb's Law: Quantitative Electrostatics}
+
+\begin{frame}
+\frametitle{\textsf{\textbf{Coulomb's Law:} Fundamental Force Law}}
+\framesubtitle{\textcolor{steelblue}{Quantifying Electrostatic Interactions (1785)}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{question-circle} \textbf{Fundamental Question}]
+\vspace{0.05cm}
+\centering
+\Large What is the magnitude and direction of the electrostatic force between two point charges?
+\vspace{0.05cm}
+\end{keybox}
+
+\vspace{0.25cm}
+
+\begin{examplebox}[\faIcon{balance-scale} \textbf{Physical Dependencies}]
+\vspace{0.1cm}
+The electrostatic force $F$ depends on:
+
+\vspace{0.15cm}
+
+\begin{columns}[T]
+    \column{0.48\textwidth}
+    \textbf{1. Charge Magnitudes:}
+    \begin{itemize}
+        \item $F \propto q_1 q_2$ (product)
+        \item Double $q_1$ $\rightarrow$ double $F$
+        \item Double both $\rightarrow$ quadruple $F$
+    \end{itemize}
+    
+    \column{0.48\textwidth}
+    \textbf{2. Separation Distance:}
+    \begin{itemize}
+        \item $F \propto \dfrac{1}{r^2}$ (inverse-square)
+        \item Half distance $\rightarrow$ $4\times$ force
+        \item Triple distance $\rightarrow$ $\dfrac{1}{9}$ force
+    \end{itemize}
+\end{columns}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Coulomb's Law (Scalar Form)}]
+\vspace{0.2cm}
+\begin{equation*}
+\boxed{F = k_e \frac{|q_1 q_2|}{r^2} = \frac{1}{4\pi\varepsilon_0} \frac{|q_1 q_2|}{r^2}}
+\end{equation*}
+\vspace{0.15cm}
+
+\begin{tabular}{r l}
+$F$ & = Electrostatic force magnitude (N) \\
+$q_1, q_2$ & = Point charges (C) \\
+$r$ & = Separation distance (m) \\
+$k_e$ & = Coulomb constant $= 8.99 \times 10^9$ N·m²/C² $\approx 9 \times 10^9$ \\
+$\varepsilon_0$ & = Permittivity of free space $= 8.85 \times 10^{-12}$ C²/(N·m²)
+\end{tabular}
+\vspace{0.15cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% INVERSE-SQUARE LAW ANALYSIS
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Inverse-Square Law:} Distance Dependence}}
+\framesubtitle{\textcolor{steelblue}{Understanding the $r^{-2}$ Relationship}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{chart-line} \textbf{Mathematical Analysis of Distance Effect}]
+\vspace{0.1cm}
+The electrostatic force decreases with the \textbf{square} of the separation distance:
+\begin{equation*}
+F(r) = \frac{k_e q_1 q_2}{r^2} \quad \Rightarrow \quad F \propto \frac{1}{r^2}
+\end{equation*}
+This is an \textbf{inverse-square law}—characteristic of central forces emanating from point sources.
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{table} \textbf{Quantitative Distance Scaling}]
+\vspace{0.1cm}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor{deepnavy!20}
+\textbf{Distance Change} & \textbf{New Force} & \textbf{Ratio} \\
+\hline
+$r \rightarrow r$ & $F$ & $1$ \\
+\hline
+$r \rightarrow 2r$ (double) & $\dfrac{F}{4}$ & $\dfrac{1}{2^2} = \dfrac{1}{4}$ \\
+\hline
+$r \rightarrow 3r$ (triple) & $\dfrac{F}{9}$ & $\dfrac{1}{3^2} = \dfrac{1}{9}$ \\
+\hline
+$r \rightarrow \dfrac{r}{2}$ (halve) & $4F$ & $\dfrac{1}{(1/2)^2} = 4$ \\
+\hline
+$r \rightarrow 10r$ & $\dfrac{F}{100}$ & $\dfrac{1}{10^2} = \dfrac{1}{100}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.15cm}
+
+\textbf{Key Insight:} Small changes in distance produce \textbf{large} changes in force.
+\end{examplebox}
+
+\begin{importantbox}[\faIcon{lightbulb} \textbf{Physical Interpretation}]
+\vspace{0.05cm}
+The $r^{-2}$ dependence arises because electric field lines spread uniformly over spherical surfaces. Surface area of sphere $\propto r^2$, hence field strength (and force) $\propto r^{-2}$.
+\vspace{0.05cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% CHARGE MAGNITUDE SCALING
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Charge Magnitude Scaling}}}
+\framesubtitle{\textcolor{steelblue}{Linear Proportionality to Charge Product}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{times} \textbf{Product Dependence on Charges}]
+\vspace{0.1cm}
+Force is \textbf{directly proportional} to the product of charge magnitudes:
+\begin{equation*}
+F \propto q_1 q_2 \quad \Rightarrow \quad F = k_e \frac{q_1 q_2}{r^2}
+\end{equation*}
+This is a \textbf{linear relationship} (doubling any charge doubles the force).
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{plus-square} \textbf{Charge Scaling Analysis}]
+\vspace{0.15cm}
+\begin{columns}[T]
+    \column{0.48\textwidth}
+    \textbf{Scaling Relationships:}
+    \begin{itemize}
+        \item $q_1 \rightarrow 2q_1$ $\Rightarrow$ $F \rightarrow 2F$
+        \item $q_2 \rightarrow 3q_2$ $\Rightarrow$ $F \rightarrow 3F$
+        \item Both doubled $\Rightarrow$ $F \rightarrow 4F$
+        \item Both tripled $\Rightarrow$ $F \rightarrow 9F$
+    \end{itemize}
+    
+    \column{0.48\textwidth}
+    \textbf{Sign Considerations:}
+    \begin{itemize}
+        \item $q_1 q_2 > 0$ $\Rightarrow$ repulsion
+        \item $q_1 q_2 < 0$ $\Rightarrow$ attraction
+        \item Magnitude: $|q_1 q_2|$ always used
+        \item Direction: from interaction type
+    \end{itemize}
+\end{columns}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{exclamation-circle} \textbf{Key Insight}]
+\centering
+\textbf{Larger charges} $\rightarrow$ \textbf{stronger interactions}\\
+This makes Coulomb force extremely strong at atomic scales!
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% COULOMB'S LAW IN DIFFERENT MEDIA
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Coulomb's Law in Different Media}}}
+\framesubtitle{\textcolor{steelblue}{Dielectric Effects on Electrostatic Force}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{flask} \textbf{Force Modification in Dielectric Media}]
+\vspace{0.1cm}
+When charges are immersed in a \textbf{dielectric material} (non-conductor), the force is reduced by the \textbf{relative permittivity} $\varepsilon_r$ (dielectric constant).
+\begin{equation*}
+\boxed{F_{\text{medium}} = \frac{1}{4\pi\varepsilon} \frac{|q_1 q_2|}{r^2} = \frac{1}{4\pi\varepsilon_0 \varepsilon_r} \frac{|q_1 q_2|}{r^2}}
+\end{equation*}
+where $\varepsilon = \varepsilon_0 \varepsilon_r$ is the \textbf{absolute permittivity} of the medium.
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{balance-scale} \textbf{Comparative Force Relation}]
+\vspace{0.15cm}
+\begin{equation*}
+\boxed{F_{\text{medium}} = \frac{F_{\text{vacuum}}}{\varepsilon_r}} \quad \text{where } \varepsilon_r = \frac{\varepsilon}{\varepsilon_0}
+\end{equation*}
+
+\vspace{0.2cm}
+
+\textbf{Practical Example:} Water dielectric
+\begin{itemize}
+    \item $\varepsilon_r(\text{water}) \approx 80$
+    \item $F_{\text{water}} = \dfrac{F_{\text{air}}}{80} \approx 0.0125 F_{\text{air}}$
+    \item Force reduces to about \textbf{1.25\%} of its vacuum value!
+\end{itemize}
+\end{examplebox}
+
+\vspace{0.25cm}
+
+\begin{importantbox}[\faIcon{info-circle} \textbf{Physical Interpretation}]
+\vspace{0.05cm}
+Dielectric molecules become \textbf{polarized} in the external field, creating an \textbf{opposing internal field} that weakens the net interaction between charges.
+\vspace{0.05cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% COULOMB'S LAW: VECTOR FORMULATION
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Coulomb's Law:} Vector Formulation}}
+\framesubtitle{\textcolor{steelblue}{Complete Specification of Force (Magnitude \& Direction)}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{vector-square} \textbf{Importance of Vector Form}]
+\vspace{0.05cm}
+The \textbf{vector form} provides complete information: both the \textbf{magnitude} and \textbf{direction} of the electrostatic force, automatically handling attraction/repulsion.
+\vspace{0.05cm}
+\end{keybox}
+
+\vspace{0.25cm}
+
+\begin{examplebox}[\faIcon{drafting-compass} \textbf{Geometric Setup}]
+\vspace{0.1cm}
+\textbf{Configuration:}
+\begin{itemize}
+    \item Two point charges: $q_1$ at position $\vec{r}_1$, \quad $q_2$ at position $\vec{r}_2$
+    \item Displacement vector: $\vec{r}_{21} = \vec{r}_2 - \vec{r}_1$ \quad (from $q_1$ to $q_2$)
+    \item Separation distance: $r_{21} = |\vec{r}_{21}| = |\vec{r}_2 - \vec{r}_1|$
+    \item Unit vector: $\hat{r}_{21} = \dfrac{\vec{r}_{21}}{|\vec{r}_{21}|} = \dfrac{\vec{r}_2 - \vec{r}_1}{|\vec{r}_2 - \vec{r}_1|}$
+\end{itemize}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{equals} \textbf{Vector Force Expression}]
+\vspace{0.15cm}
+\textbf{Force on $q_2$ due to $q_1$:}
+\begin{equation*}
+\boxed{\vec{F}_{21} = \frac{1}{4\pi\varepsilon_0} \frac{q_1 q_2}{r_{21}^2} \hat{r}_{21} = \frac{1}{4\pi\varepsilon_0} \frac{q_1 q_2}{|\vec{r}_2 - \vec{r}_1|^3} (\vec{r}_2 - \vec{r}_1)}
+\end{equation*}
+\vspace{0.1cm}
+
+\begin{center}
+\fcolorbox{deepnavy}{lightgray!20}{%
+\begin{minipage}{0.9\textwidth}
+\centering
+\vspace{0.1cm}
+\textcolor{gray}{\textit{\faIcon{image} [Diagram: Origin O, charges $q_1$ and $q_2$ with position vectors $\vec{r}_1$ and $\vec{r}_2$, displacement $\vec{r}_{21}$, force $\vec{F}_{21}$]}}
+\vspace{0.1cm}
+\end{minipage}}
+\end{center}
+
+\vspace{0.15cm}
+
+\textbf{Automatic Direction:}
+\begin{itemize}
+    \item $q_1 q_2 > 0$ (like charges) $\Rightarrow$ $\vec{F}_{21}$ along $+\hat{r}_{21}$ (repulsion)
+    \item $q_1 q_2 < 0$ (unlike charges) $\Rightarrow$ $\vec{F}_{21}$ along $-\hat{r}_{21}$ (attraction)
+\end{itemize}
+\vspace{0.1cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% NEWTON'S THIRD LAW IN ELECTROSTATICS
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Newton's Third Law} in Electrostatics}}
+\framesubtitle{\textcolor{steelblue}{Action-Reaction Pairs for Coulomb Forces}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{exchange-alt} \textbf{Reciprocity Principle}]
+\vspace{0.1cm}
+Electrostatic forces between two charges form an \textbf{action-reaction pair}, satisfying Newton's Third Law of Motion.
+\vspace{0.05cm}
+\end{keybox}
+
+\vspace{0.25cm}
+
+\begin{examplebox}[\faIcon{arrows-alt-h} \textbf{Mathematical Proof}]
+\vspace{0.15cm}
+
+\textbf{Force on $q_2$ due to $q_1$:}
+\begin{equation*}
+\vec{F}_{21} = \frac{1}{4\pi\varepsilon_0} \frac{q_1 q_2}{r_{21}^2} \hat{r}_{21}
+\end{equation*}
+
+\textbf{Force on $q_1$ due to $q_2$:}
+\begin{equation*}
+\vec{F}_{12} = \frac{1}{4\pi\varepsilon_0} \frac{q_1 q_2}{r_{12}^2} \hat{r}_{12}
+\end{equation*}
+
+\vspace{0.2cm}
+
+\textbf{Key Geometric Relation:}
+\begin{itemize}
+    \item $\vec{r}_{12} = \vec{r}_1 - \vec{r}_2 = -\vec{r}_{21}$ \quad (opposite displacement)
+    \item $r_{12} = |\vec{r}_{12}| = |\vec{r}_{21}| = r_{21}$ \quad (same separation)
+    \item $\hat{r}_{12} = -\hat{r}_{21}$ \quad (opposite unit vectors)
+\end{itemize}
+
+\vspace{0.2cm}
+
+\textbf{Therefore:}
+\begin{equation*}
+\boxed{\vec{F}_{12} = -\vec{F}_{21}}
+\end{equation*}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{check-double} \textbf{Physical Interpretation}]
+\vspace{0.05cm}
+Electrostatic forces are \textbf{equal in magnitude} and \textbf{opposite in direction}, regardless of charge magnitudes or signs. This ensures momentum conservation in isolated systems.
+\vspace{0.05cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% PRINCIPLE OF SUPERPOSITION
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Principle of Superposition}}}
+\framesubtitle{\textcolor{steelblue}{Vector Addition of Electrostatic Forces}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{layer-group} \textbf{Fundamental Statement}]
+\vspace{0.1cm}
+For a system with multiple charges, the \textbf{net electrostatic force} on any charge is the \textbf{vector sum} of individual forces from all other charges, calculated independently.
+\begin{equation*}
+\boxed{\vec{F}_{\text{net}} = \sum_{i} \vec{F}_i}
+\end{equation*}
+\textit{Each pairwise interaction is computed as if all other charges were absent.}
+\vspace{0.05cm}
+\end{keybox}
+
+\vspace{0.25cm}
+
+\begin{examplebox}[\faIcon{calculator} \textbf{Mathematical Formulation}]
+\vspace{0.15cm}
+
+\textbf{System Configuration:} $N$ point charges $q_1, q_2, \ldots, q_N$ at positions $\vec{r}_1, \vec{r}_2, \ldots, \vec{r}_N$
+
+\vspace{0.2cm}
+
+\textbf{Net Force on $q_1$:}
+\begin{equation*}
+\vec{F}_1 = \vec{F}_{12} + \vec{F}_{13} + \vec{F}_{14} + \cdots + \vec{F}_{1N} = \sum_{i=2}^{N} \vec{F}_{1i}
+\end{equation*}
+
+\vspace{0.2cm}
+
+\textbf{Explicit Form:}
+\begin{equation*}
+\boxed{\vec{F}_1 = \frac{1}{4\pi\varepsilon_0} \sum_{i=2}^{N} \frac{q_1 q_i}{|\vec{r}_{1i}|^2} \hat{r}_{1i} = \frac{q_1}{4\pi\varepsilon_0} \sum_{i=2}^{N} \frac{q_i (\vec{r}_1 - \vec{r}_i)}{|\vec{r}_1 - \vec{r}_i|^3}}
+\end{equation*}
+
+\vspace{0.15cm}
+
+where $\vec{r}_{1i} = \vec{r}_1 - \vec{r}_i$ is the displacement from $q_i$ to $q_1$.
+\end{examplebox}
+
+\vspace{0.25cm}
+
+\begin{importantbox}[\faIcon{lightbulb} \textbf{Key Insight}]
+\vspace{0.05cm}
+Superposition is a \textbf{linear principle}—forces add vectorially without modification. This is fundamental to solving multi-charge problems and understanding electric fields.
+\vspace{0.05cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+\end{beamercolorbox}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% RECAP: ELECTRIC FLUX
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Recap: Quantifying Electric Fields with Flux}}}
+\framesubtitle{\textcolor{steelblue}{How Much Electric Field "Flows" Through a Surface?}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{ruler-combined} \textbf{What is Electric Flux? ($\Phi_E$)}]
+\vspace{0.1cm}
+A measure of the total number of electric field lines passing through a given surface area. It quantifies the "flow" of the electric field.
+\end{keybox}
+
+\vspace{0.35cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{The Formula}]
+\vspace{0.1cm}
+For a uniform electric field $\vec{E}$ and a flat surface with area vector $\vec{A}$:
+\begin{equation*}
+    \Phi_E = \vec{E} \cdot \vec{A} = E A \cos\theta
+\end{equation*}
+Where $\theta$ is the angle between the electric field and the normal to the surface.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vspace{0.35cm}
+
+\begin{importantbox}[\faIcon{angle-double-right} \textbf{Key Factors}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Field Strength (E):} Stronger field $\implies$ more flux.
+    \item \textbf{Surface Area (A):} Larger area $\implies$ more flux.
+    \item \textbf{Orientation ($\cos\theta$):} Maximum flux when the field is perpendicular to the surface ($\theta=0^\circ$). Zero flux when parallel ($\theta=90^\circ$).
+\end{itemize}
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1 Recap | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% GAUSS'S LAW
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Gauss's Law:} The Core of Electrostatics}}
+\framesubtitle{\textcolor{steelblue}{Relating Electric Flux to Enclosed Charge}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{shield-alt} \textbf{The Law}]
+\vspace{0.1cm}
+The total electric flux ($\Phi_E$) passing through any \textbf{closed surface} (a "Gaussian surface") is directly proportional to the net electric charge ($Q_{\text{enclosed}}$) enclosed within that surface.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.35cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Integral Form}]
+\vspace{0.2cm}
+\begin{equation*}
+\Phi_E = \oint_S \vec{E} \cdot d\vec{A} = \frac{Q_{\text{enclosed}}}{\varepsilon_0}
+\end{equation*}
+\vspace{0.15cm}
+\textbf{Key Points:}
+\begin{itemize}
+    \item This is one of Maxwell's four fundamental equations of electromagnetism.
+    \item It provides a powerful method for calculating electric fields in situations with high symmetry.
+\end{itemize}
+\end{formulabox}
+
+\vspace{0.35cm}
+
+\begin{examplebox}[\faIcon{lightbulb} \textbf{Core Implications}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Source of Field:} Enclosed charge is the ultimate source of electric field lines.
+    \item \textbf{Symmetry is Key:} The law is always true, but only practical for symmetric charge distributions (spheres, cylinders, planes).
+    \item \textbf{External Charges:} Charges outside the Gaussian surface do not contribute to the net flux.
+\end{itemize}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1 Recap | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% 5. Electric Flux and Gauss's Law Applications
+% =============================================================================
+% ═════════════════════════════════════════════════════════════════════════════
+% APPLICATIONS OF GAUSS'S LAW
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Applications of Gauss's Law}}}
+\framesubtitle{\textcolor{steelblue}{Solving for Electric Fields in Symmetric Systems}}
+
+\begin{columns}[T]
+    \column{0.5\textwidth}
+    \begin{examplebox}[\faIcon{ruler-horizontal} \textbf{Infinite Line of Charge}]
+    \vspace{0.1cm}
+    \textbf{Setup:} Uniform linear density $\lambda$.
+    \textbf{Surface:} Coaxial cylinder.
+    \begin{equation*}
+    E = \frac{\lambda}{2\pi\varepsilon_0 r}
+    \end{equation*}
+    \end{examplebox}
+    
+    \vspace{0.2cm}
+    
+    \begin{examplebox}[\faIcon{square-full} \textbf{Infinite Plane Sheet}]
+    \vspace{0.1cm}
+    \textbf{Setup:} Uniform surface density $\sigma$.
+    \textbf{Surface:} Cylindrical "pillbox".
+    \begin{equation*}
+    E = \frac{\sigma}{2\varepsilon_0}
+    \end{equation*}
+    \end{examplebox}
+    
+    \vspace{0.2cm}
+    
+    \begin{examplebox}[\faIcon{globe} \textbf{Uniform Spherical Shell}]
+    \vspace{0.1cm}
+    \textbf{Setup:} Total charge $Q$, radius $R$.
+    \textbf{Surface:} Concentric sphere.
+    \begin{itemize}
+        \item \textbf{Inside ($r<R$):} $E = 0$
+        \item \textbf{Outside ($r>R$):} $E = \frac{Q}{4\pi\varepsilon_0 r^2}$
+    \end{itemize}
+    \end{examplebox}
+
+    \column{0.5\textwidth}
+    \begin{center}
+    \fcolorbox{deepnavy}{lightgray!20}{%
+    \begin{minipage}{0.9\textwidth}
+    \centering
+    \vspace{0.15cm}
+    \textcolor{gray}{\textit{\faIcon{image} [Diagrams showing Gaussian surfaces for a line, plane, and sphere]}}
+    \vspace{0.15cm}
+    \end{minipage}}
+    \end{center}
+    
+    \vspace{0.3cm}
+    
+    \begin{importantbox}[\faIcon{lightbulb} \textbf{The Power of Symmetry}]
+    \vspace{0.1cm}
+    Gauss's Law simplifies complex integration problems into simple algebra by exploiting the symmetry of the charge distribution. The key is choosing the correct Gaussian surface.
+    \vspace{0.1cm}
+    \end{importantbox}
+    
+\end{columns}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1 Recap | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% 6. Electric Potential Energy
+% =============================================================================
+% ═════════════════════════════════════════════════════════════════════════════
+% ELECTRIC POTENTIAL ENERGY
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Electric Potential Energy ($U_E$)}}}
+\framesubtitle{\textcolor{steelblue}{Stored Energy in a System of Charges}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{battery-half} \textbf{Conceptual Definition}]
+\vspace{0.1cm}
+The energy stored in a system of charges due to the work done to assemble them against electrostatic forces. It represents the potential to do work.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.35cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Energy of Two Point Charges}]
+\vspace{0.1cm}
+The potential energy of a pair of charges $q_1$ and $q_2$ separated by a distance $r$:
+\begin{equation*}
+\boxed{U_E = k_e \frac{q_1 q_2}{r} = \frac{1}{4\pi\varepsilon_0} \frac{q_1 q_2}{r}}
+\end{equation*}
+\textbf{Unit:} Joules (J).
+\vspace{0.1cm}
+\end{formulabox}
+
+\vspace{0.35cm}
+
+\begin{importantbox}[\faIcon{info-circle} \textbf{Interpreting the Sign of $U_E$}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{$U_E > 0$ (Positive):} For like charges. Work must be done \textit{on} the system to bring them together (repulsive system). Energy is stored.
+    \item \textbf{$U_E < 0$ (Negative):} For unlike charges. Work is done \textit{by} the system as they come together (attractive system). The system is bound.
+\end{itemize}
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 2: Electrostatic Potential & Capacitance | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% 7. Electric Potential Difference
+% =============================================================================
+% ═════════════════════════════════════════════════════════════════════════════
+% ELECTRIC POTENTIAL DIFFERENCE
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Electric Potential Difference ($\Delta V$)}}}
+\framesubtitle{\textcolor{steelblue}{The "Voltage" that Drives Charge Flow}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{tachometer-alt} \textbf{Conceptual Definition}]
+\vspace{0.1cm}
+The \textbf{work done per unit charge} to move a charge from one point to another in an electric field. It is the change in electric potential energy a charge experiences.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.35cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Defining Formula}]
+\vspace{0.1cm}
+The potential difference between points A and B is the work done ($W_{AB}$) in moving a charge $q$ from A to B, divided by the charge:
+\begin{equation*}
+\boxed{\Delta V = V_B - V_A = \frac{W_{AB}}{q}}
+\end{equation*}
+\textbf{Unit:} Volts (V), where 1 Volt = 1 Joule/Coulomb.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vspace{0.35cm}
+
+\begin{importantbox}[\faIcon{bolt} \textbf{The Role of Voltage}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item A potential difference (voltage) is the "electrical pressure" that causes charge to move.
+    \item Positive charges naturally move from a \textbf{higher potential} to a \textbf{lower potential}.
+    \item Negative charges (like electrons) naturally move from a \textbf{lower potential} to a \textbf{higher potential}.
+    \item This movement of charge is what constitutes an \textbf{electric current}.
+\end{itemize}
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 2: Electrostatic Potential & Capacitance | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% 8. Capacitance
+% =============================================================================
+% ═════════════════════════════════════════════════════════════════════════════
+% CAPACITANCE
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Capacitance ($C$)}}}
+\framesubtitle{\textcolor{steelblue}{The Ability to Store Electric Charge}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{box-open} \textbf{Conceptual Definition}]
+\vspace{0.1cm}
+\textbf{Capacitance} is a measure of a capacitor's ability to store electric charge for a given potential difference (voltage). A higher capacitance means more charge can be stored at the same voltage.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.35cm}
+
+\begin{formulabox}[\faIcon{equals} \textbf{Defining Formula}]
+\vspace{0.1cm}
+Capacitance is the ratio of the magnitude of the charge ($Q$) on one conductor to the potential difference ($V$) between the conductors.
+\begin{equation*}
+\boxed{C = \frac{Q}{V}}
+\end{equation*}
+\textbf{Unit:} Farad (F), where 1 Farad = 1 Coulomb/Volt.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vspace{0.35cm}
+
+\begin{importantbox}[\faIcon{info-circle} \textbf{Key Characteristics}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item A capacitor typically consists of two conductors separated by an insulator (a "dielectric").
+    \item Capacitance is a purely \textbf{geometric property}. It depends on the size, shape, and separation of the conductors, and the material of the dielectric between them.
+    \item It does \textbf{not} depend on the charge $Q$ or voltage $V$ applied.
+\end{itemize}
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 2: Electrostatic Potential & Capacitance | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% 9. Energy Stored in a Capacitor
+% =============================================================================
+% ═════════════════════════════════════════════════════════════════════════════
+% ENERGY STORED IN A CAPACITOR
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Energy Stored in a Capacitor ($U_C$)}}}
+\framesubtitle{\textcolor{steelblue}{Potential Energy in the Electric Field}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{bolt} \textbf{Conceptual Basis}]
+\vspace{0.1cm}
+The work done to charge a capacitor is stored as electric potential energy ($U_C$) in the electric field between its plates. This energy can be released to do work.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.35cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Energy Formulas}]
+\vspace{0.1cm}
+There are three equivalent expressions for the stored energy:
+\begin{equation*}
+\boxed{U_C = \frac{1}{2} Q V = \frac{1}{2} C V^2 = \frac{Q^2}{2C}}
+\end{equation*}
+\textbf{Unit:} Joules (J).
+\vspace{0.1cm}
+\end{formulabox}
+
+\vspace{0.35cm}
+
+\begin{examplebox}[\faIcon{camera-retro} \textbf{Real-World Applications}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Camera Flash:} A capacitor rapidly discharges its stored energy to power the bright flash.
+    \item \textbf{Defibrillators:} Deliver a large amount of stored energy to restore a normal heart rhythm.
+    \item \textbf{Power Supplies:} Used to smooth out voltage fluctuations by storing and releasing energy.
+    \item \textbf{Computer RAM:} Tiny capacitors store bits of information (0 or 1) as charge.
+\end{itemize}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 2: Electrostatic Potential & Capacitance | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% 10. Applications of Electrostatics
+% =============================================================================
+% ═════════════════════════════════════════════════════════════════════════════
+% APPLICATIONS OF ELECTROSTATICS
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Applications of Electrostatics}}}
+\framesubtitle{\textcolor{steelblue}{Harnessing Static Charges in Technology}}
+
+\begin{columns}[T]
+    \column{0.5\textwidth}
+    \begin{examplebox}[\faIcon{industry} \textbf{Industrial Applications}]
+    \vspace{0.1cm}
+    \begin{itemize}
+        \item \textbf{Electrostatic Precipitators:} Use high voltage to charge and remove pollutant particles from industrial smoke.
+        \item \textbf{Paint Spraying:} Charged paint droplets are attracted to a grounded object, ensuring an even coat and reducing waste.
+    \end{itemize}
+    \end{examplebox}
+    
+    \vspace{0.3cm}
+    
+    \begin{examplebox}[\faIcon{print} \textbf{Office Technology}]
+    \vspace{0.1cm}
+    \begin{itemize}
+        \item \textbf{Photocopiers (Xerography):} Use a charged drum and light to create an electrostatic image, which then attracts toner powder to be transferred to paper.
+        \item \textbf{Inkjet Printers:} Tiny, charged ink droplets are precisely guided by electric fields onto the paper.
+    \end{itemize}
+    \end{examplebox}
+    
+    \column{0.5\textwidth}
+    \begin{examplebox}[\faIcon{heartbeat} \textbf{Medical Devices}]
+    \vspace{0.1cm}
+    \begin{itemize}
+        \item \textbf{Defibrillators:} A large capacitor delivers a controlled electric shock to restore a normal heart rhythm during cardiac arrest.
+    \end{itemize}
+    \end{examplebox}
+    
+    \vspace{0.3cm}
+    
+    \begin{importantbox}[\faIcon{lightbulb} \textbf{Core Principle}]
+    \vspace{0.1cm}
+    All these applications are based on the fundamental principles of charge, electric fields, and potential difference to control the movement and deposition of charged particles or droplets.
+    \vspace{0.1cm}
+    \end{importantbox}
+    
+\end{columns}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 2: Electrostatic Potential & Capacitance | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% 11. Summary of Key Concepts
+% =============================================================================
+% ═════════════════════════════════════════════════════════════════════════════
+% SUMMARY OF KEY CONCEPTS
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Summary of Key Concepts}}}
+\framesubtitle{\textcolor{steelblue}{Core Principles of Electrostatics and Capacitance}}
+
+\begin{columns}[T]
+    \column{0.5\textwidth}
+    \begin{keybox}[\faIcon{bolt} \textbf{Fields & Forces}]
+    \vspace{0.1cm}
+    \begin{itemize}
+        \item \textbf{Charge:} The source of electric fields.
+        \item \textbf{Coulomb's Law:} Quantifies the force between charges ($F \propto 1/r^2$).
+        \item \textbf{Gauss's Law:} Relates flux to enclosed charge, simplifying E-field calculations for symmetric systems.
+    \end{itemize}
+    \end{keybox}
+    
+    \column{0.5\textwidth}
+    \begin{keybox}[\faIcon{battery-full} \textbf{Energy & Potential}]
+    \vspace{0.1cm}
+    \begin{itemize}
+        \item \textbf{Potential Energy ($U_E$):} Energy stored in a system of charges.
+        \item \textbf{Potential ($V$):} Potential energy per unit charge ($V=U_E/q$).
+        \item \textbf{Capacitance ($C$):} Ability to store charge ($C=Q/V$).
+    \end{itemize}
+    \end{keybox}
+\end{columns}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{cogs} \textbf{The Big Picture}]
+\vspace{0.1cm}
+These concepts form the foundation of electronics. Charges create fields, fields exert forces and store energy, and potential differences drive the flow of charge. Capacitors are practical devices that harness these principles to store and release energy.
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1 & 2 Summary | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% 12. Importance of Electrostatics in Technology
+% =============================================================================
+% ═════════════════════════════════════════════════════════════════════════════
+% IMPORTANCE OF ELECTROSTATICS IN TECHNOLOGY
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Importance of Electrostatics in Technology}}}
+\framesubtitle{\textcolor{steelblue}{From Foundational Physics to Modern Engineering}}
+
+\begin{keybox}[\faIcon{microchip} \textbf{Core of Modern Electronics}]
+\vspace{0.1cm}
+The principles of electrostatics are fundamental to the design and operation of nearly all electronic components and systems.
+\begin{itemize}
+    \item \textbf{Transistors:} Controlled by electric fields to switch and amplify signals.
+    \item \textbf{Semiconductors:} Doping and p-n junctions rely on managing charge carriers.
+\end{itemize}
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{memory} \textbf{Energy Storage and Circuit Design}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Capacitors:} Essential for timing circuits, filtering power supply noise, and storing energy in devices from tiny sensors to electric vehicles.
+    \item \textbf{Circuit Integrity:} Understanding stray capacitance and electric fields is crucial for preventing interference in high-speed circuits.
+\end{itemize}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{user-graduate} \textbf{Career Relevance}]
+\vspace{0.1cm}
+A deep knowledge of electrostatics is non-negotiable for careers in electrical engineering, electronics design, physics research, and materials science.
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Career Outlook | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% 13. Conceptual Questions on Electrostatics
+% =============================================================================
+% ═════════════════════════════════════════════════════════════════════════════
+% CONCEPTUAL QUESTIONS
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Conceptual Questions}}}
+\framesubtitle{\textcolor{steelblue}{Test Your Understanding of Core Principles}}
+
+\begin{keybox}[\faIcon{question-circle} \textbf{Fundamental Concepts}]
+\vspace{0.1cm}
+\begin{enumerate}
+    \item \textbf{Conductors vs. Insulators:} Explain the key difference in terms of electron mobility and how this affects their ability to be charged by induction.
+    \item \textbf{Coulomb's Law:} How does the electrostatic force change if the distance between two charges is tripled? What if one charge is doubled and the other is halved?
+    \item \textbf{Electrostatic Equilibrium:} Why must the electric field inside a conductor be zero when it is in electrostatic equilibrium? What happens to excess charge placed on it?
+\end{enumerate}
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{cogs} \textbf{Capacitors and Dielectrics}]
+\vspace{0.1cm}
+\begin{enumerate}
+    \setcounter{enumi}{3}
+    \item \textbf{Energy Storage:} Describe, in terms of work and energy, how a capacitor stores energy in its electric field. How is this energy released?
+    \item \textbf{Dielectrics:} What is the primary function of a dielectric material placed inside a capacitor? How does it achieve this at a microscopic level?
+\end{enumerate}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Review & Assessment | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% 14. Numerical Problems on Electrostatics
+% =============================================================================
+% ═════════════════════════════════════════════════════════════════════════════
+% NUMERICAL PROBLEMS
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Numerical Problems}}}
+\framesubtitle{\textcolor{steelblue}{Apply the Formulas to Solve Real Problems}}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Problem 1: Coulomb's Law}]
+\vspace{0.1cm}
+Calculate the magnitude and nature of the force between two charges, $q_1 = +3\,\mu\text{C}$ and $q_2 = -5\,\mu\text{C}$, separated by a distance of 10 cm in a vacuum.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Problem 2: Energy in a Capacitor}]
+\vspace{0.1cm}
+A capacitor with a capacitance of $10\,\mu\text{F}$ is charged to a potential difference of 12 V. Calculate the total energy stored in the capacitor.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Problem 3: Superposition of E-Fields}]
+\vspace{0.1cm}
+Two identical point charges, each with a charge of $+4\,\mu\text{C}$, are placed 20 cm apart. Calculate the net electric field at the point midway between them.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Problem Solving Practice | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+
+
+% ═════════════════════════════════════════════════════════════════════════════
+% ELECTRIC FIELD LINES: PROPERTIES
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Properties of Electric Field Lines}}}
+\framesubtitle{\textcolor{steelblue}{Visualizing Electric Fields (A Faraday Concept)}}
+
+\begin{keybox}[\faIcon{lightbulb} \textbf{What are Field Lines?}]
+\vspace{0.1cm}
+Imaginary curves drawn in space to provide a visual representation of an electric field. The tangent to the line at any point gives the direction of the electric field at that point.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{list-ol} \textbf{Key Properties (Exam Focus)}]
+\vspace{0.1cm}
+\begin{enumerate}
+    \item \textbf{Origin/Termination:} They start from positive charges and end on negative charges. For a single charge, they may start or end at infinity.
+    \item \textbf{Tangent gives Direction:} The tangent to a field line at any point gives the direction of the net electric field $\vec{E}$ at that point.
+    \item \textbf{Density represents Strength:} The density of field lines (how close they are) in a region is proportional to the magnitude of the electric field strength.
+    \item \textbf{Non-Intersection:} Two electric field lines can never cross each other. (If they did, the field would have two directions at one point, which is impossible).
+    \item \textbf{Conductor Surface:} Field lines are always perpendicular to the surface of a conductor in electrostatic equilibrium.
+\end{enumerate}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% FIELD LINE PATTERNS
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Common Electric Field Line Patterns}}}
+\framesubtitle{\textcolor{steelblue}{Visualizing Fundamental Charge Configurations}}
+
+\begin{columns}[T]
+    \column{0.5\textwidth}
+    \begin{keybox}[\faIcon{plus-circle} \textbf{Positive Point Charge}]
+    Lines radiate outwards uniformly in all directions.
+    \end{keybox}
+    \vspace{0.2cm}
+    \begin{keybox}[\faIcon{minus-circle} \textbf{Negative Point Charge}]
+    Lines converge inwards uniformly from all directions.
+    \end{keybox}
+    \vspace{0.2cm}
+    \begin{keybox}[\faIcon{arrows-alt-h} \textbf{Electric Dipole (+q, -q)}]
+    Lines originate from the positive charge and terminate on the negative charge.
+    \end{keybox}
+    
+    \column{0.5\textwidth}
+    \begin{center}
+    \fcolorbox{deepnavy}{lightgray!20}{%
+    \begin{minipage}{0.9\textwidth}
+    \centering
+    \vspace{0.15cm}
+    \textcolor{gray}{\textit{\faIcon{image} [Diagrams for: single positive charge, single negative charge, and an electric dipole]}}
+    \vspace{0.15cm}
+    \end{minipage}}
+    \end{center}
+\end{columns}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{layer-group} \textbf{Systems of Like Charges}]
+\vspace{0.1cm}
+For two positive charges, the field lines from each charge repel each other, creating a null point (zero field) between them.
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% TRANSITION TO ELECTRIC DIPOLE
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Conceptual Bridge:} From Point Charges to Dipoles}}
+\framesubtitle{\textcolor{steelblue}{A Fundamental System in Nature}}
+
+\vspace{0.5cm}
+
+\begin{center}
+\begin{beamercolorbox}[wd=0.95\textwidth,rounded=true,shadow=true]{block body}
+\vspace{0.3cm}
+\large
+\faIcon{check-circle}\quad We have mastered the fields from \textbf{single point charges}.
+\\[0.5cm]
+\faIcon{question-circle}\quad What happens when we have a pair of \textbf{equal and opposite charges} very close together?
+\\[0.5cm]
+\faIcon{atom}\quad This common configuration is called an \textbf{Electric Dipole}.
+\vspace{0.3cm}
+\end{beamercolorbox}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{importantbox}[\faIcon{flask} \textbf{Why are Dipoles Important?}]
+\vspace{0.1cm}
+Many molecules (like water, H\textsubscript{2}O) behave as natural electric dipoles. Understanding them is crucial for chemistry, biology, and materials science.
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% ELECTRIC DIPOLE: DEFINITION
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{The Electric Dipole}}}
+\framesubtitle{\textcolor{steelblue}{Definition and Dipole Moment}}
+
+\begin{keybox}[\faIcon{equals} \textbf{Definition}]
+\vspace{0.1cm}
+An \textbf{electric dipole} is a system composed of two equal and opposite point charges, $+q$ and $-q$, separated by a small vector distance, typically denoted as $2\vec{a}$.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{ruler-combined} \textbf{The Dipole Moment ($\vec{p}$)}]
+\vspace{0.1cm}
+The dipole moment is a vector quantity that measures the overall polarity and strength of the dipole.
+\begin{equation*}
+\boxed{\vec{p} = q(2\vec{a})}
+\end{equation*}
+\begin{itemize}
+    \item \textbf{Magnitude:} $p = 2aq$
+    \item \textbf{Direction:} By convention, the vector points from the \textbf{negative charge to the positive charge} ($-q \to +q$).
+    \item \textbf{Unit:} Coulomb-meter (C·m).
+\end{itemize}
+\vspace{0.1cm}
+\end{formulabox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{water} \textbf{Examples}]
+\vspace{0.1cm}
+Many molecules are permanent dipoles, such as water (H$_2$O), hydrogen chloride (HCl), and ammonia (NH$_3$). Their polar nature explains many of their chemical and physical properties.
+\vspace{0.1cm}
+\end{examplebox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% ELECTRIC FIELD ON AXIAL LINE OF DIPOLE
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Electric Field on the Axial Line of a Dipole}}}
+\framesubtitle{\textcolor{steelblue}{Derivation for a Point Along the Dipole's Axis}}
+
+\begin{keybox}[\faIcon{drafting-compass} \textbf{Setup}]
+\vspace{0.1cm}
+Consider a point P on the axis of a dipole at a distance $r$ from its center. The goal is to find the net electric field $\vec{E}$ at P.
+\begin{itemize}
+    \item Field from $+q$ is $\vec{E}_{+}$ (rightward).
+    \item Field from $-q$ is $\vec{E}_{-}$ (leftward).
+\end{itemize}
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Derivation}]
+\vspace{0.1cm}
+The net field is the vector sum $\vec{E}_{\text{axial}} = \vec{E}_{+} + \vec{E}_{-}$.
+\begin{align*}
+E_{\text{axial}} &= E_{+} - E_{-} \\
+&= \frac{1}{4\pi\varepsilon_0} \left[ \frac{q}{(r-a)^2} - \frac{q}{(r+a)^2} \right] \\
+&= \frac{q}{4\pi\varepsilon_0} \frac{(r+a)^2 - (r-a)^2}{(r^2-a^2)^2} = \frac{q}{4\pi\varepsilon_0} \frac{4ar}{(r^2-a^2)^2}
+\end{align*}
+For a short dipole ($r \gg a$), we can approximate $r^2-a^2 \approx r^2$.
+\begin{equation*}
+\boxed{\vec{E}_{\text{axial}} \approx \frac{1}{4\pi\varepsilon_0} \frac{2(2aq)}{r^3} \hat{p} = \frac{1}{4\pi\varepsilon_0} \frac{2\vec{p}}{r^3}}
+\end{equation*}
+\end{formulabox}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{lightbulb} \textbf{Key Result}]
+\vspace{0.1cm}
+The electric field on the axial line is in the \textbf{same direction} as the dipole moment $\vec{p}$ and its magnitude decays as $\mathbf{1/r^3}$.
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% ELECTRIC FIELD ON EQUATORIAL LINE OF DIPOLE
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Electric Field on the Equatorial Line of a Dipole}}}
+\framesubtitle{\textcolor{steelblue}{Derivation for a Point on the Perpendicular Bisector}}
+
+\begin{keybox}[\faIcon{drafting-compass} \textbf{Setup}]
+\vspace{0.1cm}
+Consider a point P on the equatorial line at a distance $r$ from the dipole's center.
+\begin{itemize}
+    \item The magnitudes of the fields from $+q$ and $-q$ are equal: $E_{+} = E_{-}$.
+    \item The vertical components of the fields cancel out.
+    \item The horizontal components add up, pointing opposite to $\vec{p}$.
+\end{itemize}
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Derivation}]
+\vspace{0.1cm}
+The net field is $E_{\text{eq}} = E_{+} \cos\theta + E_{-} \cos\theta = 2E_{+} \cos\theta$.
+\begin{align*}
+E_{\text{eq}} &= 2 \left( \frac{1}{4\pi\varepsilon_0} \frac{q}{r^2+a^2} \right) \left( \frac{a}{\sqrt{r^2+a^2}} \right) \\
+&= \frac{1}{4\pi\varepsilon_0} \frac{2aq}{(r^2+a^2)^{3/2}}
+\end{align*}
+For a short dipole ($r \gg a$), we can approximate $r^2+a^2 \approx r^2$.
+\begin{equation*}
+\boxed{\vec{E}_{\text{eq}} \approx \frac{1}{4\pi\varepsilon_0} \frac{p}{r^3} (-\hat{p}) = -\frac{1}{4\pi\varepsilon_0} \frac{\vec{p}}{r^3}}
+\end{equation*}
+\end{formulabox}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{lightbulb} \textbf{Key Results}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item The equatorial field is in the \textbf{opposite direction} to the dipole moment $\vec{p}$.
+    \item Its magnitude is \textbf{half} the axial field at the same distance: $E_{\text{axial}} = 2 E_{\text{eq}}$.
+    \item The field still decays as $\mathbf{1/r^3}$.
+\end{itemize}
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% DIPOLE FIELD AT A GENERAL POINT
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Dipole Field at a General Point}}}
+\framesubtitle{\textcolor{steelblue}{The General Case using Polar Coordinates}}
+
+\begin{keybox}[\faIcon{globe-americas} \textbf{General Position}]
+\vspace{0.1cm}
+For a point P located at polar coordinates $(r, \theta)$ with respect to the center of a short dipole. This formula generalizes the axial and equatorial cases.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{General Field Magnitude}]
+\vspace{0.1cm}
+The magnitude of the electric field at this point is given by:
+\begin{equation*}
+\boxed{E = \frac{p}{4\pi\varepsilon_0 r^3} \sqrt{3\cos^2\theta + 1}}
+\end{equation*}
+This formula elegantly connects the two special cases.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{check-double} \textbf{Verifying the Special Cases}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Axial Line ($\theta = 0^\circ$):} $\cos(0^\circ)=1 \implies E = \frac{p}{4\pi\varepsilon_0 r^3} \sqrt{3(1)^2+1} = \frac{2p}{4\pi\varepsilon_0 r^3}$. (Matches)
+    \item \textbf{Equatorial Line ($\theta = 90^\circ$):} $\cos(90^\circ)=0 \implies E = \frac{p}{4\pi\varepsilon_0 r^3} \sqrt{3(0)^2+1} = \frac{p}{4\pi\varepsilon_0 r^3}$. (Matches)
+\end{itemize}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% TORQUE ON A DIPOLE IN A UNIFORM FIELD
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Torque on a Dipole in a Uniform Electric Field}}}
+\framesubtitle{\textcolor{steelblue}{Rotational Effect of an External Field}}
+
+\begin{keybox}[\faIcon{sync-alt} \textbf{Physical Action}]
+\vspace{0.1cm}
+When a dipole is placed in a uniform external electric field $\vec{E}$, the forces on the two charges form a couple, creating a torque that tends to align the dipole with the field.
+\begin{itemize}
+    \item Force on $+q$: $\vec{F}_{+} = q\vec{E}$.
+    \item Force on $-q$: $\vec{F}_{-} = -q\vec{E}$.
+    \item The \textbf{net force is zero}, so there is no translational motion.
+\end{itemize}
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Torque Formula}]
+\vspace{0.1cm}
+The torque $\vec{\tau}$ is given by the cross product of the dipole moment $\vec{p}$ and the electric field $\vec{E}$:
+\begin{equation*}
+\boxed{\vec{\tau} = \vec{p} \times \vec{E}}
+\end{equation*}
+The magnitude of the torque is $\tau = pE\sin\theta$, where $\theta$ is the angle between $\vec{p}$ and $\vec{E}$.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{sliders-h} \textbf{Equilibrium Conditions}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Maximum Torque ($\tau = pE$):} When $\theta = 90^\circ$ (dipole is perpendicular to the field).
+    \item \textbf{Zero Torque ($\tau = 0$):}
+    \begin{itemize}
+        \item \textbf{Stable Equilibrium:} When $\theta = 0^\circ$ (dipole is aligned with the field).
+        \item \textbf{Unstable Equilibrium:} When $\theta = 180^\circ$ (dipole is anti-aligned with the field).
+    \end{itemize}
+\end{itemize}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% TRANSITION TO GAUSS'S LAW
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Conceptual Bridge:} From Integration to Symmetry}}
+\framesubtitle{\textcolor{steelblue}{Introducing a More Powerful Tool for Calculating E-Fields}}
+
+\vspace{0.5cm}
+
+\begin{center}
+\begin{beamercolorbox}[wd=0.95\textwidth,rounded=true,shadow=true]{block body}
+\vspace{0.3cm}
+\large
+\faIcon{calculator}\quad Calculating electric fields using Coulomb's Law and integration can be mathematically intensive, especially for continuous charge distributions.
+\\[0.5cm]
+\faIcon{lightbulb}\quad For problems with a high degree of \textbf{symmetry} (spheres, cylinders, planes), there is a much more elegant and powerful method.
+\\[0.5cm]
+\faIcon{shield-alt}\quad This method involves two new concepts: \textbf{Electric Flux} and \textbf{Gauss's Law}.
+\vspace{0.3cm}
+\end{beamercolorbox}
+\end{center}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+\section{Electric Flux and Gauss's Law}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% ELECTRIC FLUX
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Electric Flux ($\Phi_E$)}}}
+\framesubtitle{\textcolor{steelblue}{Measuring the "Flow" of the Electric Field}}
+
+\begin{keybox}[\faIcon{ruler-combined} \textbf{Conceptual Definition}]
+\vspace{0.1cm}
+Electric flux is a measure of the total number of \textbf{electric field lines} passing perpendicularly through a given surface. It quantifies the "amount of field" penetrating an area.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Mathematical Definition}]
+\vspace{0.1cm}
+For a small area element $d\vec{A}$ in an electric field $\vec{E}$, the differential flux is $d\Phi_E = \vec{E} \cdot d\vec{A}$. The total flux through a surface S is the integral:
+\begin{equation*}
+\boxed{\Phi_E = \int_S \vec{E} \cdot d\vec{A} = \int_S E \cos\theta \, dA}
+\end{equation*}
+\begin{itemize}
+    \item $\theta$ is the angle between the electric field $\vec{E}$ and the area normal vector $d\vec{A}$.
+    \item Flux is a \textbf{scalar} quantity.
+    \item \textbf{Unit:} N·m²/C or V·m.
+\end{itemize}
+\vspace{0.1cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% GAUSS'S LAW
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Gauss's Law:} The Heart of Electrostatics}}
+\framesubtitle{\textcolor{steelblue}{One of Maxwell's Four Equations}}
+
+\begin{keybox}[\faIcon{shield-alt} \textbf{The Law}]
+\vspace{0.1cm}
+The total electric flux passing out of any \textbf{closed surface} (called a Gaussian surface) is proportional to the total \textbf{net charge enclosed} within that surface.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{infinity} \textbf{The Integral Form}]
+\vspace{0.1cm}
+\begin{equation*}
+\boxed{\Phi_E = \oint_S \vec{E} \cdot d\vec{A} = \frac{Q_{\text{enclosed}}}{\varepsilon_0}}
+\end{equation*}
+\end{formulabox}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{lightbulb} \textbf{Profound Implications}]
+\vspace{0.1cm}
+\begin{enumerate}
+    \item \textbf{Source of Field:} It fundamentally states that electric fields originate from charges.
+    \item \textbf{Symmetry is Power:} While always true, the law is most useful for calculating $\vec{E}$ in highly symmetric scenarios (spheres, cylinders, planes).
+    \item \textbf{External Charges Don't Count:} Charges outside the Gaussian surface contribute zero net flux to the total.
+    \item \textbf{Shape Independence:} The total flux depends only on the enclosed charge, not the shape or size of the Gaussian surface.
+\end{enumerate}
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% APPLICATION 1: FIELD OF AN INFINITE LINE OF CHARGE
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Application 1: Field of an Infinite Line of Charge}}}
+\framesubtitle{\textcolor{steelblue}{Using a Cylindrical Gaussian Surface}}
+
+\begin{keybox}[\faIcon{drafting-compass} \textbf{Setup}]
+\vspace{0.1cm}
+An infinite line has a uniform positive linear charge density $\lambda$ (charge per unit length). We want to find the electric field $\vec{E}$ at a distance $r$ from the line.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{cogs} \textbf{Applying Gauss's Law}]
+\vspace{0.1cm}
+\begin{enumerate}
+    \item \textbf{Choose Gaussian Surface:} A cylinder of radius $r$ and length $L$, coaxial with the charged line.
+    \item \textbf{Analyze Flux:}
+    \begin{itemize}
+        \item Flux through the top and bottom caps is zero (since $\vec{E}$ is parallel to the caps, $\vec{E} \perp d\vec{A}$).
+        \item Flux through the curved side wall is $\Phi = E \times (\text{Area}) = E(2\pi rL)$ (since $\vec{E}$ is parallel to $d\vec{A}$).
+    \end{itemize}
+    \item \textbf{Find Enclosed Charge:} The charge inside the cylinder is $Q_{\text{enclosed}} = \lambda L$.
+    \item \textbf{Apply the Law:} $\oint \vec{E} \cdot d\vec{A} = E(2\pi rL) = \frac{\lambda L}{\varepsilon_0}$.
+\end{enumerate}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Final Result}]
+\vspace{0.1cm}
+\begin{equation*}
+\boxed{E = \frac{\lambda}{2\pi\varepsilon_0 r}}
+\end{equation*}
+The field strength decreases as $1/r$.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% APPLICATION 2: FIELD OF AN INFINITE PLANE SHEET
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Application 2: Field of an Infinite Plane Sheet}}}
+\framesubtitle{\textcolor{steelblue}{Using a Cylindrical "Pillbox" Gaussian Surface}}
+
+\begin{keybox}[\faIcon{drafting-compass} \textbf{Setup}]
+\vspace{0.1cm}
+An infinite plane has a uniform positive surface charge density $\sigma$ (charge per unit area). We want to find the electric field $\vec{E}$ at any point.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{cogs} \textbf{Applying Gauss's Law}]
+\vspace{0.1cm}
+\begin{enumerate}
+    \item \textbf{Choose Gaussian Surface:} A small cylinder or "pillbox" of cross-sectional area $A$, piercing the sheet perpendicularly.
+    \item \textbf{Analyze Flux:}
+    \begin{itemize}
+        \item Flux through the curved side wall is zero (since $\vec{E}$ is parallel to the wall).
+        \item Flux passes through the two end caps. The total flux is $\Phi = EA + EA = 2EA$.
+    \end{itemize}
+    \item \textbf{Find Enclosed Charge:} The charge inside the pillbox is $Q_{\text{enclosed}} = \sigma A$.
+    \item \textbf{Apply the Law:} $\oint \vec{E} \cdot d\vec{A} = 2EA = \frac{\sigma A}{\varepsilon_0}$.
+\end{enumerate}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Final Result}]
+\vspace{0.1cm}
+\begin{equation*}
+\boxed{E = \frac{\sigma}{2\varepsilon_0}}
+\end{equation*}
+Remarkably, the field is \textbf{uniform and independent of distance} from the sheet.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% APPLICATION 3: FIELD OF A SPHERICAL SHELL
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Application 3: Field of a Uniformly Charged Spherical Shell}}}
+\framesubtitle{\textcolor{steelblue}{Using a Spherical Gaussian Surface}}
+
+\begin{keybox}[\faIcon{drafting-compass} \textbf{Setup}]
+\vspace{0.1cm}
+A thin spherical shell of radius $R$ carries a total charge $Q$ distributed uniformly over its surface. We analyze the field both outside and inside the shell.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{columns}[T]
+    \column{0.5\textwidth}
+    \begin{examplebox}[\faIcon{sign-out-alt} \textbf{Case 1: Outside ($r > R$)}]
+    \vspace{0.1cm}
+    \textbf{Surface:} Sphere of radius $r > R$.
+    \textbf{Law:} $E(4\pi r^2) = \frac{Q}{\varepsilon_0}$.
+    \begin{equation*}
+    E = \frac{1}{4\pi\varepsilon_0} \frac{Q}{r^2}
+    \end{equation*}
+    \textbf{Result:} The shell behaves exactly like a point charge $Q$ located at its center.
+    \end{examplebox}
+    
+    \column{0.5\textwidth}
+    \begin{examplebox}[\faIcon{sign-in-alt} \textbf{Case 2: Inside ($r < R$)}]
+    \vspace{0.1cm}
+    \textbf{Surface:} Sphere of radius $r < R$.
+    \textbf{Law:} $Q_{\text{enclosed}} = 0$.
+    \begin{equation*}
+    E(4\pi r^2) = 0 \implies E=0
+    \end{equation*}
+    \textbf{Result:} The electric field inside a uniform spherical shell of charge is identically zero everywhere.
+    \end{examplebox}
+\end{columns}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% ELECTROSTATIC SHIELDING
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Conductors and Electrostatic Shielding}}}
+\framesubtitle{\textcolor{steelblue}{Properties of Conductors in Electrostatic Equilibrium}}
+
+\begin{keybox}[\faIcon{check-double} \textbf{Properties of Conductors in Equilibrium}]
+\vspace{0.1cm}
+\begin{enumerate}
+    \item \textbf{Net Electric Field Inside is Zero:} Mobile charges rearrange themselves to perfectly cancel any external field within the conductor's bulk.
+    \item \textbf{Excess Charge Resides on the Surface:} Mutual repulsion pushes all excess charges to the outer surface.
+    \item \textbf{Electric Field is Perpendicular to the Surface:} If a parallel component existed, charges would move along the surface, violating equilibrium.
+    \item \textbf{Potential is Constant:} Since $\vec{E}=0$ inside, no work is done moving a charge between any two points within the conductor.
+\end{enumerate}
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[\faIcon{shield-alt} \textbf{Electrostatic Shielding (Faraday Cage)}]
+\vspace{0.1cm}
+The fact that the electric field inside a conductor is zero is the principle behind electrostatic shielding. A conductive enclosure (a Faraday cage) can be used to protect sensitive electronic equipment from external electric fields.
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1: Electric Charges and Fields | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% CHAPTER 1 SUMMARY (1/4)
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Chapter 1 Summary:} Key Concepts (1/2)}}
+\framesubtitle{\textcolor{steelblue}{Fundamental Concepts & Coulomb's Law}}
+
+\begin{keybox}[\faIcon{atom} \textbf{Electric Charge}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Properties:} An intrinsic property of matter that is conserved, quantized ($Q=ne$), and additive.
+    \item \textbf{Unit:} Coulomb (C).
+\end{itemize}
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{hand-sparkles} \textbf{Methods of Charging}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Friction:} Rubbing transfers electrons (e.g., glass rod and silk).
+    \item \textbf{Conduction:} Direct contact results in sharing of charge (same sign).
+    \item \textbf{Induction:} No-contact method using grounding to induce an opposite charge.
+\end{itemize}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Coulomb's Law}]
+\vspace{0.1cm}
+The force between two point charges is given by:
+\begin{equation*}
+F = k_e \frac{|q_1 q_2|}{r^2}
+\end{equation*}
+This force is repulsive for like charges and attractive for unlike charges.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Chapter 1 Review | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% CHAPTER 1 SUMMARY (2/4)
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Chapter 1 Summary:} Key Concepts (2/2)}}
+\framesubtitle{\textcolor{steelblue}{Fields, Dipoles, and Gauss's Law}}
+
+\begin{keybox}[\faIcon{drafting-compass} \textbf{Electric Field ($\vec{E}$)}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item Defined as force per unit charge ($\vec{E} = \vec{F}/q_0$).
+    \item Visualized by electric field lines, which show direction and strength.
+    \item For a point charge: $E = k_e |Q|/r^2$.
+\end{itemize}
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{examplebox}[\faIcon{magnet} \textbf{Electric Dipole}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item A pair of equal and opposite charges. Characterized by its dipole moment, $\vec{p}$.
+    \item The field from a dipole decays as $1/r^3$.
+    \item Experiences a torque ($\vec{\tau} = \vec{p} \times \vec{E}$) in a uniform electric field.
+\end{itemize}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vspace{0.3cm}
+
+\begin{formulabox}[\faIcon{shield-alt} \textbf{Gauss's Law}]
+\vspace{0.1cm}
+A fundamental law relating electric flux to the enclosed charge:
+\begin{equation*}
+\oint \vec{E} \cdot d\vec{A} = \frac{Q_{\text{enclosed}}}{\varepsilon_0}
+\end{equation*}
+It is extremely useful for finding the electric field in symmetric situations.
+\vspace{0.1cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Chapter 1 Review | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+
+
+
+
+
+
+
+% Chapter 2: Electrostatic Potential and Capacitance
+\section{Chapter 2: Electric Potential and Capacitors}
+
+\begin{frame}{\textbf{Chapter 2 - What Will We Learn?}}
+
+\begin{keybox}[Easy Topics in This Chapter]
+\begin{itemize}
+    \item \concept{Electric Potential}: Energy level of charges
+    \item \concept{Capacitors}: Devices that store charge
+    \item \concept{How They Work}: Storing and releasing energy
+    \item \concept{Real Uses}: Phones, computers, cameras, power banks
+\end{itemize}
+\end{keybox}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[Why Learn This?]
+Every electronic device uses capacitors! Understanding them helps you understand modern technology!
+\end{importantbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% ELECTRIC POTENTIAL: INTUITIVE INTRODUCTION
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Electric Potential:} An Intuitive Introduction}}
+\framesubtitle{\textcolor{steelblue}{The Concept of "Energy Level" in Electrostatics}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{lightbulb} \textbf{Conceptual Definition}]
+\vspace{0.1cm}
+\textbf{Electric potential ($V$)} is the \textbf{\textcolor{importantRed}{potential energy per unit charge}} at a point in an electric field. It represents the "energy level" of that location.
+\vspace{0.1cm}
+\end{keybox}
+
+\vspace{0.35cm}
+
+\begin{examplebox}[\faIcon{mountain} \textbf{Gravitational Analogy: Height \& Energy}]
+\vspace{0.1cm}
+A ball at a \textbf{high altitude} has more gravitational potential energy than one at a low altitude.
+\vspace{0.1cm}
+\begin{center}
+\textit{Similarly, a positive charge in a region of \textbf{high electric potential} has more electric potential energy.}
+\end{center}
+\end{examplebox}
+
+\vspace{0.35cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Mathematical Definition}]
+\vspace{0.2cm}
+\begin{equation*}
+\boxed{V = \frac{U}{q} = \frac{\text{Electric Potential Energy}}{\text{Charge}}}
+\end{equation*}
+\vspace{0.15cm}
+\textbf{Unit:} \quad 1 Volt (V) = 1 Joule per Coulomb (J/C)
+\vspace{0.1cm}
+\end{formulabox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 2: Electrostatic Potential & Capacitance | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% RECAP: COULOMB'S LAW
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Recap from Chapter 1:} Coulomb's Law}}
+\framesubtitle{\textcolor{steelblue}{The Fundamental Force of Electrostatics}}
+
+\vspace{-0.05cm}
+
+\begin{importantbox}[\faIcon{exclamation-triangle} \textbf{Core Principle}]
+\vspace{0.1cm}
+Two point charges exert a force on each other that is \textbf{directly proportional} to the product of the charges and \textbf{inversely proportional} to the square of the distance between them.
+\vspace{0.1cm}
+\end{importantbox}
+
+\vspace{0.35cm}
+
+\begin{formulabox}[\faIcon{calculator} \textbf{Scalar Formula}]
+\vspace{0.2cm}
+\begin{equation*}
+\boxed{F = k_e \frac{|q_1 q_2|}{r^2}} \quad \text{where } k_e \approx 9 \times 10^9 \, \text{N·m}^2/\text{C}^2
+\end{equation*}
+\end{formulabox}
+
+\vspace{0.35cm}
+
+\begin{examplebox}[\faIcon{arrows-alt-h} \textbf{Interaction Rules}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Bigger charges} $\rightarrow$ Stronger force
+    \item \textbf{Closer distance} $\rightarrow$ Much stronger force (inverse-square law)
+    \item \textbf{Like charges} ($+,+$ or $-,-$) $\rightarrow$ \textcolor{importantRed}{Repel} (Push apart)
+    \item \textbf{Unlike charges} ($+,-$) $\rightarrow$ \textcolor{familiarGreen}{Attract} (Pull together)
+\end{itemize}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1 Recap | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% RECAP: FUNDAMENTAL CHARGE PROPERTIES
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Recap: Fundamental Properties of Electric Charge}}}
+\framesubtitle{\textcolor{steelblue}{The Building Blocks of Electrostatics}}
+
+\vspace{-0.05cm}
+
+\begin{formulabox}[\faIcon{cubes} \textbf{Key Properties}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Quantization:} Charge exists in discrete units of $e = 1.6 \times 10^{-19}$ C. You can't have half an electron's charge.
+    \item \textbf{Additivity:} Total charge is the algebraic sum of individual charges.
+    \item \textbf{Conservation:} The net charge of an isolated system is always constant. Charge is transferred, not created.
+\end{itemize}
+\vspace{0.1cm}
+\end{formulabox}
+
+\vspace{0.5cm}
+
+\begin{keybox}[\faIcon{arrows-alt-h} \textbf{Fundamental Interaction}]
+\vspace{0.2cm}
+\centering
+\Large
+\textbf{\textcolor{importantRed}{Like charges REPEL}} \quad | \quad \textbf{\textcolor{familiarGreen}{Unlike charges ATTRACT}}
+\vspace{0.2cm}
+\end{keybox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1 Recap | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% RECAP: ELECTRIC FIELD
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Recap: The Electric Field Concept}}}
+\framesubtitle{\textcolor{steelblue}{The "Sphere of Influence" of a Charge}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{bullseye} \textbf{Conceptual Definition}]
+\vspace{0.1cm}
+The \textbf{electric field ($\vec{E}$)} is a vector field created by source charges that permeates the space around them. It describes the force that would be exerted on a test charge placed at any point.
+\end{keybox}
+
+\vspace{0.35cm}
+
+\begin{examplebox}[\faIcon{magnet} \textbf{Analogy: Magnetic Field}]
+\vspace{0.1cm}
+Just as a magnet creates an invisible magnetic field that affects compasses, a charge creates an electric field that affects other charges.
+\end{examplebox}
+
+\vspace{0.35cm}
+
+\begin{importantbox}[\faIcon{compass} \textbf{Field Direction & Units}]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Direction:} The direction of the force on a \textit{positive} test charge.
+    \begin{itemize}
+        \item Points \textbf{away} from positive sources.
+        \item Points \textbf{toward} negative sources.
+    \end{itemize}
+    \item \textbf{Units:} Newtons per Coulomb (N/C) or Volts per meter (V/m).
+\end{itemize}
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1 Recap | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+% ═════════════════════════════════════════════════════════════════════════════
+% RECAP: ELECTRIC FIELD LINES
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{frame}
+\frametitle{\textsf{\textbf{Recap: Visualizing Electric Fields with Field Lines}}}
+\framesubtitle{\textcolor{steelblue}{The "Rules of the Road" for Electric Fields}}
+
+\vspace{-0.05cm}
+
+\begin{keybox}[\faIcon{drafting-compass} \textbf{What are Field Lines?}]
+\vspace{0.1cm}
+Imaginary lines that provide a visual map of an electric field's direction and strength.
+\end{keybox}
+
+\vspace{0.35cm}
+
+\begin{examplebox}[\faIcon{list-ol} \textbf{Fundamental Rules}]
+\vspace{0.1cm}
+\begin{enumerate}
+    \item \textbf{Origin/Termination:} Start on positive charges, end on negative charges.
+    \item \textbf{Direction:} Tangent to the line gives the field direction at that point.
+    \item \textbf{Strength:} Line density is proportional to field strength (closer lines = stronger field).
+    \item \textbf{Non-crossing:} Field lines can never intersect.
+\end{enumerate}
+\vspace{0.1cm}
+\end{examplebox}
+
+\vspace{0.35cm}
+
+\begin{importantbox}[\faIcon{exclamation-triangle} \textbf{Conductor Rule}]
+\vspace{0.1cm}
+The electric field inside a conductor in electrostatic equilibrium is \textbf{zero}. Therefore, there are \textbf{no field lines} inside a conductor. All excess charge resides on the surface.
+\vspace{0.1cm}
+\end{importantbox}
+
+\vfill
+
+\begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+    \small\color{coolgray} Unit 1 Recap | Class 12 Physics
+\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}{\textbf{Field Lines Around Different Charges}}
+
+\textbf{Around a Positive Charge:}
+\begin{itemize}
+	\item Lines point AWAY from the charge
+	\item Like rays of light from a bulb
+\end{itemize}
+
+\vspace{0.2cm}
+
+\textbf{Around a Negative Charge:}
+\begin{itemize}
+	\item Lines point TOWARD the charge
+	\item Like arrows pointing inward
+\end{itemize}
+
+\vspace{0.2cm}
+
+\textbf{Inside a Conductor:}
+\begin{itemize}
+	\item NO field lines exist!
+	\item Field is ZERO inside
+	\item All charges go to the surface
+\end{itemize}
+
+\important{[Diagram: Field lines for different configurations]}
+\end{frame}
+
+\begin{frame}{\textbf{Capacitors - What Are They?}}
+
+\begin{keybox}[Easy Definition]
+A capacitor is a device that \textbf{STORES electrical charge}. Like a battery, but DIFFERENT!
+\end{keybox}
+
+\vspace{0.2cm}
+
+\begin{examplebox}[Simple Design]
+\begin{itemize}
+    \item Two metal plates placed close together
+    \item Special material (dielectric) between them
+    \item When you add charge → it stores on these plates
+\end{itemize}
+\end{examplebox}
+
+\vspace{0.2cm}
+
+\begin{formulabox}[Capacitance Formula]
+$\displaystyle C = \frac{Q}{V}$ \\
+{\normalsize Charge stored / Voltage applied} \\
+{\normalsize Unit: Farad (F) {\normalsize$\mu F$ or pF for practical use}}
+\end{formulabox}
+\end{frame}
+
+\begin{frame}{\textbf{Why Do We Use Capacitors?}}
+
+\begin{keybox}[Real Uses in Daily Life]
+\end{keybox}
+
+\vspace{0.1cm}
+
+\begin{columns}[T]
+    \column{0.46\textwidth}
+    \begin{itemize}[<+->]
+        \item \textbf{Phones}: Camera flash power
+        \item \textbf{Computers}: Data protection during power loss
+        \item \textbf{Power supplies}: Smooth electrical signals
+    \end{itemize}
+    
+    \column{0.46\textwidth}
+    \begin{itemize}[<+->]
+        \item \textbf{Speakers}: Store and release energy
+        \item \textbf{Electric cars}: Store huge energy amounts
+        \item \textbf{Power banks}: Quick energy release
+    \end{itemize}
+\end{columns}
+
+\vspace{0.3cm}
+
+\begin{importantbox}[Bottom Line]
+Every electronic device has capacitors! They're energy storage boxes of electronics!
+\end{importantbox}
+\end{frame}
+
+% =============================================================================
+% Contents Slide
+% Unit 1: Electrostatics - Class 12 Physics
+% Board Exam Preparation Series
+% =============================================================================
+
+\begin{frame}[plain]
+    \centering
+    % Main title (matches image exactly)
+    {\Huge\color{red!90}\textbf{CONTENTS}}
+    
+    \vspace{0.8cm}
+    
+    % Content list with green arrows and text
+    \begin{minipage}{0.85\textwidth}
+        \textcolor{familiarGreen}{
+        \begin{itemize}
+        \item[\faArrowRight] Introduction
+        \item[\faArrowRight] Electric Charges
+        \item[\faArrowRight] Conductors and Insulators
+        \item[\faArrowRight] Charging by Induction
+        \item[\faArrowRight] Basic Properties of Electric Charge
+        \item[\faArrowRight] Coulomb's Law
+        \item[\faArrowRight] Forces between Multiple Charges
+        \item[\faArrowRight] Electric Field
+        \item[\faArrowRight] Electric Field Lines
+        \item[\faArrowRight] Electric Flux
+        \item[\faArrowRight] Electric Dipole
+        \item[\faArrowRight] Dipole in a Uniform External Field
+        \item[\faArrowRight] Continuous Charge Distribution
+        \item[\faArrowRight] Gauss's Law
+        \item[\faArrowRight] Application of Gauss's Law
+        \end{itemize}
+        }
+    \end{minipage}
+    
+    \vfill
+    % Add subtle footer for consistency
+    \relax
+\end{frame}
+
+% =============================================================================
+% Electrostatics Definition Slide
+% =============================================================================
+\begin{frame}[plain]
+    \centering
+    
+    {\Huge\color{accentorange}\textbf{Electrostatics}}
+    
+    \vspace{1.5cm}
+    
+    {\Large\color{black}
+    Electrostatics is the branch of Physics \\
+    which deals with the study forces, \\
+    fields, and potentials arising from static \\
+    charges.}
+    
+\end{frame}
+% =============================================================================
+% Introduction to Electrostatics Slide
+% =============================================================================
+\begin{frame}{Introduction to Electrostatics}
+    \begin{conceptdiagram}{Origin of the Word}
+        The term \textit{electricity} comes from the Greek word \textit{elektron}, meaning amber. Ancient observers noticed that rubbed amber could attract lightweight objects.
+    \end{conceptdiagram}
+
+    \begin{itemize}
+        \item Thales of Miletus (600 BC) described the attraction between amber and wool, the earliest recorded electrostatic experiment.
+        \item These observations laid the foundation for explaining how charges move and interact in modern physics.
+    \end{itemize}
+\end{frame}
+
+% =============================================================================
+% Activity: Plastic Scale and Paper Bits Slide
+% =============================================================================
+\begin{frame}{Experiment: Plastic Scale and Paper Bits}
+    \begin{conceptdiagram}{Observation}
+        Rub a dry plastic scale on hair to transfer electrons to the scale. When the charged scale is brought near tiny paper bits, they jump up and cling to it.
+    \end{conceptdiagram}
+
+    \begin{itemize}
+        \item Friction moves electrons from hair to the scale, leaving the scale negatively charged.
+        \item Neutral paper bits polarise: electrons move slightly away, leaving the near side positive.
+        \item The electrostatic attraction between opposite charges lifts the bits upward.
+    \end{itemize}
+\end{frame}
+% =============================================================================
+% Activity: Comb and Paper Bits Slide
+% =============================================================================
+\begin{frame}{Experiment: Charging a Comb}
+    \begin{conceptdiagram}{Simple Classroom Demonstration}
+        Comb dry hair vigorously and then bring the comb close to light paper shreds. The pieces leap toward the comb and remain attached until the charge leaks away.
+    \end{conceptdiagram}
+
+    \begin{columns}[T,totalwidth=\textwidth]
+        \column{0.52\textwidth}
+            	extbf{What happens?}
+            \begin{itemize}
+                \item Electrons shift from hair to the plastic comb, making the comb negatively charged.
+                \item Paper pieces polarise, leaving the side closest to the comb slightly positive.
+            \end{itemize}
+
+        \column{0.45\textwidth}
+            	extbf{Key Takeaways}
+            \begin{itemize}
+                \item Frictional charging is quick and works with many materials.
+                \item Contact with the table or hand allows charge to leak away (discharge).
+            \end{itemize}
+    \end{columns}
+\end{frame}
+
+% =============================================================================
+% Methods of Charging Slide
+% =============================================================================
+\begin{frame}{Methods of Charging}
+    \begin{conceptdiagram}{Classical Techniques}
+        Electrostatic charge can be produced in three reliable ways. Each method transfers electrons differently, but the law of conservation of charge always holds.
+    \end{conceptdiagram}
+
+    \begin{columns}[T,totalwidth=\textwidth]
+        \column{0.33\textwidth}
+            	extbf{Friction}
+            \begin{itemize}
+                \item Surfaces rub together.
+                \item Electrons shift from one material to another.
+                \item Example: glass rod and silk.
+            \end{itemize}
+
+        \column{0.33\textwidth}
+            	extbf{Conduction}
+            \begin{itemize}
+                \item A charged body touches a neutral conductor.
+                \item Charge flows until potentials match.
+                \item Requires physical contact.
+            \end{itemize}
+
+        \column{0.33\textwidth}
+            	extbf{Induction}
+            \begin{itemize}
+                \item Charged object brought nearby, not touching.
+                \item Charge separation occurs inside conductor.
+                \item Grounding allows permanent charging.
+            \end{itemize}
+    \end{columns}
+\end{frame}
+% =============================================================================
+% Glass Rod and Silk Activity Slide
+% =============================================================================
+\begin{frame}{Charging by Friction: Laboratory Benchmarks}
+    \begin{columns}[T,totalwidth=\textwidth]
+        \column{0.46\textwidth}
+            \begin{conceptdiagram}[0.95\linewidth]{Glass Rod with Silk}
+                Electrons move from the glass surface to the silk. The rod loses electrons and becomes positively charged, while the silk gains electrons and becomes negatively charged.
+            \end{conceptdiagram}
+
+        \column{0.46\textwidth}
+            \begin{conceptdiagram}[0.95\linewidth]{Plastic Rod with Fur}
+                Electrons travel from the fur to the plastic rod. The rod gains electrons (negative charge) and the fur is left electron deficient (positive charge).
+            \end{conceptdiagram}
+    \end{columns}
+
+    \vspace{0.3cm}
+
+    \begin{itemize}
+        \item The direction of electron flow depends on the material pair and their position in the triboelectric series.
+        \item Frictional charging always creates equal and opposite charges on the two interacting bodies.
+    \end{itemize}
+\end{frame}
+% =============================================================================
+% Frictional Charging Explanation Slide
+% =============================================================================
+\begin{frame}{Rubbing (charging by friction)}
+    \begin{columns}
+        \column{0.05\textwidth}
+        \column{0.9\textwidth}
+        \begin{itemize}
+        \item When glass rod is rubbed with silk, glass acquires positive charge and silk acquires negative charge.
+            
+            \vspace{0.5cm}
+            
+            \item When plastic is rubbed with fur, plastic acquires negative charge and fur acquires positive charge.
+            
+            \vspace{0.5cm}
+            
+            \item \familiar{Electricity developed on bodies, when two suitable bodies rubbed with each other is called frictional electricity or static electricity.}
+        \end{itemize}
+    \end{columns}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}
+
+% 5. Detailed Frictional Charging Slide
+% =============================================================================
+% Detailed Frictional Charging Explanation Slide
+% =============================================================================
+\begin{frame}{Charging by friction}
+    \begin{columns}
+        \column{0.05\textwidth}
+        \column{0.9\textwidth}
+        \begin{itemize}
+        \item When we rub a glass rod with silk, some of the electrons from the rod are transferred to the silk cloth. Thus the rod gets positively charged and the silk gets negatively charged.
+            
+            \vspace{0.5cm}
+            
+            \item Similarly, when we rub a plastic rod with fur, some of the electrons from fur are transferred to the plastic rod. Thus the fur gets positively charged and the plastic rod gets negatively charged.
+        \end{itemize}
+    \end{columns}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}
+
+% =============================================================================
+% Electron Theory of Electrification
+% =============================================================================
+\begin{frame}{ELECTRON THEORY OF ELECTRIFICATION}
+    \begin{columns}
+        \column{0.46\textwidth}
+        \begin{itemize}
+        \item To electrify a neutral body, we need to add or remove one kind of charge.
+            
+            \item When we say a body is charged, we always refer to this excess charge or deficit of charge.
+            
+            \item In solids, some electrons (less tightly bound in atoms) are transferred between bodies.
+        \end{itemize}
+        
+        \column{0.46\textwidth}
+        \begin{itemize}
+        \item A body charged positively loses some electrons.
+            
+            \item A body charged negatively gains electrons.
+            
+            \item This electron transfer is the basis of all electrification phenomena.
+        \end{itemize}
+    \end{columns}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}
+
+% 2. Pith Ball Experiment Slide
+% =============================================================================
+% Pith Ball Experiment
+% =============================================================================
+\begin{frame}{Pith Ball Experiment}
+    % Image placeholder: pith_balls.png
+    \begin{center}
+        \textcolor{gray}{\textit{[Pith Balls Experiment Diagram]}}
+    \end{center}
+    
+    \begin{itemize}
+    \item If a plastic rod rubbed with fur touches two suspended pith balls, they repel each other.
+        
+        \item Similar repulsion occurs with glass rod rubbed with silk.
+        
+        \item A pith ball touched with glass rod attracts one touched with plastic rod.
+    \end{itemize}
+    
+    \vspace{0.3cm}
+    
+    \begin{center}
+        \familiar{Like charges repel and unlike charges attract each other.}
+    \end{center}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}
+
+% 3. Rod Experiment Slide
+% =============================================================================
+% Rod Experiment
+% =============================================================================
+\begin{frame}{Rod Experiment}
+    % Image placeholder: rods.png
+    \begin{center}
+        \textcolor{gray}{\textit{[Rod Experiment Diagram]}}
+    \end{center}
+    
+    \begin{columns}
+        \column{0.46\textwidth}
+        \begin{itemize}
+        \item[a)] Two glass rods rubbed with wool/silk repel each other.
+            
+            \item[b)] Two plastic rods rubbed with cat's fur repel each other.
+        \end{itemize}
+        
+        \column{0.46\textwidth}
+        \begin{itemize}
+        \item[c)] Plastic rod attracts glass rod.
+            
+            \item The fundamental law: Like charges repel, unlike charges attract.
+        \end{itemize}
+    \end{columns}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}
+
+% 4. Like Charges Repel (Centered Layout)
+% =============================================================================
+% Like Charges Repel
+% =============================================================================
+\begin{frame}{Like charges repel while unlike charges attract each other.}
+    \vspace{0.2cm}
+    
+    \begin{center}
+        % Image placeholder: charge_diagram.png
+        \textcolor{gray}{\textit{[Charge Diagram - Like/Unlike Charges]}}
+    \end{center}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}
+% =============================================================================
+% Charge Interaction Summary
+% =============================================================================
+\begin{frame}{Fundamental Charge Interactions}
+    \begin{columns}
+        \column{0.46\textwidth}
+        \centering
+        \familiar{\Huge\faPlus\faPlus}
+        
+        \vspace{0.5cm}
+        
+        \textbf{Like Charges Repel}
+        
+        \vspace{0.5cm}
+        
+        \begin{itemize}
+        \item Glass rod + Glass rod
+            \item Plastic rod + Plastic rod
+            \item Two negative charges
+        \end{itemize}
+        
+        \column{0.46\textwidth}
+        \centering
+        \familiar{\Huge\faPlus\faMinus}
+        
+        \vspace{0.5cm}
+        
+        \textbf{Unlike Charges Attract}
+        
+        \vspace{0.5cm}
+        
+        \begin{itemize}
+        \item Glass rod + Plastic rod
+            \item Positive + Negative charge
+            \item Pith ball experiments
+        \end{itemize}
+    \end{columns}
+    
+    \vspace{0.5cm}
+    
+    \begin{center}
+        \familiar{This is the fundamental law of electrostatics}
+    \end{center}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}
+
+% =============================================================================
+% Conductors and Insulators
+% =============================================================================
+\begin{frame}{Conductors and insulators}
+    \begin{columns}
+        \column{0.46\textwidth}
+        \begin{itemize}
+        \item Some substances readily allow passage of electricity through them
+            
+            \item Those allowing electricity to pass easily are called \familiar{conductors}
+            
+            \item Conductors have free electrons that move inside the material
+            
+            \item Examples: Metals, human/animal bodies, earth
+        \end{itemize}
+        
+        \column{0.46\textwidth}
+        \begin{itemize}
+        \item Other substances do not allow electricity to pass easily
+            
+            \item They offer high resistance to electricity and are called \familiar{insulators}
+            
+            \item Examples: Glass, porcelain, plastic, nylon, wood
+            
+            \item Insulators are crucial for safety in electrical systems
+        \end{itemize}
+    \end{columns}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}
+
+
+% 2. Charging by Conduction
+% =============================================================================
+% Charging by Conduction
+% =============================================================================
+\begin{frame}{Charging by conduction}
+    \begin{center}
+        \familiar{\Large When a charged body is brought in contact with an uncharged conductor, charge flows from the charged body to the uncharged body.}
+    \end{center}
+    
+    \vspace{0.5cm}
+    
+    \begin{figure}[h]
+        \centering
+        % Image placeholder: conduction.png
+        \textcolor{gray}{\textit{[Charge Conduction Diagram]}}
+        % Image: Two spheres (one charged with + signs, one neutral)
+    \end{figure}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}
+
+
+% =============================================================================
+% Charging by Induction Process
+% =============================================================================
+\begin{frame}{Charging by Induction}
+    \begin{columns}
+        \column{0.4\textwidth}
+        \begin{figure}[h]
+            \centering
+            % Image placeholder: induction_steps.png
+            \textcolor{gray}{\textit{[Induction Steps Diagram]}}
+            % Image: Three diagrams labeled (c), (d), (e)
+        \end{figure}
+        
+        \column{0.55\textwidth}
+        \begin{enumerate}
+            \item[iii)] Separate spheres while glass rod is near sphere A
+            
+            \item The two spheres become oppositely charged and attract
+            
+            \item[iv)] Remove the rod - charges rearrange uniformly
+            
+            \item[v)] Separate spheres completely - charges distribute uniformly
+            
+            \item \familiar{Result: Equal and opposite charges (charging by induction)}
+        \end{enumerate}
+    \end{columns}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}
+
+% =============================================================================
+% Electroscope
+% =============================================================================
+\begin{frame}{ELECTROSCOPE}
+    \begin{columns}
+        \column{0.55\textwidth}
+        \begin{itemize}
+        \item A simple apparatus to detect charge on a body
+            
+            \item Consists of vertical metal rod with two thin gold leaves attached
+            
+            \item When charged object touches metal knob, charge flows to leaves
+            
+            \item Leaves diverge - degree of divergence indicates amount of charge
+        \end{itemize}
+        
+        \column{0.4\textwidth}
+        \begin{figure}[h]
+            \centering
+            % Image placeholder: electroscope.png
+            \textcolor{gray}{\textit{[Gold-Leaf Electroscope]}}
+            % Image: Gold-leaf electroscope diagram
+        \end{figure}
+    \end{columns}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}
+
+
+% 5. Charging by Induction (Initial Steps)
+% =============================================================================
+% Charging by Induction - Initial Steps
+% =============================================================================
+\begin{frame}{Charging by Induction}
+    \begin{columns}
+        \column{0.3\textwidth}
+        \begin{figure}[h]
+            \centering
+            % Image placeholder: induction_initial.png
+            \textcolor{gray}{\textit{[Induction Initial Steps]}}
+            % Image: Two spheres (a) in contact, (b) with charged rod near
+        \end{figure}
+        
+        \column{0.65\textwidth}
+        \begin{enumerate}
+            \item[I.] Two metal spheres (A and B) on insulating stands in contact
+            
+            \item[II.] Bring positively charged rod near sphere A
+            
+            \item Free electrons in spheres are attracted to the rod
+            
+            \item Sphere A gets excess negative charge
+            
+            \item Sphere B gets excess positive charge
+            
+            \item \familiar{This is called induction of charge (happens almost instantly)}
+        \end{enumerate}
+    \end{columns}
+    
+    \vfill
+    
+    \begin{beamercolorbox}[wd=\textwidth,ht=0.5cm,dp=0.1cm,center]{titleinfobox}
+        \small\color{coolgray} Unit 1: Electrostatics | Class 12 Physics
+    \end{beamercolorbox}
+\end{frame}

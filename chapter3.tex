@@ -1,0 +1,1355 @@
+% =============================================================================
+% CHAPTER: MAGNETIC EFFECT OF CURRENT & MAGNETISM (THEORY ONLY)
+% Based on Magnetism Module.pdf
+% =============================================================================
+
+% ====== Set Section for Beamer Outline ======
+\section{Introduction & Biot-Savart Law}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Magnetic Effect of Current: Introduction}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small % Adjust font size if needed
+
+    \begin{itemize}
+    %% --- Electromagnetism Definition ---
+      \item<+-> \textbf{Electromagnetism:} The branch of physics dealing with magnetism produced by electric current or moving charges.
+
+    \vspace{1em}
+
+    %% --- Magnetic Field Definition ---
+      \item<+-> \textbf{Magnetic Field ($\vec{B}$):}
+        \begin{itemize}
+              \item A region near a magnet, electric current, or moving charge where magnetic effects are exerted on other such entities.
+              \item Also known as magnetic flux density or magnetic induction.
+              \item **Units:**
+                \begin{itemize}
+                      \item SI: Tesla (T) or Weber/meter² (Wb/m²).
+                    \item CGS: Gauss (G).   $1 \, \text{T} = 10^4 \, \text{G}$.
+                \end{itemize}
+              \item **Dimensions:** $[MT^{-2}A^{-1}]$.
+        \end{itemize}
+
+    \vspace{1em}
+
+    %% --- Oersted's Discovery ---
+      \item<+-> \textbf{Oersted's Discovery (1820):}
+        \begin{itemize}
+              \item Showed that electric current in a wire deflects a nearby magnetic needle, establishing the link between electricity and magnetism.
+              \item Reversing current direction reverses needle deflection.
+              \item Deflection increases with current strength or proximity to the wire.
+              \item Discovered a magnetic field exists around a current-carrying conductor.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Field Sources & Current Element}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    \begin{itemize}
+    %% --- Sources of Fields ---
+      \item<+-> \textbf{Field Sources Compared:}
+        \begin{itemize}
+              \item Magnet at rest $\rightarrow$ Magnetic field only.
+              \item Charge at rest $\rightarrow$ Electric field only.
+              \item Current-carrying conductor $\rightarrow$ Magnetic field only (no net electric field).
+              \item Charge moving at constant velocity $\rightarrow$ Both electric and magnetic fields.
+              \item Oscillating/accelerated charge $\rightarrow$ Electric field, magnetic field, and electromagnetic waves.
+        \end{itemize}
+
+    \vspace{1em}
+
+    %% --- Current Element Definition ---
+      \item<+-> \textbf{Current Element ($I d\vec{l}$):}
+        \begin{itemize}
+              \item A small vector element of a conductor carrying current $I$.
+              \item Magnitude: $I \times dl$ (current times element length).
+              \item Direction: Along the flow of current.
+              \item Vector quantity.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Biot-Savart Law}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    \begin{itemize}
+    %% --- Introduction to Biot-Savart Law ---
+      \item<+-> Mathematical expression giving the magnetic field ($d\vec{B}$) at a point P due to a current element ($I d\vec{l}$).   Based on experimental observations.
+
+    %% --- Scalar Form ---
+      \item<+-> \textbf{Magnitude of the Field:}
+        \begin{itemize}
+              \item $dB \propto I$ (Current)
+              \item $dB \propto dl$ (Length of element)
+              \item $dB \propto \sin\theta$ (Angle between $d\vec{l}$ and position vector $\vec{r}$)
+              \item $dB \propto \frac{1}{r^2}$ (Inverse square of distance)
+        \end{itemize}
+    \item<+-> Leads to the scalar equation:
+        \begin{tcolorbox}[colback=orange!8,colframe=accentorange,boxrule=0.5pt,arc=1mm,boxsep=2pt]
+        \begin{equation*}
+            dB = \frac{\mu_0}{4\pi} \frac{I dl \sin\theta}{r^2} \label{eq:biot_savart_scalar} \tag{Scalar}
+        \end{equation*}
+        \end{tcolorbox}
+          where $\frac{\mu_0}{4\pi} = 10^{-7} \, \text{T}\cdot\text{m/A}$ is a constant, and $\mu_0$ is the permeability of free space.
+
+    \vspace{1em}
+
+    %% --- Vector Form ---
+      \item<+-> \textbf{Vector Form:} Incorporates the direction of the field.
+        \begin{tcolorbox}[colback=orange!8,colframe=accentorange,boxrule=0.5pt,arc=1mm,boxsep=2pt]
+        \begin{equation*}
+             d\vec{B} = \frac{\mu_0}{4\pi} \frac{I (d\vec{l} \times \hat{r})}{r^2} = \frac{\mu_0}{4\pi} \frac{I (d\vec{l} \times \vec{r})}{r^3} \label{eq:biot_savart_vector} \tag{Vector}
+        \end{equation*}
+        \end{tcolorbox}
+          The direction of $d\vec{B}$ is perpendicular to the plane containing $d\vec{l}$ and $\vec{r}$, given by the right-hand rule.
+    \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Magnetic Field Lines}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Concept Introduction ---
+      \item<+-> Introduced by Michael Faraday to visualize magnetic fields graphically.
+      \item<+-> Imaginary lines representing the direction of the magnetic field continuously.
+
+    %% --- Properties ---
+    \item<+-> \textbf{Properties:}
+        \begin{itemize}[<+->]
+              \item Tangent at any point gives the direction of $\vec{B}$ at that point.
+            \item Lines emanate from North poles and enter South poles (outside the magnet).
+              \item Form continuous closed loops (unlike electric field lines).   They exist inside magnets too.
+              \item Never intersect each other.
+              \item Density of lines indicates field strength: crowded lines = stronger field, distant lines = weaker field.
+              \item Equidistant and straight lines represent a uniform field. % Add image of uniform vs non-uniform fields if needed
+              \item Can emanate from or enter a magnetic material surface at any angle.
+              \item Can be mapped using iron filings or a compass needle.
+        \end{itemize}
+
+    %% --- Field Patterns ---
+    \item<+-> \textbf{Field Patterns:}
+        \begin{itemize}[<+->]
+              \item Straight current $\rightarrow$ Circular field lines.
+              \item Circular current $\rightarrow$ Straight field lines along the axis (near the center).
+              \item Wire in plane of paper $\rightarrow$ Field perpendicular to paper.
+              \item Wire perpendicular to paper $\rightarrow$ Field in plane of paper.
+        \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Rules for Field Direction}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Right Hand Thumb Rule ---
+      \item<+-> \textbf{Right Hand Thumb Rule:} Gives the pattern of field lines.
+        \begin{itemize}[<+->]
+              \item \textbf{Straight Current:} Thumb points along current direction; curling fingers show the direction of circular magnetic field lines. % Add image for straight wire rule
+              \item \textbf{Circular Current:} Curling fingers follow current direction; thumb points along the direction of the magnetic field (especially at the center/axis). % Add image for circular wire rule
+        \end{itemize}
+
+    \vspace{1em}
+
+    %% --- Right Hand Palm Rule ---
+      \item<+-> \textbf{Right Hand Palm Rule (Fleming's):} Gives the direction of the $\vec{B}$ vector at a point due to a straight wire.
+        \begin{itemize}[<+->]
+            \item Point thumb along current direction.
+            \item Stretch fingers towards the point where the field is needed.
+            \item The direction perpendicular to the palm (pushing direction) gives the direction of $\vec{B}$.
+              \item Useful for wires in the plane (Knock-Knock rule)   or perpendicular to the plane (Sliding rule)[cite: 172].
+        \end{itemize}
+\end{frame}
+
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Biot-Savart Application: Straight Conductor}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- General Formula ---
+      \item<+-> For a thin straight conductor carrying current $I$, the magnetic field $B$ at a perpendicular distance 'a' from the wire is given by:
+        \begin{tcolorbox}[colback=orange!8,colframe=accentorange,boxrule=0.5pt,arc=1mm,boxsep=2pt]
+        \begin{equation*}
+             B = \frac{\mu_0 I}{4\pi a} (\sin\phi_1 + \sin\phi_2)
+        \end{equation*}
+        \end{tcolorbox}
+          where $\phi_1$ and $\phi_2$ are the angles subtended by the ends of the wire at point P, measured from the perpendicular.   The direction is perpendicular to the plane containing the wire and the point (use Right Hand Palm Rule).
+
+    %% --- Special Cases ---
+    \item<+-> \textbf{Special Cases:}
+        \begin{itemize}[<+->]
+              \item \textbf{Infinitely Long Wire:} $\phi_1 = \phi_2 = 90^\circ$
+            \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt,left=1pt,right=1pt]
+            \begin{equation*}
+                 B = \frac{\mu_0 I}{2\pi a}
+            \end{equation*}
+             \end{tcolorbox}
+              \item \textbf{Semi-Infinite Wire (P near one end):} $\phi_1 = 0^\circ$, $\phi_2 = 90^\circ$
+            \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt,left=1pt,right=1pt]
+            \begin{equation*}
+                 B = \frac{\mu_0 I}{4\pi a}
+            \end{equation*}
+            \end{tcolorbox}
+            \item \textbf{Point on the Axis:} $\theta = 0^\circ$ or $180^\circ$, so $\sin\theta = 0$.   Magnetic field is zero.
+        \end{itemize}
+\end{frame}
+
+
+% ====== Set Section for Beamer Outline ======
+\section{Ampere's Law}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Ampere's Circuital Law}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Statement of Ampere's Law ---
+      \item<+-> \textbf{Statement:} The line integral of the magnetic field $\vec{B}$ around any closed path (Amperian loop) in free space is equal to $\mu_0$ times the net current ($\Sigma I$) enclosed by that path.
+        \begin{tcolorbox}[colback=orange!8,colframe=accentorange,boxrule=0.5pt,arc=1mm,boxsep=2pt]
+        \begin{equation*}
+             \oint \vec{B} \cdot d\vec{l} = \mu_0 \Sigma I
+        \end{equation*}
+        \end{tcolorbox}
+
+    %% --- Key Points about Ampere's Law ---
+    \item<+-> \textbf{Key Points:}
+        \begin{itemize}[<+->]
+              \item Independent of the size and shape of the closed path.
+            \item Only currents *inside* the closed path contribute to $\Sigma I$.   Currents outside are not included.
+              \item Sign convention for currents depends on the direction chosen for the line integral ($d\vec{l}$) via the right-hand rule.
+              \item Most suitable for situations with high symmetry (infinite long wires, solenoids, toroids).
+        \end{itemize}
+
+    \vspace{0.5em}
+
+    %% --- Magnetomotive Force (MMF) ---
+      \item<+-> \textbf{Magnetomotive Force (MMF):}
+        \begin{itemize}
+              \item Defined as $\oint \vec{H} \cdot d\vec{l}$, where $\vec{H} = \vec{B}/\mu_0$ is the magnetic intensity.
+              \item From Ampere's Law, MMF equals the net enclosed current: $\oint \vec{H} \cdot d\vec{l} = \Sigma I$.
+              \item Unit of $\vec{H}$: Ampere/meter (A/m).
+        \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Ampere's Law: Application to Infinite Wire}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Setup ---
+      \item<+-> Consider an infinitely long straight conductor carrying current $I$.
+      \item<+-> Choose a circular Amperian loop of radius $r$ centered on the wire, in a plane perpendicular to the wire.
+      \item<+-> By symmetry, the magnetic field $\vec{B}$ has a constant magnitude on this loop and is tangential to it everywhere.   Thus, $\vec{B}$ is parallel to $d\vec{l}$.
+
+    %% --- Applying Ampere's Law ---
+      \item<+-> Apply Ampere's Law: $\oint \vec{B} \cdot d\vec{l} = \mu_0 \Sigma I$.
+      \item<+-> $\oint B dl \cos(0^\circ) = \mu_0 I$.
+      \item<+-> Since B is constant on the loop: $B \oint dl = \mu_0 I$.
+      \item<+-> The integral $\oint dl$ is the circumference of the loop, $2\pi r$.
+      \item<+-> $B (2\pi r) = \mu_0 I$.
+
+    %% --- Result ---
+    \item<+-> Resulting magnetic field:
+        \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+        \begin{equation*}
+             B = \frac{\mu_0 I}{2\pi r}
+        \end{equation*}
+        \end{tcolorbox}
+          This matches the result from the Biot-Savart Law for an infinite wire.
+\end{frame}
+
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Ampere's Law: Cylindrical Conductors}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Solid Cylinder ---
+      \item<+-> \textbf{Solid Cylindrical Conductor (Radius R, Uniform Current I):}
+        \begin{itemize}[<+->]
+              \item \textbf{Inside ($r < R$):} Current enclosed by loop of radius $r$ is $I_{enc} = I (r^2/R^2)$.   Applying Ampere's Law gives:
+                  \begin{equation*} B_{in} = \frac{\mu_0 I r}{2\pi R^2} \quad (\propto r) \end{equation*}
+              \item \textbf{On the axis ($r = 0$):} $B_{axis} = 0$.
+              \item \textbf{On the surface ($r = R$):}
+                  \begin{equation*} B_{surface} = \frac{\mu_0 I}{2\pi R} \quad (\text{Maximum}) \end{equation*}
+              \item \textbf{Outside ($r > R$):} Current enclosed is $I$.   Applying Ampere's Law gives:
+                  \begin{equation*} B_{out} = \frac{\mu_0 I}{2\pi r} \quad (\propto 1/r) \end{equation*}
+              \item Outside field is independent of conductor nature (solid/hollow) or radius.
+        \end{itemize} % Add B vs r graph image
+
+    \vspace{0.5em}
+
+    %% --- Hollow Cylinder ---
+      \item<+-> \textbf{Thin Hollow Cylindrical Conductor (Radius R):}
+        \begin{itemize}[<+->]
+              \item \textbf{Inside ($r < R$):} $I_{enc} = 0$, so $B_{in} = 0$.
+              \item \textbf{On the surface ($r = R$):} $B_{surface} = \frac{\mu_0 I}{2\pi R}$.
+              \item \textbf{Outside ($r > R$):} $B_{out} = \frac{\mu_0 I}{2\pi r}$.
+        \end{itemize} % Add B vs r graph image
+\end{frame}
+
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Ampere's Law: Solenoid}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Solenoid Definition ---
+      \item<+-> \textbf{Solenoid:} A coil tightly wound in a helical form over a cylindrical frame.   Used to produce a uniform magnetic field over a long range.   Adjacent turns are insulated.
+
+    %% --- Field Calculation (Ideal Infinite Solenoid) ---
+      \item<+-> \textbf{Ideal Infinite Solenoid:} Length is very large compared to radius.   Field inside is uniform and parallel to the axis; field outside is negligible (approximately zero).
+      \item<+-> Using a rectangular Amperian loop ABCD (part inside, part outside):
+        \begin{itemize}
+              \item $\oint \vec{B} \cdot d\vec{l} = \int_{AB} \vec{B} \cdot d\vec{l} + \int_{BC} \vec{B} \cdot d\vec{l} + \int_{CD} \vec{B} \cdot d\vec{l} + \int_{DA} \vec{B} \cdot d\vec{l}$
+              \item Integrals over BC and DA are zero ($\vec{B} \perp d\vec{l}$ or B=0).   Integral over CD is zero ($B \approx 0$ outside).
+              \item $\oint \vec{B} \cdot d\vec{l} = \int_{AB} B dl = B \times a$, where 'a' is the length of side AB.
+        \end{itemize}
+      \item<+-> Current enclosed $\Sigma I = (\text{number of turns in length 'a'}) \times I = (n \times a) \times I$, where $n$ is turns per unit length.
+      \item<+-> Applying Ampere's Law: $B \times a = \mu_0 (n \times a \times I)$.
+    \item<+-> Magnetic field inside an ideal infinite solenoid:
+        \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+        \begin{equation*}
+             B = \mu_0 n I
+        \end{equation*}
+        \end{tcolorbox}
+          where $n = N/L$ (total turns / total length).   Field does not depend on radius.
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Finite Solenoid & Toroid}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Finite Length Solenoid ---
+      \item<+-> \textbf{Finite Length Solenoid:} Length and diameter are comparable.
+        \begin{itemize}
+              \item Field at an axial point 'P':
+            \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+            \begin{equation*}
+                 B_P = \frac{\mu_0 n I}{2} (\cos\theta_1 - \cos\theta_2)
+            \end{equation*}
+            \end{tcolorbox}
+              where $\theta_1, \theta_2$ are angles from the axis to the end vectors, measured in the same sense.
+              \item At the center of an infinite solenoid: $\theta_1 \approx 0^\circ, \theta_2 \approx 180^\circ \implies B = \mu_0 n I$.
+              \item At the axial end points of an infinite solenoid: $\theta_1 = 90^\circ, \theta_2 = 180^\circ \implies B = \frac{\mu_0 n I}{2}$. (Half the center field).
+        \end{itemize}
+
+    \vspace{0.5em}
+
+    %% --- Toroid ---
+      \item<+-> \textbf{Toroid:} A solenoid bent into a ring shape (endless solenoid).
+        \begin{itemize}
+              \item Field inside the core (using a circular Amperian loop of radius $r$ within the core):
+            \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+            \begin{equation*}
+                 B = \mu_0 n I
+            \end{equation*}
+            \end{tcolorbox}
+              where $n = \frac{N}{2\pi R_m}$ is the turn density.   $N$ = total turns, $R_m = (R_1+R_2)/2$ = mean radius.
+              \item Field direction is along the circular axis.   Magnitude is approximately constant over the cross-section if the toroid is thin.   (Note: $B \propto 1/r$ dependence exists within the core).
+              \item Field outside the toroid volume is zero.
+              \item Field in the empty space surrounded by the toroid is zero.   Field at the center point is zero.
+        \end{itemize}
+\end{frame}
+
+% ====== Set Section for Beamer Outline ======
+\section{Motion of Charge in Magnetic Field}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Magnetic Force on a Moving Charge}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Lorentz Force Law (Magnetic Part) ---
+      \item<+-> A charge $q$ moving with velocity $\vec{v}$ in a magnetic field $\vec{B}$ experiences a magnetic force $\vec{F}_m$.
+        \begin{tcolorbox}[colback=orange!8,colframe=accentorange,boxrule=0.5pt,arc=1mm,boxsep=2pt]
+        \begin{equation*}
+             \vec{F}_m = q (\vec{v} \times \vec{B})
+        \end{equation*}
+          \end{tcolorbox}
+
+    %% --- Magnitude and Direction ---
+      \item<+-> \textbf{Magnitude:} $F_m = |q| v B \sin\theta$, where $\theta$ is the angle between $\vec{v}$ and $\vec{B}$.
+    \item<+-> \textbf{Direction:} Given by the right-hand rule for the cross product $(\vec{v} \times \vec{B})$, and depends on the sign of $q$.   $\vec{F}_m$ is always perpendicular to both $\vec{v}$ and $\vec{B}$.
+
+    %% --- Conditions for Zero/Maximum Force ---
+    \item<+-> \textbf{Conditions:}
+        \begin{itemize}[<+->]
+              \item Force is **zero** ($F_m = 0$) if:
+                \begin{itemize}
+                      \item Charge is at rest ($\vec{v} = \vec{0}$).
+                      \item Motion is parallel ($\theta = 0^\circ$) or antiparallel ($\theta = 180^\circ$) to the field $\vec{B}$.
+                \end{itemize}
+              \item Force is **maximum** ($F_m = |q|vB$) if motion is perpendicular to the field ($\theta = 90^\circ$).   In this case, $\vec{F}_m, \vec{v}, \vec{B}$ are mutually perpendicular.
+        \end{itemize}
+
+    %% --- Work Done ---
+      \item<+-> \textbf{Work Done:} The magnetic force does **no work** on the charged particle because $\vec{F}_m$ is always perpendicular to the displacement $d\vec{s}$ (which is along $\vec{v}$).
+      \item<+-> $W = \int \vec{F}_m \cdot d\vec{s} = \int F_m ds \cos(90^\circ) = 0$.
+      \item<+-> Consequently, the magnetic force **cannot change the kinetic energy** ($K = \frac{1}{2}mv^2$) or the speed ($v$) of the particle.   It only changes the direction of motion (velocity $\vec{v}$).
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Motion in Uniform Transverse Field ($\vec{v} \perp \vec{B}$)}} }
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Circular Path ---
+      \item<+-> When $\vec{v}$ is perpendicular to a uniform $\vec{B}$ ($\theta=90^\circ$), the magnetic force $F_m = qvB$ is constant in magnitude and always perpendicular to $\vec{v}$.
+      \item<+-> This force acts as a centripetal force, causing the particle to move in a **circular path**.
+
+    %% --- Radius of Circular Path ---
+      \item<+-> Equating magnetic force to centripetal force:
+          \begin{equation*} qvB = \frac{mv^2}{r} \end{equation*}
+      \item<+-> Radius of the circular path:
+        \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+        \begin{equation*}
+             r = \frac{mv}{qB} = \frac{p}{qB} = \frac{\sqrt{2m K}}{qB} = \frac{\sqrt{2mqV_{acc}}}{qB}
+        \end{equation*}
+        \end{tcolorbox}
+          where $p=mv$ is momentum, $K = \frac{1}{2}mv^2$ is kinetic energy, and $V_{acc}$ is accelerating potential difference.
+
+    %% --- Time Period and Frequency ---
+      \item<+-> Time period (time for one revolution):
+          \begin{equation*} T = \frac{\text{Circumference}}{\text{Speed}} = \frac{2\pi r}{v} \end{equation*}
+        Substituting $r = mv/qB$:
+        \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+        \begin{equation*}
+             T = \frac{2\pi m}{qB}
+        \end{equation*}
+        \end{tcolorbox}
+          Note: The time period is independent of velocity $v$ and radius $r$.
+      \item<+-> Frequency (Cyclotron Frequency): $f = 1/T = \frac{qB}{2\pi m}$.
+    \item<+-> Angular Frequency: $\omega = 2\pi f = \frac{qB}{m}$.
+
+    %% --- Kinetic Energy (Relation to r) ---
+      \item<+-> Kinetic energy in terms of radius:
+        \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+        \begin{equation*}
+            K = \frac{q^2 B^2 r^2}{2m}
+        \end{equation*}
+          \end{tcolorbox}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Motion at an Angle to Field (Helical Path)}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Velocity Components ---
+      \item<+-> If $\vec{v}$ makes an angle $\theta$ ($0^\circ < \theta < 180^\circ$) with $\vec{B}$, resolve $\vec{v}$ into components:
+        \begin{itemize}
+              \item Parallel component: $v_{||} = v \cos\theta$ (along $\vec{B}$)
+              \item Perpendicular component: $v_{\perp} = v \sin\theta$ (perpendicular to $\vec{B}$)
+        \end{itemize}
+
+    %% --- Path Description ---
+    \item<+-> The magnetic force $q(\vec{v} \times \vec{B})$ only depends on $v_{\perp}$.   The parallel component $v_{||}$ is unaffected.
+      \item<+-> $v_{\perp}$ causes circular motion in the plane perpendicular to $\vec{B}$.
+      \item<+-> $v_{||}$ causes uniform linear motion along the direction of $\vec{B}$.
+      \item<+-> The combination results in a **helical path**.   The axis of the helix is parallel to $\vec{B}$.
+
+    %% --- Parameters of Helical Path ---
+      \item<+-> \textbf{Radius of Helix:} Determined by $v_{\perp}$.
+          \begin{equation*} r = \frac{m v_{\perp}}{qB} = \frac{m v \sin\theta}{qB} \end{equation*}
+      \item<+-> \textbf{Time Period of Revolution:} Determined by the circular motion, independent of $\theta$.
+          \begin{equation*} T = \frac{2\pi r}{v_{\perp}} = \frac{2\pi m}{qB} \end{equation*} (Same as for purely circular motion).
+      \item<+-> \textbf{Pitch of Helix (p):} The linear distance travelled along the magnetic field direction during one revolution.
+          \begin{equation*} p = v_{||} \times T = (v \cos\theta) \left( \frac{2\pi m}{qB} \right) = \frac{2\pi m v \cos\theta}{qB} \end{equation*}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Lorentz Force & Cyclotron}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Lorentz Force ---
+      \item<+-> \textbf{Lorentz Force ($\vec{F}_L$):} The total electromagnetic force on a charge $q$ moving with velocity $\vec{v}$ in a region with both electric field $\vec{E}$ and magnetic field $\vec{B}$.
+        \begin{tcolorbox}[colback=orange!8,colframe=accentorange,boxrule=0.5pt,arc=1mm,boxsep=2pt]
+        \begin{equation*}
+             \vec{F}_L = \vec{F}_e + \vec{F}_m = q\vec{E} + q(\vec{v} \times \vec{B})
+        \end{equation*}
+          \end{tcolorbox}
+
+    \vspace{0.5em}
+
+    %% --- Cyclotron ---
+      \item<+-> \textbf{Cyclotron:} A device to accelerate charged particles (ions) to high energies.   Invented by Lawrence and Livingston (1934).
+        \begin{itemize}[<+->]
+              \item \textbf{Principle:} Uses a high-frequency electric field to accelerate particles across a gap and a strong magnetic field to bend them in semi-circular paths within D-shaped chambers ('Dees').
+              \item \textbf{Construction:} Two hollow 'Dees' ($D_1, D_2$), gap with particle source, high-frequency oscillator connected to Dees, strong electromagnet providing a uniform magnetic field perpendicular to the Dees.
+              \item \textbf{Working:} Magnetic field causes circular motion ($r=mv/qB$)[cite: 1185].   Electric field accelerates particle each time it crosses the gap.
+            \item \textbf{Resonance Condition:} The time period of the electric field ($T$) must match twice the time taken to complete a semi-circle ($t = \pi m / qB$).   $T/2 = t$.
+              \item \textbf{Cyclotron Frequency:} Frequency of the oscillator must be $f = 1/T = \frac{qB}{2\pi m}$.
+            \item \textbf{Max Kinetic Energy:} Occurs at the maximum radius ($r_{max}$) of the Dees.   $(K)_{max} = \frac{q^2 B^2 r_{max}^2}{2m}$.
+              \item \textbf{Limitations:} Cannot accelerate uncharged particles (neutrons)[cite: 1208].   Not suitable for electrons due to their small mass (relativistic effects become significant quickly)[cite: 1210].
+        \end{itemize}
+\end{frame}
+
+% ====== Set Section for Beamer Outline ======
+\section{Force on Current-Carrying Conductor}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Force on a Current Element & Straight Wire}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Force on Current Element ---
+      \item<+-> Origin: The resultant magnetic force on the moving free electrons within the conductor when placed in an external magnetic field.
+      \item<+-> Ampere established that a current element $I d\vec{l}$ in a magnetic field $\vec{B}$ experiences a force $d\vec{F}_m$.
+        \begin{tcolorbox}[colback=orange!8,colframe=accentorange,boxrule=0.5pt,arc=1mm,boxsep=2pt]
+        \begin{equation*}
+             d\vec{F}_m = I (d\vec{l} \times \vec{B})
+        \end{equation*}
+          \end{tcolorbox}
+
+    %% --- Conditions ---
+    \item<+-> \textbf{Conditions:}
+        \begin{itemize}[<+->]
+              \item Force is **zero** if $d\vec{l}$ is parallel or antiparallel to $\vec{B}$ ($\theta = 0^\circ$ or $180^\circ$).
+              \item Force is **maximum** ($dF_m = I B dl$) if $d\vec{l}$ is perpendicular to $\vec{B}$ ($\theta = 90^\circ$).
+              \item $d\vec{F}_m$ is always perpendicular to both $I d\vec{l}$ and $\vec{B}$.
+        \end{itemize}
+
+    %% --- Force on Straight Conductor ---
+      \item<+-> Total force on a straight conductor of length vector $\vec{L}$ in a uniform magnetic field $\vec{B}$ is found by integrating $d\vec{F}_m$:
+        \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+        \begin{equation*}
+             \vec{F}_m = I (\vec{L} \times \vec{B})
+        \end{equation*}
+        \end{tcolorbox}
+          where $\vec{L}$ is the vector from the initial to the final point of the conductor segment.
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Force on Arbitrary & Closed Loops}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Force on Arbitrary Shape Conductor ---
+      \item<+-> Total force on an arbitrary shaped conductor from initial point 'i' to final point 'f' in a uniform magnetic field $\vec{B}$ is:
+        \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+        \begin{equation*}
+             \vec{F}_m = I (\vec{L} \times \vec{B})
+        \end{equation*}
+        \end{tcolorbox}
+          where $\vec{L} = \int_{i}^{f} d\vec{l}$ is the net displacement vector from the initial point 'i' to the final point 'f'. The force depends only on the endpoints, not the path shape.
+
+    \vspace{1em}
+
+    %% --- Force on Closed Loop ---
+      \item<+-> For any **closed current-carrying loop** of any shape placed in a **uniform magnetic field**:
+        \begin{itemize}[<+->]
+              \item The net displacement vector $\vec{L} = \oint d\vec{l} = \vec{0}$.
+              \item Therefore, the net magnetic force on the loop is always **zero**: $\vec{F}_m = I (\vec{0} \times \vec{B}) = \vec{0}$.
+              \item Note: The net torque may or may not be zero.
+        \end{itemize}
+
+    \vspace{1em}
+
+    %% --- Non-Uniform Field ---
+      \item<+-> In a **non-uniform magnetic field**:
+        \begin{itemize}
+              \item The net magnetic force on a closed loop may or may not be zero.
+              \item The net torque may or may not be zero.
+        \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Force Between Parallel Conductors}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Setup ---
+      \item<+-> Consider two long, parallel conductors separated by distance $d$, carrying currents $I_1$ and $I_2$.
+      \item<+-> Wire 1 produces a magnetic field $B_1 = \frac{\mu_0 I_1}{2\pi d}$ at the location of wire 2.
+      \item<+-> Wire 2 produces a magnetic field $B_2 = \frac{\mu_0 I_2}{2\pi d}$ at the location of wire 1.
+
+    %% --- Force Calculation ---
+    \item<+-> The force $dF_{21}$ on a small element $dl$ of wire 2 due to $B_1$ is $dF_{21} = I_2 (dl \times B_1)$.   Since $dl \perp B_1$, the magnitude is $dF_{21} = I_2 dl B_1$.
+      \item<+-> Force per unit length on wire 2:
+        \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+        \begin{equation*}
+             f = \frac{dF_{21}}{dl} = I_2 B_1 = I_2 \left( \frac{\mu_0 I_1}{2\pi d} \right) = \frac{\mu_0 I_1 I_2}{2\pi d}
+        \end{equation*}
+          \end{tcolorbox}
+      \item<+-> Similarly, the force per unit length on wire 1 is the same magnitude.
+
+    %% --- Direction ---
+    \item<+-> \textbf{Direction (Using Right-Hand Rules):}
+        \begin{itemize}[<+->]
+              \item **Like Currents (Parallel):** Wires **attract** each other.
+              \item **Unlike Currents (Antiparallel):** Wires **repel** each other.
+        \end{itemize} % Add image showing attraction/repulsion
+
+    %% --- Definition of Ampere ---
+      \item<+-> \textbf{Definition of Ampere:} If $I_1 = I_2 = 1\,$A and $d = 1\,$m, the force per unit length is $f = \frac{\mu_0 (1)(1)}{2\pi (1)} = \frac{4\pi \times 10^{-7}}{2\pi} = 2 \times 10^{-7}\,$N/m.
+      \item<+-> One Ampere is defined as that current which, if maintained in two straight parallel conductors of infinite length, negligible circular cross-section, and placed 1 meter apart in vacuum, would produce between these conductors a force equal to $2 \times 10^{-7}$ newton per meter of length.
+\end{frame}
+
+
+% ====== Set Section for Beamer Outline ======
+\section{Magnetic Dipole Moment}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Magnetic Dipole & Bar Magnet Moment}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Magnetic Dipole Definition ---
+      \item<+-> \textbf{Magnetic Dipole:} Consists of a pair of magnetic poles (North and South) of equal and opposite strength ($+m$ and $-m$), separated by a small distance.
+      \item<+-> Examples: Magnetic needle, bar magnet, current-carrying loop/coil/solenoid.
+
+    %% --- Bar Magnet ---
+    \item<+-> \textbf{Bar Magnet Properties:}
+        \begin{itemize}[<+->]
+              \item **Attraction:** Attracts magnetic substances (e.g., iron).   Max attraction at poles near the ends.
+            \item **Pole Strength ($m$):** Measure of attracting power at poles.   Scalar, Unit: A$\cdot$m.   $m \propto$ Area of cross-section.   Conventionally +m (North), -m (South).
+              \item **Neutral Point:** Center point where attracting power is zero.
+              \item **Poles Exist in Pairs:** Monopoles do not exist.   Leads to Gauss's Law for Magnetism: $\oint \vec{B} \cdot d\vec{s} = 0$.
+            \item **Effective Length ($l$):** Distance between poles along the axis. Slightly less than geometric length ($l_0$).   $l \approx 0.91 l_0$.
+        \end{itemize}
+
+    %% --- Magnetic Moment of Bar Magnet ---
+      \item<+-> \textbf{Magnetic Moment ($\vec{M}$) of Bar Magnet:}
+        \begin{itemize}[<+->]
+              \item Vector quantity.
+            \item Magnitude: Product of pole strength ($m$) and effective length ($l$).   $M = ml$.
+              \item Direction: Along the axis from South pole to North pole.
+              \item Axial vector.
+              \item SI Unit: Ampere-meter² (A$\cdot$m²).
+        \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Magnetic Moment of Current Loop}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Current Loop as Dipole ---
+      \item<+-> A current-carrying coil or loop behaves like a magnetic dipole.
+        \begin{itemize}[<+->]
+              \item Face with anticlockwise (ACW) current acts as North pole.
+              \item Face with clockwise (CW) current acts as South pole. % Add image of ACW/CW poles
+        \end{itemize}
+
+    %% --- Magnetic Moment of Loop ---
+      \item<+-> \textbf{Magnetic Moment ($\vec{M}$) of Current Loop:}
+        \begin{itemize}[<+->]
+              \item For a single loop of area $A$ carrying current $I$: $M = IA$.
+            \item For a coil with $N$ turns:
+            \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+            \begin{equation*}
+                 M = NIA
+            \end{equation*}
+              \end{tcolorbox}
+              \item Vector form: $\vec{M} = NI\vec{A}$, where $\vec{A}$ is the area vector perpendicular to the loop plane.
+              \item Direction of $\vec{M}$ (and $\vec{A}$) given by Right Hand Thumb Rule: Curl fingers along current, thumb gives $\vec{M}$ direction.
+              \item For a current loop, $\vec{M}$ and the magnetic field $\vec{B}$ it produces at its center are parallel axial vectors.
+              \item SI Unit: A$\cdot$m² or Joule/Tesla (J/T).
+        \end{itemize}
+\end{frame}
+
+% ====== Set Section for Beamer Outline ======
+\section{Dipole in Magnetic Field}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Torque on Magnetic Dipole}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Torque Calculation ---
+      \item<+-> When a magnetic dipole (bar magnet or current loop) with moment $\vec{M}$ is placed in a uniform external magnetic field $\vec{B}$, it experiences a torque $\vec{\tau}$.
+      \item<+-> The forces on the N and S poles (or on the sides of the loop) form a couple.
+    \item<+-> Torque magnitude: $\tau = \text{Force} \times \text{Perpendicular distance}$.   For a bar magnet: $\tau = (mB)(l \sin\theta) = (ml)B\sin\theta = MB\sin\theta$.   For a coil: $\tau = BINA\sin\alpha$.
+    \item<+-> Vector Form:
+        \begin{tcolorbox}[colback=orange!8,colframe=accentorange,boxrule=0.5pt,arc=1mm,boxsep=2pt]
+        \begin{equation*}
+             \vec{\tau} = \vec{M} \times \vec{B}
+        \end{equation*}
+          \end{tcolorbox}
+          For a coil: $\vec{\tau} = NI (\vec{A} \times \vec{B})$.
+
+    %% --- Conditions ---
+      \item<+-> \textbf{Magnitude:} $\tau = MB \sin\theta$, where $\theta$ is the angle between $\vec{M}$ and $\vec{B}$.
+        \begin{itemize}[<+->]
+              \item Torque is **maximum** ($\tau_{max} = MB$) when $\theta = 90^\circ$ ($\vec{M} \perp \vec{B}$).   This occurs when the field is longitudinal (parallel to the plane of the coil).
+              \item Torque is **minimum** ($\tau_{min} = 0$) when $\theta = 0^\circ$ ($\vec{M} || \vec{B}$) or $\theta = 180^\circ$ ($\vec{M}$ antiparallel to $\vec{B}$).   This occurs when the field is transverse (perpendicular to the plane of the coil).
+        \end{itemize}
+
+    %% --- Effect of Torque ---
+      \item<+-> The torque tends to align $\vec{M}$ with $\vec{B}$, rotating the dipole towards the $\theta = 0^\circ$ position.   For a coil, it tries to make the plane of the coil perpendicular to $\vec{B}$.
+      \item<+-> $\vec{\tau}$ is an axial vector along the axis of rotation.
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Moving Coil Galvanometer (MCG)}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Purpose and Principle ---
+      \item<+-> Instrument used for detection and measurement of small electric currents.
+      \item<+-> \textbf{Principle:} A current-carrying coil placed in a magnetic field experiences a torque ($\vec{\tau} = NI(\vec{A} \times \vec{B})$).
+
+    %% --- Working ---
+      \item<+-> In an MCG, a radial magnetic field is used, ensuring the plane of the coil is always parallel to $\vec{B}$, so the angle $\alpha$ between $\vec{A}$ and $\vec{B}$ is always $90^\circ$. (Correction: Angle 'alpha' in source likely refers to angle between plane and field, if torque is max. Standard notation uses $\theta$ between $\vec{A}$ and $\vec{B}$.)
+      \item<+-> Deflecting Torque: $\tau_{deflect} = NIAB \sin(90^\circ) = NIAB$.
+      \item<+-> A restoring spring provides a counter-torque proportional to the deflection angle $\theta$: $\tau_{restore} = C\theta$, where C is the torsional constant.
+      \item<+-> At equilibrium: $\tau_{deflect} = \tau_{restore}$.
+          \begin{equation*} NIAB = C\theta \implies I = \left(\frac{C}{NAB}\right) \theta \end{equation*}
+      \item<+-> Deflection $\theta$ is directly proportional to the current $I$ ($\theta \propto I$), allowing for a linear scale.
+
+    %% --- Sensitivities ---
+      \item<+-> \textbf{Current Sensitivity (CS):} Deflection per unit current.
+          \begin{equation*} CS = \frac{\theta}{I} = \frac{NAB}{C} \quad (\text{radian/Ampere}) \end{equation*}
+      \item<+-> \textbf{Voltage Sensitivity (VS):} Deflection per unit voltage ($V=IR_g$, where $R_g$ is galvanometer resistance).
+          \begin{equation*} VS = \frac{\theta}{V} = \frac{\theta}{IR_g} = \frac{NAB}{CR_g} \quad (\text{radian/Volt}) \end{equation*}
+      \item<+-> Sensitivity increased by increasing N, B, A and decreasing C (torsional constant).
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Work Done & Potential Energy of Dipole}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Work Done ---
+      \item<+-> \textbf{Work Done} in rotating a dipole in a uniform field $\vec{B}$:
+        \begin{itemize}[<+->]
+              \item Infinitesimal work $dW = \tau d\theta = MB\sin\theta d\theta$.
+              \item Work to rotate from $\theta_1$ to $\theta_2$:
+            \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+            \begin{equation*}
+                 W = \int_{\theta_1}^{\theta_2} MB\sin\theta d\theta = MB (\cos\theta_1 - \cos\theta_2)
+            \end{equation*}
+              \end{tcolorbox}
+              \item Work to rotate from parallel ($\theta_1=0^\circ$) to angle $\theta$: $W_{\theta} = MB(1 - \cos\theta)$.
+        \end{itemize}
+
+    %% --- Potential Energy ---
+      \item<+-> \textbf{Potential Energy ($U$) of Dipole:} Defined as work done rotating from $\theta=90^\circ$ (zero potential energy reference) to angle $\theta$.
+          \begin{equation*} U = W_{90^\circ \to \theta} = MB(\cos 90^\circ - \cos\theta) = -MB\cos\theta \end{equation*}
+    \item<+-> Vector Form:
+        \begin{tcolorbox}[colback=orange!8,colframe=accentorange,boxrule=0.5pt,arc=1mm,boxsep=2pt]
+        \begin{equation*}
+             U = -\vec{M} \cdot \vec{B}
+        \end{equation*}
+          \end{tcolorbox}
+
+    %% --- Equilibrium Conditions ---
+    \item<+-> \textbf{Equilibrium Conditions} (where $\tau = 0$):
+        \begin{itemize}[<+->]
+            \item **Stable Equilibrium:** $\theta = 0^\circ$ ($\vec{M} || \vec{B}$).   Potential energy is minimum ($U = -MB$).
+            \item **Unstable Equilibrium:** $\theta = 180^\circ$ ($\vec{M}$ antiparallel to $\vec{B}$).   Potential energy is maximum ($U = +MB$).
+            \item **No Equilibrium (Max Torque):** $\theta = 90^\circ$ ($\vec{M} \perp \vec{B}$).   Potential energy is zero ($U = 0$), torque is maximum ($\tau = MB$).
+        \end{itemize}
+
+    %% --- Field Type Effects ---
+    \item<+-> \textbf{Field Type Effects:}
+        \begin{itemize}[<+->]
+              \item **Uniform Field:** Net force is zero ($F_{net}=0$), torque may be non-zero.
+              \item **Non-Uniform Field:** Both net force and torque may be non-zero.
+        \end{itemize}
+\end{frame}
+
+% ====== Set Section for Beamer Outline ======
+\section{Atomic Magnetism}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Atomic Magnetism: Orbital Electron}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Origin ---
+      \item<+-> An electron orbiting a nucleus constitutes a current loop.
+      \item<+-> This orbital motion produces a magnetic field at the nucleus and gives the orbit a magnetic dipole moment.
+
+    %% --- Basic Elements ---
+      \item<+-> \textbf{Orbital Current ($I$):} Charge passing per unit time.
+        \begin{equation*} I = ef = \frac{e}{T} = \frac{ev}{2\pi r} = \frac{e\omega}{2\pi} \end{equation*}
+          where $e$ is electron charge magnitude, $f$ frequency, $T$ period, $v$ speed, $r$ radius, $\omega$ angular speed.
+      \item<+-> \textbf{Magnetic Field at Nucleus ($B_N$):} Field at the center of the current loop.
+          \begin{equation*} B_N = \frac{\mu_0 I}{2r} = \frac{\mu_0 ev}{4\pi r^2} \end{equation*}
+      \item<+-> \textbf{Magnetic Moment of Orbit ($M$):} Current times area.
+          \begin{equation*} M = IA = I (\pi r^2) = \frac{evr}{2} = \frac{e\omega r^2}{2} \end{equation*}
+
+    %% --- Relation to Angular Momentum ---
+      \item<+-> \textbf{Relation to Angular Momentum ($L$):}
+        \begin{itemize}[<+->]
+              \item Orbital angular momentum magnitude: $L = mvr$.
+            \item Substituting $vr = L/m$ into the expression for $M$:
+            \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+            \begin{equation*}
+                 M = \frac{eL}{2m}
+            \end{equation*}
+              \end{tcolorbox}
+            where $m$ is the electron mass. The ratio $M/L = e/2m$ is called the gyromagnetic ratio for orbital motion.
+            \item Vector form: $\vec{M} = -\frac{e}{2m}\vec{L}$.   The negative sign indicates $\vec{M}$ and $\vec{L}$ are antiparallel for an electron (due to its negative charge).
+        \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Bohr Magneton & Rotating Charged Bodies}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Bohr Magneton ---
+      \item<+-> \textbf{Bohr Magneton ($\mu_B$):} The fundamental unit of magnetic moment associated with electron orbital motion in Bohr's model.
+        \begin{itemize}[<+->]
+              \item Bohr's quantization rule: $L = n \frac{h}{2\pi}$, where $n=1, 2, 3...$ and $h$ is Planck's constant.
+              \item Substituting into $M = eL/2m$: $M = n \left( \frac{eh}{4\pi m} \right)$.
+              \item The smallest non-zero magnetic moment occurs for $n=1$:
+            \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+            \begin{equation*}
+                 \mu_B = \frac{eh}{4\pi m}
+            \end{equation*}
+              \end{tcolorbox}
+            \item This is defined as the Bohr Magneton.   It's the magnetic moment of an electron in the first Bohr orbit ($n=1$).
+            \item Value: $\mu_B \approx 9.27 \times 10^{-24} \, \text{A}\cdot\text{m}^2$. (Source gives $0.923 \times 10^{-23}$)  
+        \end{itemize}
+
+    %% --- Rotating Charged Bodies ---
+      \item<+-> \textbf{Rotating Charged Bodies:} For a rigid body with charge $q$ and mass $m$ rotating with angular velocity $\omega$, the ratio of its magnetic moment $M$ to its angular momentum $L$ is constant:
+        \begin{tcolorbox}[colback=orange!8,colframe=accentorange,boxrule=0.5pt,arc=1mm,boxsep=2pt]
+        \begin{equation*}
+             \frac{M}{L} = \frac{q}{2m}
+        \end{equation*}
+          \end{tcolorbox}
+          This holds for rings, discs, spheres, etc.
+        \begin{itemize}[<+->]
+              \item $L = I^* \omega$, where $I^*$ is the moment of inertia.
+              \item $M = \frac{q L}{2m} = \frac{q (I^* \omega)}{2m}$. Specific formulas depend on $I^*$. (See table in source for examples)  .
+        \end{itemize}
+\end{frame}
+
+% ====== Set Section for Beamer Outline ======
+\section{Geomagnetism}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Geomagnetism: Earth's Magnetic Field}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Introduction ---
+      \item<+-> \textbf{Geomagnetism:} The study of Earth's magnetic field.   Attributed to Dr. William Gilbert.
+
+    %% --- Geographic Definitions ---
+    \item<+-> \textbf{Geographic Elements:}
+        \begin{itemize}[<+->]
+              \item **Geographic Axis:** Axis of Earth's rotation, passing through Geographic North and South poles.
+              \item **Geographic Meridian (GM):** A vertical plane passing through the geographic axis at any given location.
+              \item **Geographic Equator:** Great circle perpendicular to the geographic axis, equidistant from the poles.   Defines Northern (NHS) and Southern (SHS) Hemispheres.
+        \end{itemize}
+
+    %% --- Magnetic Definitions ---
+    \item<+-> \textbf{Magnetic Elements (Approximation as a Dipole):}
+        \begin{itemize}[<+->]
+            \item **Magnetic Axis:** Axis connecting Earth's magnetic poles (approximated as a dipole).   Inclined at about $11.3^\circ$ to the geographic axis.
+            \item **Magnetic Poles:** Locations where the magnetic field lines are vertical. Magnetic North Pole (where field lines enter) is near Geographic South Pole, and vice versa.
+              \item **Magnetic Meridian (MM):** A vertical plane passing through the magnetic axis at any given location.   Also, the vertical plane containing the direction a freely suspended compass needle points.   Contains Earth's B-field lines at that location.
+              \item **Magnetic Equator:** Great circle perpendicular to the magnetic axis, equidistant from magnetic poles.
+        \end{itemize} % Add image of Earth's magnetic field
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Elements of Earth's Magnetic Field}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Angle of Declination ---
+    \item<+-> \textbf{1.   Angle of Declination ($\alpha$ or D):}
+        \begin{itemize}[<+->]
+              \item The acute angle between the Geographic Meridian (true north-south) and the Magnetic Meridian (direction compass points) at a given place.
+        \end{itemize}
+
+    %% --- Angle of Dip ---
+    \item<+-> \textbf{2.   Angle of Dip ($\delta$ or $\theta$):}
+        \begin{itemize}[<+->]
+              \item The angle between the direction of Earth's total magnetic field ($\vec{B}$) and the horizontal, measured in the Magnetic Meridian.
+              \item Also the angle a freely suspended magnetic needle (allowed to pivot vertically) makes with the horizontal in the Magnetic Meridian.
+              \item Measured using a Dip Circle.
+              \item Convention: Positive (+) if the North pole dips down (Northern Hemisphere), Negative (-) if the South pole dips down (Southern Hemisphere).
+              \item At Magnetic Poles: $\delta = \pm 90^\circ$.
+              \item At Magnetic Equator: $\delta = 0^\circ$.
+        \end{itemize}
+
+    %% --- Horizontal Component ---
+    \item<+-> \textbf{3.   Horizontal Component ($B_H$):}
+        \begin{itemize}[<+->]
+              \item The component of Earth's total magnetic field ($\vec{B}$) along the horizontal direction in the Magnetic Meridian.
+              \item Relations:
+                \begin{itemize}
+                      \item $B_H = B \cos\delta$
+                      \item $B_V = B \sin\delta$ (Vertical Component)
+                      \item $B = \sqrt{B_H^2 + B_V^2}$
+                      \item $\tan\delta = \frac{B_V}{B_H}$
+                \end{itemize}
+              \item At Magnetic Poles ($\delta=90^\circ$): $B_H = 0$, $B_V = B$.
+              \item At Magnetic Equator ($\delta=0^\circ$): $B_H = B$, $B_V = 0$.
+        \end{itemize}
+      \item<+-> These three elements ($\alpha, \delta, B_H$) fully specify Earth's magnetic field at a location.
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Apparent Dip & Tangent Galvanometer}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Apparent Dip ---
+      \item<+-> \textbf{Apparent Angle of Dip ($\delta_a$ or $\theta_a$):}
+        \begin{itemize}[<+->]
+              \item If the Dip Circle is used in a vertical plane that is *not* the Magnetic Meridian (i.e., at an angle $\alpha$ to the MM), the measured dip angle is called the apparent dip.
+              \item The horizontal component in this plane is $B_H' = B_H \cos\alpha$. The vertical component $B_V$ remains the same.
+              \item $\tan\delta_a = \frac{B_V}{B_H'} = \frac{B_V}{B_H \cos\alpha} = \frac{\tan\delta}{\cos\alpha}$. Since $\cos\alpha \le 1$, the apparent dip $\delta_a \ge \delta$ (true dip).
+              \item If measurements $\delta_1, \delta_2$ are taken in two perpendicular vertical planes: $\cot^2\delta = \cot^2\delta_1 + \cot^2\delta_2$.   Allows finding true dip $\delta$ without locating the MM.
+        \end{itemize}
+
+    %% --- Tangent Galvanometer ---
+      \item<+-> \textbf{Tangent Galvanometer:} Instrument to detect/measure DC currents.   Moving magnet type.
+        \begin{itemize}[<+->]
+            \item \textbf{Principle:} Tangent Law.   A magnetic needle subject to two perpendicular magnetic fields ($B_0$ from coil, $B_H$ from Earth) aligns itself such that $B_0 = B_H \tan\theta$, where $\theta$ is the deflection angle from the $B_H$ direction.
+            \item \textbf{Setup:} Vertical circular coil oriented in the Magnetic Meridian.   Small compass needle pivoted at the center.
+              \item Field from coil: $B_0 = \frac{\mu_0 NI}{2R}$.
+              \item Combining with Tangent Law: $\frac{\mu_0 NI}{2R} = B_H \tan\theta$.
+              \item Current: $I = \left( \frac{2R B_H}{\mu_0 N} \right) \tan\theta = K \tan\theta$.
+              \item $K = \frac{2R B_H}{\mu_0 N}$ is the Reduction Factor.   $K$ equals the current needed for a $45^\circ$ deflection.
+              \item Sensitivity is maximum around $\theta = 45^\circ$.
+        \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Vibration Magnetometer}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Purpose and Principle ---
+      \item<+-> \textbf{Vibration Magnetometer (Oscillation Magnetometer):}   Used to compare magnetic moments ($M$) of magnets or horizontal components ($B_H$) of Earth's field at different places.
+      \item<+-> \textbf{Principle:} A freely suspended bar magnet in $B_H$, when slightly disturbed from its North-South equilibrium, experiences a restoring torque ($\tau = -MB_H \sin\theta$) and executes angular Simple Harmonic Motion (SHM) in the horizontal plane.
+
+    %% --- SHM Analysis ---
+    \item<+-> For small angle $\theta$, $\sin\theta \approx \theta$.   Torque $\tau \approx -MB_H \theta$.
+      \item<+-> Equation of motion: $\tau = I^* \alpha = I^* \frac{d^2\theta}{dt^2}$, where $I^*$ is moment of inertia.
+      \item<+-> $I^* \alpha = -MB_H \theta \implies \alpha = -\left(\frac{MB_H}{I^*}\right) \theta$.
+      \item<+-> This is the form $\alpha = -\omega^2 \theta$, with angular frequency $\omega = \sqrt{\frac{MB_H}{I^*}}$.
+
+    %% --- Time Period ---
+      \item<+-> Time Period of Oscillation:
+        \begin{tcolorbox}[colback=blue!5,colframe=blue!80,boxrule=0.5pt,arc=1mm,boxsep=1pt]
+        \begin{equation*}
+             T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{I^*}{M B_H}}
+        \end{equation*}
+        \end{tcolorbox}
+          where $I^*$ = moment of inertia about suspension axis, $M$ = magnetic moment, $B_H$ = horizontal component of Earth's field.
+
+    %% --- Applications (Comparisons) ---
+      \item<+-> \textbf{Comparing Moments ($M_1, M_2$) (same size, same $I^*$, same $B_H$):}
+        \begin{itemize}
+              \item $T_1 = 2\pi \sqrt{I^*/(M_1 B_H)}$, $T_2 = 2\pi \sqrt{I^*/(M_2 B_H)}$.
+              \item $\frac{T_1}{T_2} = \sqrt{\frac{M_2}{M_1}} \implies \frac{M_1}{M_2} = \frac{T_2^2}{T_1^2}$.
+        \end{itemize}
+      \item<+-> \textbf{Comparing Moments ($M_1, M_2$) (different sizes, $I^*_1, I^*_2$):} Uses sum ($M_1+M_2$, $I^*_1+I^*_2$) and difference ($M_1-M_2$, $I^*_1+I^*_2$) combinations.
+        \begin{itemize}
+             \item $\frac{T_{sum}}{T_{diff}} = \sqrt{\frac{M_1 - M_2}{M_1 + M_2}}$.   Allows finding $M_1/M_2$.
+        \end{itemize}
+      \item<+-> \textbf{Comparing Fields ($B_{H1}, B_{H2}$) (same magnet $M, I^*$):}
+        \begin{itemize}
+              \item $T_1 = 2\pi \sqrt{I^*/(M B_{H1})}$, $T_2 = 2\pi \sqrt{I^*/(M B_{H2})}$.
+              \item $\frac{T_1}{T_2} = \sqrt{\frac{B_{H2}}{B_{H1}}} \implies \frac{B_{H1}}{B_{H2}} = \frac{T_2^2}{T_1^2}$.
+        \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Neutral Points}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Definition ---
+      \item<+-> A **Neutral Point** is a location where the net magnetic field is zero.
+      \item<+-> At this point, the magnetic field produced by a magnet (or current) exactly cancels the horizontal component of Earth's magnetic field ($B_H$).
+      \item<+-> A compass needle placed at a neutral point will not align in any specific direction.
+
+    %% --- Location for Bar Magnet ---
+    \item<+-> \textbf{Location depends on magnet's orientation relative to Geographic North:}
+        \begin{itemize}
+              \item \textbf{N-pole of magnet points North:}
+                \begin{itemize}
+                    \item The magnet's field opposes $B_H$ along its equatorial line.
+                      \item Neutral points are located symmetrically on the **equatorial line**.
+                    \item At distance $y$: $B_{eq} = B_H$.   For a short magnet ($y \gg l$): $\frac{\mu_0}{4\pi} \frac{M}{y^3} \approx B_H$.
+                \end{itemize} % Add image
+              \item \textbf{S-pole of magnet points North:}
+                \begin{itemize}
+                    \item The magnet's field opposes $B_H$ along its axial line.
+                      \item Neutral points are located symmetrically on the **axial line**.
+                    \item At distance $x$: $B_{axis} = B_H$.   For a short magnet ($x \gg l$): $\frac{\mu_0}{4\pi} \frac{2M}{x^3} \approx B_H$.
+                \end{itemize} % Add image
+        \end{itemize}
+\end{frame}
+
+% ====== Set Section for Beamer Outline ======
+\section{Magnetic Materials}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Magnetic Materials: Definitions (I)}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Magnetising Field ---
+      \item<+-> \textbf{Magnetising Field or Magnetic Intensity ($\vec{H}$):}
+        \begin{itemize}
+              \item The external magnetic field applied to a material to magnetize it.
+              \item Related to the external magnetic field in vacuum ($\vec{B}_0$) by $\vec{H} = \vec{B}_0 / \mu_0$.
+              \item Unit: Ampere/meter (A/m).
+        \end{itemize}
+
+    %% --- Intensity of Magnetisation ---
+      \item<+-> \textbf{Intensity of Magnetisation ($\vec{I}$ or $\vec{M}_{vol}$):}
+        \begin{itemize}
+              \item The induced magnetic dipole moment per unit volume within the material when placed in a magnetising field.
+              \item $\vec{I} = \frac{\vec{M}_{total}}{V}$.
+              \item Unit: Ampere/meter (A/m) (same as H).
+        \end{itemize}
+
+    %% --- Magnetic Susceptibility ---
+      \item<+-> \textbf{Magnetic Susceptibility ($\chi_m$):}
+        \begin{itemize}
+              \item A dimensionless scalar quantity representing the ease with which a material can be magnetized.
+              \item Defined as the ratio of the intensity of magnetization ($\vec{I}$) to the magnetising field ($\vec{H}$).
+              \begin{equation*} \chi_m = \frac{|\vec{I}|}{|\vec{H}|} \quad (\text{assuming linear response}) \end{equation*}
+              \item No units or dimensions.
+              \item For vacuum, $\chi_m = 0$.   For air (STP), $\chi_m \approx 0.04$.
+        \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Magnetic Materials: Definitions (II)}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Magnetic Permeability ---
+      \item<+-> \textbf{Magnetic Permeability ($\mu$):}
+        \begin{itemize}
+              \item Measures the degree to which a material allows magnetic field lines to pass through it (how easily it is permeated).
+              \item Defined as the ratio of the total magnetic field inside the material ($B_m$) to the magnetising field ($H$).
+              \begin{equation*} \mu = \frac{B_m}{H} \end{equation*}
+              \item Unit: Weber/(A$\cdot$m) or Henry/meter (H/m).
+        \end{itemize}
+
+    %% --- Relative Permeability ---
+      \item<+-> \textbf{Relative Permeability ($\mu_r$):}
+        \begin{itemize}
+              \item The ratio of the material's permeability ($\mu$) to the permeability of free space ($\mu_0$).
+            \begin{equation*} \mu_r = \frac{\mu}{\mu_0} \end{equation*}
+              \item Dimensionless.   For vacuum, $\mu_r = 1$.
+        \end{itemize}
+
+    %% --- Relation between mu and chi ---
+      \item<+-> \textbf{Relation between Permeability and Susceptibility:}
+        \begin{itemize}[<+->]
+              \item Total field inside: $B_m = B_0 + B_i$, where $B_0$ is external field in vacuum, $B_i$ is induced field from magnetization.
+              \item $B_0 = \mu_0 H$, $B_i = \mu_0 I$.
+              \item $B_m = \mu_0 H + \mu_0 I = \mu_0 (H + I)$.
+              \item Divide by $H$: $\frac{B_m}{H} = \mu_0 (1 + \frac{I}{H})$.
+              \item $\mu = \mu_0 (1 + \chi_m)$.
+            \item Dividing by $\mu_0$:
+            \begin{tcolorbox}[colback=orange!8,colframe=accentorange,boxrule=0.5pt,arc=1mm,boxsep=2pt]
+            \begin{equation*}
+                 \mu_r = 1 + \chi_m
+            \end{equation*}
+              \end{tcolorbox}
+        \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Classification of Magnetic Materials}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \tiny % Need smaller font for table content
+
+    %% --- Classification Intro ---
+      \item<+-> Materials classified by Faraday based on their magnetic properties (I, $\chi_m$, $\mu_r$).   Three main classes: Diamagnetic, Paramagnetic, Ferromagnetic.
+
+    \vspace{0.5em}
+
+    %% --- Comparison Table (Part 1) ---
+    \begin{table}
+    \centering
+    \renewcommand{\arraystretch}{1.1} % Adjust row spacing
+    \begin{tabular}{|p{2.5cm}|p{3cm}|p{3cm}|p{3cm}|}
+        \hline
+        \rowcolor{gray!20} \textbf{Property} & \textbf{Diamagnetic} & \textbf{Paramagnetic} & \textbf{Ferromagnetic} \\ \hline
+          Cause of Magnetism & Orbital motion of electrons   & Spin motion of electrons   & Formation of domains \\ \hline
+          Magnetization in Field & Poor, opposite direction ($B_m < B_0$)   & Poor, same direction ($B_m > B_0$)   & Strong, same direction ($B_m \gg B_0$) \\ \hline
+          Intensity ($I$) & Small, negative   & Small, positive   & Very large, positive (non-linear with H) \\ \hline
+          Susceptibility ($\chi_m$) & Small, negative ($\approx -10^{-5}$)   & Small, positive ($\approx +10^{-5}$)   & Very large, positive ($> 1000$) \\ \hline
+        Temp.   Dependence of $\chi_m$ & Independent ($\chi_m \propto T^0$)   & Inverse ($\chi_m \propto 1/T$) (Curie's Law)   & Complex ($\chi_m \propto 1/(T-T_c)$ above Curie Temp $T_c$) (Curie-Weiss Law) \\ \hline
+          Relative Permeability ($\mu_r$) & $0 < \mu_r < 1$ ($\mu < \mu_0$)   & $1 < \mu_r \approx 1$ ($\mu > \mu_0$)   & $\mu_r \gg 1$ ($\mu \gg \mu_0$) \\ \hline
+          Atomic Moment (Permanent) & No   & Yes (randomly oriented)   & Yes (aligned in domains) \\ \hline
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Behavior of Magnetic Materials}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \tiny % Need smaller font for table content
+
+    %% --- Comparison Table (Part 2) ---
+    \begin{table}
+    \centering
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{|p{3cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+        \hline
+        \rowcolor{gray!20} \textbf{Property} & \textbf{Diamagnetic} & \textbf{Paramagnetic} & \textbf{Ferromagnetic} \\ \hline
+          Behavior in Non-uniform Field & Moves from stronger to weaker field region   & Moves weakly from weaker to stronger field region   & Moves strongly from weaker to stronger field region \\ \hline
+          Rod Suspended in Field & Aligns perpendicular to field   & Aligns parallel to field (if strong enough)   & Aligns parallel to field (even if weak) \\ \hline
+          Liquid Level Between Poles & Level depressed   & Level slightly rises   & Level rises strongly \\ \hline
+          Examples & Bi, Cu, Ag, Pb, H₂O, NaCl, Diamond, He, Ne, Au, Zn   & Na, K, Mg, Mn, Pt, Al, O₂   & Fe, Co, Ni, Alnico, Gd, Fe₃O₄ (Mostly crystalline solids) \\ \hline
+    \end{tabular}
+    \end{table}
+
+    \vspace{0.5em}
+
+    %% --- Superconductors ---
+      \item<+-> \textbf{Superconductors:} Exhibit perfect diamagnetism ($\chi_m = -1$, $\mu_r = 0$).   They expel magnetic field lines completely (Meissner effect).   Provide perfect magnetic screening.
+\end{frame}
+
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Magnetic Hysteresis}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Hysteresis Definition ---
+      \item<+-> Phenomenon observed only in **Ferromagnetic materials**.
+      \item<+-> Describes the lagging of the total magnetic field ($B$) inside the material behind the external magnetising field ($H$) when the material is subjected to a cycle of magnetization and demagnetization. % Add image of Hysteresis Loop
+
+    %% --- Key Terms on Hysteresis Loop ---
+    \item<+-> \textbf{Key Features of the B-H Loop:}
+        \begin{itemize}[<+->]
+              \item **Saturation:** Point 'a' where further increase in H produces no significant increase in B.
+              \item **Retentivity (Remanence, $B_r$):** Residual magnetic field (Ob) remaining in the material when the external field H is reduced to zero. Measure of how well the material retains magnetism.
+              \item **Coercivity ($H_c$):** Magnitude of the reverse magnetising field (Oc) required to reduce the residual magnetism to zero (to demagnetize the material). Measure of resistance to demagnetization.
+        \end{itemize}
+
+    %% --- Cause ---
+    \item<+-> \textbf{Cause:} Alignment of magnetic domains.   Even when $H=0$, some domains remain aligned, causing residual magnetism.
+
+    %% --- Material Types based on Hysteresis ---
+      \item<+-> \textbf{Material Types:}
+        \begin{itemize}[<+->]
+              \item **Soft Magnetic Materials:** Low retentivity, low coercivity, small hysteresis loop area (low energy loss per cycle). Suitable for electromagnets, transformer cores.   Ex: Soft Iron.
+              \item **Hard Magnetic Materials:** High retentivity, high coercivity, large hysteresis loop area (high energy loss per cycle). Suitable for permanent magnets.   Ex: Steel, Alnico.
+        \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Hysteresis Loss & Magnetic Shielding}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Hysteresis Loss ---
+      \item<+-> \textbf{Hysteresis Loss:} Energy dissipated as heat during each cycle of magnetization and demagnetization.
+        \begin{itemize}[<+->]
+              \item Energy loss per unit volume per cycle is equal to the area of the B-H hysteresis loop ($\oint B \cdot dH$).
+              \item Total energy loss depends on volume, loop area, frequency ($f$), and time ($t$). $W_H = \text{Volume} \times \text{Area} \times f \times t$.
+        \end{itemize}
+
+    \vspace{1em}
+
+    %% --- Magnetic Shielding ---
+      \item<+-> \textbf{Magnetic Shielding (Screening):}
+        \begin{itemize}[<+->]
+              \item Protecting a region from external magnetic fields.
+              \item Achieved by enclosing the region within a material of high magnetic permeability (like soft iron).
+              \item The high permeability material channels the magnetic field lines around the enclosed space, leaving the field inside close to zero. % Add image of shielding
+              \item Used to protect sensitive instruments (e.g., watches) from external fields.
+              \item Superconductors also provide perfect shielding (Meissner effect).
+        \end{itemize}
+\end{frame}
+
+% ====== OPTIONAL: Add slide transition before this slide ======
+\transfade[duration=0.5]
+
+\begin{frame}[t]
+    \frametitle{\textcolor{deepnavy}{\textbf{Electromagnets}}}
+    \setbeamercovered{transparent=15}
+    \usefonttheme{serif}\renewcommand{\familydefault}{\rmdefault}
+    \small
+
+    %% --- Electromagnet Definition ---
+      \item<+-> An **Electromagnet** is a temporary magnet created by passing current through a coil wound around a ferromagnetic core (typically soft iron).
+        \begin{itemize}[<+->]
+              \item The soft iron core significantly increases the magnetic field strength (hundreds of times) compared to an air-cored solenoid due to its high permeability.
+              \item Made using a straight rod or U-shaped rod core with insulated copper wire windings.
+              \item Magnetism exists only when current flows (temporary magnet).
+        \end{itemize} % Add image of electromagnet
+
+    %% --- Applications ---
+      \item<+-> \textbf{Applications:}
+        \begin{itemize}[<+->]
+              \item Electric bells, locks, relays, telephone diaphragms.
+              \item Medical field (extracting magnetic foreign objects).
+              \item Industrial cranes for lifting heavy magnetic materials.
+        \end{itemize}
+
+    %% --- Core Material Choice ---
+    \item<+-> \textbf{Why Soft Iron Core?} Soft iron is used because it has:
+        \begin{itemize}[<+->]
+            \item High permeability (easily magnetized).
+              \item Low retentivity (loses magnetism quickly when current stops).
+              \item Low coercivity (easy to demagnetize).
+              \item Low hysteresis loss (efficient for AC applications like transformers).
+        \end{itemize}
+\end{frame}
+
+% ====== End of Chapter ======
